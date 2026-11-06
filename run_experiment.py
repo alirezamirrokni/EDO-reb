@@ -439,7 +439,7 @@ def run(cfg_path: str, reset: bool = False, reset_generations: bool = False, no_
 
     score_model = None
     method_name = str(cfg.get("method", "")).lower().replace("-", "_")
-    if method_name == "ours":
+    if method_name in {"ours", "topk"}:
         score_cfg = dict(cfg.get("score_model", {"provider": "none"}) or {})
         score_cfg.setdefault("dataset_name", cfg.get("data", {}).get("name"))
         score_model = build_score_model(score_cfg)

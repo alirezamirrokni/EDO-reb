@@ -3,6 +3,7 @@ from .ours import OursSelection
 from .ours_llm import OursLLMSelection
 from .ours_random import OursRandomSelection
 from .random import RandomSelection
+from .topk import TopKSelection
 
 
 def build_method(cfg, score_model=None, state=None):
@@ -15,6 +16,8 @@ def build_method(cfg, score_model=None, state=None):
         return OursRandomSelection(cfg, score_model=score_model, state=state)
     if method == "random":
         return RandomSelection(cfg, score_model=score_model, state=state)
+    if method == "topk":
+        return TopKSelection(cfg, score_model=score_model, state=state)
     if method == "llm_select":
         return LLMSelect(cfg, score_model=score_model, state=state)
     raise ValueError(f"Unknown method: {cfg.get('method')}")
