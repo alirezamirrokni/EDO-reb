@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+figures/*
+!figures/.gitkeep
+.cache/
+.ipynb_checkpoints/
+
+# Reproducible paper-analysis artifacts (generated locally)
+paper_artifacts/
+
+# Human-audit runtime output
+human_annotations/*.csv
+!human_annotations/.gitkeep
