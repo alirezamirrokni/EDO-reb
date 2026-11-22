@@ -1,0 +1,45 @@
+method: ours_llm
+seed: 7
+output_dir: outputs
+data:
+  name: math500
+  split: full_n2500_norepeat
+  local_files:
+  - /home/mll/ali/datasets/MATH/test-00000-of-00001.parquet
+  - /home/mll/ali/datasets/MATH/train-00000-of-00001.parquet
+  exclude_hf_name: HuggingFaceH4/MATH-500
+  subset_size: 2500
+  subset_seed: 42
+  batch_size: 10
+  num_batches: 250
+  sampling: without_replacement
+main_llm:
+  provider: openrouter
+  model_name: meta-llama/llama-3.3-70b-instruct
+  temperature: 0.0
+  max_output_tokens: 1024
+  request_timeout: 180
+  retry_attempts: 8
+  retry_sleep: 2.0
+  min_seconds_between_calls: 0.0
+  display_name: or-llama-3.3-70b-instruct
+selector_llm:
+  provider: openrouter
+  model_name: meta-llama/llama-3.3-70b-instruct
+  temperature: 0.0
+  max_output_tokens: 64
+  request_timeout: 180
+  retry_attempts: 8
+  retry_sleep: 2.0
+  min_seconds_between_calls: 0.0
+  display_name: or-llama-3.3-70b-instruct
+policy:
+  epsilon: 0.505
+  alpha_step_size: 0.1
+  initial_alpha: 0.0
+  warm_start_batches: 0
+  budget_per_batch: 5
+  cost_variant: constant
+  fallback_score: 0.5
+  max_question_chars: 2500
+  max_answer_chars: 2500

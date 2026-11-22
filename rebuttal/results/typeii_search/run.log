@@ -1,0 +1,879 @@
+{"time_utc": "2026-11-09T10:02:08Z", "phase": "validating"}
+{"time_utc": "2026-11-09T10:02:27Z", "phase": "validation_passed", "checks": 24}
+{"time_utc": "2026-11-09T10:02:28Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 0, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:02:30Z", "phase": "failed", "error": "Object of type bool is not JSON serializable"}
+Traceback (most recent call last):
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 323, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 310, in main
+    baseline=baseline_best(run_stage('baselines',args.workers,con))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 187, in run_stage
+    con.execute('insert into jobs values (?, ?, ?)',(key,stage,json.dumps(rows))); con.commit()
+                                                               ^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 323, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 310, in main
+    baseline=baseline_best(run_stage('baselines',args.workers,con))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 187, in run_stage
+    con.execute('insert into jobs values (?, ?, ?)',(key,stage,json.dumps(rows))); con.commit()
+                                                               ^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+{"time_utc": "2026-11-09T10:03:03Z", "phase": "validating"}
+{"time_utc": "2026-11-09T10:03:22Z", "phase": "validation_passed", "checks": 24}
+{"time_utc": "2026-11-09T10:03:23Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 0, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:26Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 10, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:27Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 20, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:28Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 30, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:30Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 40, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:32Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 50, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:34Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 60, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:36Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 70, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:38Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 80, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:40Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 90, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:41Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 100, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:43Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 110, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:44Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 120, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:45Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 130, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:45Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 140, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:46Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 150, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:46Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 160, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:47Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 170, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:47Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 180, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:48Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 190, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:49Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 200, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:49Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 210, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:49Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 220, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:51Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 230, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:52Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 240, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:55Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 250, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:57Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 260, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:03:59Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 270, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:01Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 280, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:03Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 290, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:05Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 300, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:06Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 310, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:08Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 320, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:10Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 330, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:11Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 340, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:11Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 350, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:11Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 360, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:12Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 370, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:12Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 380, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:13Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 390, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:13Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 400, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:13Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 410, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:14Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 420, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:14Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 430, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:14Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 440, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:15Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 450, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:15Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 456, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:04:15Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 0, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:24Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 10, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:29Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 20, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:33Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 30, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:38Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 40, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:43Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 50, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:47Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 60, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:50Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 70, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:54Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 80, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:04:58Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 90, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:01Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:05Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:09Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:12Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:16Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:19Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:23Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:26Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:30Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:33Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:37Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:41Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:44Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:48Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:51Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:54Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:05:58Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:02Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:05Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:09Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:13Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:16Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:20Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:23Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:26Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:31Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:34Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:38Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:41Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:45Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:48Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:51Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:55Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:06:59Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:01Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:04Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:07Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:08Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:10Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:11Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:13Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:14Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:16Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:17Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:18Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:20Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:21Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:22Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:23Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:24Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:25Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:26Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:27Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:28Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:29Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:30Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:31Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:32Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:33Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:34Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:35Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:36Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:37Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:38Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:39Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:39Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:41Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:41Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:43Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:43Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:44Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:46Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:46Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:47Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 830, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:48Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 840, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:49Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 850, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:50Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 860, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:51Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 870, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:52Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 880, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:53Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 890, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:54Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 900, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:07:55Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 910, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:00Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 920, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:03Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 930, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:08Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 940, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:12Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 950, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:16Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 960, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:20Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 970, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:24Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 980, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:28Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 990, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:31Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1000, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:34Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1010, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:38Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1020, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:42Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1030, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:45Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1040, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:48Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1050, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:51Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1060, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:55Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1070, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:08:59Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1080, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:02Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1090, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:05Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:08Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:12Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:15Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:19Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:22Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:26Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:29Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:32Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:36Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:39Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:42Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:46Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:49Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:52Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:55Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:09:59Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:02Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:05Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:08Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:12Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:14Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:18Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:21Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:10:24Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1340, "total_jobs": 1824}
+Traceback (most recent call last):
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/multiprocessing/pool.py", line 856, in next
+    item = self._items.popleft()
+           ^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 323, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 313, in main
+    df=run_stage(stage,args.workers,con)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/search_typeii.py", line 186, in run_stage
+    for key,rows in pool.imap_unordered(job,pending,chunksize=1):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/multiprocessing/pool.py", line 861, in next
+    self._cond.wait(timeout)
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt
+{"time_utc": "2026-11-09T10:10:41Z", "phase": "validating"}
+{"time_utc": "2026-11-09T10:11:00Z", "phase": "validation_passed", "checks": 24}
+{"time_utc": "2026-11-09T10:11:01Z", "phase": "sweeping", "stage": "baselines", "completed_jobs": 456, "total_jobs": 456}
+{"time_utc": "2026-11-09T10:11:01Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:04Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:06Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:07Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:09Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:09Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:10Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:11Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:12Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:12Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:13Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:14Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:15Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:16Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:17Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:17Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:18Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:19Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:20Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:20Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:21Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:22Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:22Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:23Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:24Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:24Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:25Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:26Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:26Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:27Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:28Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:28Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:29Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:29Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:30Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:31Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:32Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:32Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:33Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:33Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:34Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:34Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:35Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:36Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:36Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:37Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:37Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:38Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:38Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:39Z", "phase": "sweeping", "stage": "minilm", "completed_jobs": 1824, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:39Z", "phase": "stage_complete", "stage": "minilm", "gamma_by_setting": {"or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.1, "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 5.0, "or-qwen3-32b_math500-full_n2500_norepeat": 0.068, "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.75}, "lr": 1.0, "warm": 0.0, "mean_type_ii": 0.35475119047619047}
+findfont: Failed to find font weight bold for STIXSizeFiveSym, now using 400.
+findfont: Failed to find font weight bold for cmmi10, now using 400.
+findfont: Failed to find font weight bold for cmsy10, now using 400.
+findfont: Failed to find font weight bold for cmr10, now using 400.
+findfont: Failed to find font weight bold for cmtt10, now using 400.
+findfont: Failed to find font weight bold for cmti10, now using 400.
+findfont: Failed to find font weight bold for cmb10, now using 400.
+findfont: Failed to find font weight bold for cmss10, now using 400.
+findfont: Failed to find font weight bold for cmex10, now using 400.
+findfont: Failed to find font weight bold for DejaVu Sans Display, now using 400.
+{"time_utc": "2026-11-09T10:11:49Z", "phase": "best_updated", "stage": "minilm", "mean_type_ii": 0.35475119047619047}
+{"time_utc": "2026-11-09T10:11:49Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 0, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:11:55Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 10, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:00Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 20, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:05Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 30, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:10Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 40, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:14Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 50, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:18Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 60, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:23Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 70, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:26Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 80, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:30Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 90, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:38Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:42Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:47Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:50Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:55Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:12:58Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:02Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:06Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:10Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:14Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:18Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:21Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:25Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:29Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:32Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:37Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:40Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:44Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:48Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:51Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:13:56Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:00Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:03Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:07Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:11Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:13Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:18Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:21Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:24Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:28Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:32Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:39Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:42Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:45Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:48Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:49Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:51Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:53Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:54Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:56Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:57Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:14:58Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:00Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:01Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:02Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:03Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:04Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:05Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:06Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:07Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:08Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:09Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:10Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:11Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:12Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:13Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:14Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:15Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:16Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:17Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:18Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:19Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:20Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:21Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:22Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:23Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:24Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:25Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:26Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:27Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:28Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:29Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 830, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:30Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 840, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:31Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 850, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:32Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 860, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:33Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 870, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:34Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 880, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 890, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 900, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:37Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 910, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:42Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 920, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:46Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 930, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:51Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 940, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:15:56Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 950, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:00Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 960, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:04Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 970, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:08Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 980, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:12Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 990, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:16Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1000, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:20Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1010, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:24Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1020, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:27Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1030, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:31Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1040, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1050, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:38Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1060, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:42Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1070, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:46Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1080, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:50Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1090, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:53Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:16:56Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:01Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:04Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:07Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:11Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:15Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:18Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:21Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:25Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:29Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:32Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:39Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:43Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:46Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:50Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:52Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:17:56Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:00Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:03Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:06Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:09Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:13Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:16Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:19Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:22Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:24Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:25Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:27Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:27Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:28Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:29Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:30Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:31Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:32Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:33Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:33Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:34Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:35Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:36Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:36Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:37Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:38Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:38Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:39Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:40Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:40Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:41Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:42Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:42Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:43Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:44Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:44Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:45Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:45Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:46Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:46Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:47Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:48Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:48Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:49Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:49Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:50Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:51Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:51Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:52Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:53Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:53Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:54Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:54Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:55Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:55Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:56Z", "phase": "sweeping", "stage": "0.6B", "completed_jobs": 1824, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:18:56Z", "phase": "stage_complete", "stage": "0.6B", "gamma_by_setting": {"or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.005, "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 1.0, "or-qwen3-32b_math500-full_n2500_norepeat": 0.0, "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.2}, "lr": 8.0, "warm": 5.0, "mean_type_ii": 0.3509333333333333}
+{"time_utc": "2026-11-09T10:19:05Z", "phase": "best_updated", "stage": "0.6B", "mean_type_ii": 0.3509333333333333}
+{"time_utc": "2026-11-09T10:19:05Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 0, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:12Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 10, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:19Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 20, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:23Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 30, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:30Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 40, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:35Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 50, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:40Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 60, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:45Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 70, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:50Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 80, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:19:55Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 90, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:00Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:04Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:08Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:13Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:17Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:21Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:26Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:30Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:35Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:40Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:44Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:49Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:53Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:20:57Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:02Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:07Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:10Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:15Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:19Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:24Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:28Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:32Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:37Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:41Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:45Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:50Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:54Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:21:59Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:02Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:07Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:10Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:14Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:18Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:21Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:26Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:30Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:32Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:34Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:37Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:38Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:40Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:42Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:44Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:45Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:46Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:48Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:49Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:50Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:51Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:53Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:54Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:55Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:56Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:57Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:58Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:22:59Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:01Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:02Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:03Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:04Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:05Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:07Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:07Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:09Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:10Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:11Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:12Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:13Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:14Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:16Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:16Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:18Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:19Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:20Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 830, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:21Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 840, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:22Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 850, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:23Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 860, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:24Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 870, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:25Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 880, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:26Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 890, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:27Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 900, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:28Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 910, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:34Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 920, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:39Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 930, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:45Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 940, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:51Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 950, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:23:55Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 960, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:01Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 970, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:04Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 980, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:09Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 990, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:14Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1000, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:18Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1010, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:22Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1020, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:27Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1030, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:30Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1040, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:35Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1050, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:40Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1060, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:43Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1070, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:48Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1080, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:51Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1090, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:24:56Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:00Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:04Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:08Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:12Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:16Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:20Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:24Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:28Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:33Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:37Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:41Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:45Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:49Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:53Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:25:57Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:01Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:05Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:08Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:12Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:15Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:19Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:23Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:26Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:30Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:34Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:37Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:40Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:41Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:42Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:43Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:44Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:45Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:46Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:47Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:48Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:49Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:50Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:51Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:52Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:53Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:53Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:54Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:55Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:56Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:56Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:57Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:58Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:59Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:26:59Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:00Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:01Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:02Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:02Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:03Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:04Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:04Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:05Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:06Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:07Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:08Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:08Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:09Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:09Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:10Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:11Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:12Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:12Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:13Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:13Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:14Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:15Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:16Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:16Z", "phase": "sweeping", "stage": "1.7B", "completed_jobs": 1824, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:16Z", "phase": "stage_complete", "stage": "1.7B", "gamma_by_setting": {"or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.1, "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 2.0, "or-qwen3-32b_math500-full_n2500_norepeat": 0.2, "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.4}, "lr": 4.0, "warm": 0.0, "mean_type_ii": 0.34419087301587303}
+{"time_utc": "2026-11-09T10:27:25Z", "phase": "best_updated", "stage": "1.7B", "mean_type_ii": 0.34419087301587303}
+{"time_utc": "2026-11-09T10:27:25Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 0, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:33Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 10, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 20, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:44Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 30, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:51Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 40, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:27:57Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 50, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:02Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 60, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:07Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 70, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:12Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 80, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:17Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 90, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:22Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:26Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:31Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:36Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:45Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:50Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:53Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:28:58Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:03Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:07Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:12Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:16Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:21Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:26Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:29Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:34Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:39Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:43Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:48Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:53Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:29:56Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:01Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:06Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:10Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:14Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:19Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:23Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:27Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:31Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:36Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:44Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:48Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:52Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:56Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:30:59Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:01Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:04Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:06Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:08Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:10Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:12Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:13Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:15Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:16Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:17Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:19Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:20Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:21Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:23Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:24Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:25Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:26Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:28Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:29Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:30Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:31Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:32Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:33Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:34Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:36Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:37Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:38Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:39Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:42Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:43Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:44Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:46Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:46Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:48Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:49Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:50Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 830, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:51Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 840, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:52Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 850, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:53Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 860, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:55Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 870, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:56Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 880, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:57Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 890, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:31:58Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 900, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:00Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 910, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:07Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 920, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:11Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 930, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:18Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 940, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:23Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 950, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:28Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 960, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:34Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 970, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:38Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 980, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:43Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 990, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:49Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1000, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:52Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1010, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:32:57Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1020, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:01Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1030, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:05Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1040, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:10Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1050, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:15Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1060, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:19Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1070, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:23Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1080, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:27Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1090, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:31Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1100, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:37Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1110, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1120, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:44Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1130, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:49Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1140, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:53Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1150, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:33:57Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1160, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:02Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1170, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:06Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1180, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:10Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1190, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:15Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1200, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:18Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1210, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:23Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1220, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:26Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1230, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:30Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1240, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:35Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1250, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:39Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1260, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:42Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1270, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:47Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1280, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:51Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1290, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:54Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1300, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:34:58Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1310, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:02Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1320, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:06Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1330, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:10Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1340, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:13Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1350, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:17Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1360, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:20Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1370, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:21Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1380, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:22Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1390, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:23Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1400, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:25Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1410, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:26Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1420, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:27Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1430, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:28Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1440, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:29Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1450, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:30Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1460, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:31Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1470, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:32Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1480, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:33Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1490, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:34Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1500, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:35Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1510, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:36Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1520, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:37Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1530, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:38Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1540, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:39Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1550, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1560, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:40Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1570, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:41Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1580, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:42Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1590, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:43Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1600, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:44Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1610, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:45Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1620, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:46Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1630, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:46Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1640, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:47Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1650, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:48Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1660, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:49Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1670, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:50Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1680, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:50Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1690, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:51Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1700, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:52Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1710, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:53Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1720, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:54Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1730, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:54Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1740, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:55Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1750, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:56Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1760, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:57Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1770, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:57Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1780, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:58Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1790, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:35:59Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1800, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:36:00Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1810, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:36:01Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1820, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:36:01Z", "phase": "sweeping", "stage": "4B", "completed_jobs": 1824, "total_jobs": 1824}
+{"time_utc": "2026-11-09T10:36:01Z", "phase": "stage_complete", "stage": "4B", "gamma_by_setting": {"or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.02, "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 2.0, "or-qwen3-32b_math500-full_n2500_norepeat": 0.0, "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.0}, "lr": 8.0, "warm": 0.0, "mean_type_ii": 0.3353936507936508}
+{"time_utc": "2026-11-09T10:36:10Z", "phase": "best_updated", "stage": "4B", "mean_type_ii": 0.3353936507936508}
+{"time_utc": "2026-11-09T10:36:10Z", "phase": "complete", "encoder": "4B", "gamma_by_setting": {"or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.02, "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 2.0, "or-qwen3-32b_math500-full_n2500_norepeat": 0.0, "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.0}, "lr": 8.0, "warm": 0.0, "mean_type_ii": 0.3353936507936508}

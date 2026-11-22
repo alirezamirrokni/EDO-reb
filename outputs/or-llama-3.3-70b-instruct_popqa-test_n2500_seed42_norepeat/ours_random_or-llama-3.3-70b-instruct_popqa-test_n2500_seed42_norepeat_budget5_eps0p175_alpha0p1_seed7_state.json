@@ -1,0 +1,7 @@
+{
+  "config": "ours_random_or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat_budget5_eps0p175_alpha0p1_seed7",
+  "next_batch": 250,
+  "method_state": {
+    "alpha": 0.9450000000000056
+  }
+}

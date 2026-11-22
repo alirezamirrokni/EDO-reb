@@ -1,0 +1,773 @@
+[ablation] dataset=math500 variant=legacy_full_context
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7.csv
+[replay] completed=250/250
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7:   0%|          | 0/250 [00:00<?, ?it/s]llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7: 100%|██████████| 250/250 [00:00<00:00, 2076388.12it/s]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.7348 (1837/2500)
+  selected          : 943
+  unselected        : 1557
+  type-I            : 0.5684
+  type-II           : 0.1644
+  budget used       : 943.00/1250.00 (75.4%)
+[done] wrote outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7.csv
+[ablation] dataset=math500 variant=reasoning_allowed
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7.csv
+[replay] completed=45/250
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   0%|          | 0/250 [00:00<?, ?it/s][batch 045] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  18%|█▊        | 46/250 [00:01<00:07, 28.40it/s][batch 046] selected=2
+[batch 047] selected=4
+[batch 048] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  20%|█▉        | 49/250 [00:04<00:23,  8.63it/s][batch 049] selected=3
+[batch 050] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  20%|██        | 51/250 [00:06<00:34,  5.80it/s][batch 051] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  21%|██        | 52/250 [00:07<00:47,  4.18it/s][batch 052] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  21%|██        | 53/250 [00:08<00:54,  3.64it/s][batch 053] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  22%|██▏       | 54/250 [00:09<01:02,  3.15it/s][batch 054] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  22%|██▏       | 55/250 [00:10<01:10,  2.77it/s][batch 055] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  22%|██▏       | 56/250 [00:11<01:30,  2.14it/s][batch 056] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  23%|██▎       | 57/250 [00:12<01:48,  1.79it/s][batch 057] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  23%|██▎       | 58/250 [00:13<02:02,  1.56it/s][batch 058] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  24%|██▎       | 59/250 [00:14<02:16,  1.40it/s][batch 059] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  24%|██▍       | 60/250 [00:15<02:29,  1.28it/s][batch 060] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  24%|██▍       | 61/250 [00:16<02:37,  1.20it/s][batch 061] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  25%|██▍       | 62/250 [00:17<02:46,  1.13it/s][batch 062] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  25%|██▌       | 63/250 [00:18<02:50,  1.10it/s][batch 063] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  26%|██▌       | 64/250 [00:19<02:55,  1.06it/s][batch 064] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  26%|██▌       | 65/250 [00:20<02:56,  1.05it/s][batch 065] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  26%|██▋       | 66/250 [00:21<02:59,  1.03it/s][batch 066] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  27%|██▋       | 67/250 [00:22<02:58,  1.02it/s][batch 067] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  27%|██▋       | 68/250 [00:23<03:00,  1.01it/s][batch 068] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  28%|██▊       | 69/250 [00:24<02:59,  1.01it/s][batch 069] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  28%|██▊       | 70/250 [00:25<02:59,  1.00it/s][batch 070] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  28%|██▊       | 71/250 [00:26<02:58,  1.00it/s][batch 071] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  29%|██▉       | 72/250 [00:28<03:50,  1.29s/it][batch 072] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  29%|██▉       | 73/250 [00:29<03:33,  1.21s/it][batch 073] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  30%|██▉       | 74/250 [00:30<03:21,  1.15s/it][batch 074] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  30%|███       | 75/250 [00:32<04:04,  1.40s/it][batch 075] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  30%|███       | 76/250 [00:33<03:44,  1.29s/it][batch 076] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  31%|███       | 77/250 [00:34<03:26,  1.20s/it][batch 077] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  31%|███       | 78/250 [00:35<03:18,  1.16s/it][batch 078] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  32%|███▏      | 79/250 [00:36<03:06,  1.09s/it][batch 079] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  32%|███▏      | 80/250 [00:37<03:07,  1.10s/it][batch 080] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  32%|███▏      | 81/250 [00:39<03:45,  1.33s/it][batch 081] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  33%|███▎      | 82/250 [00:40<03:27,  1.23s/it][batch 082] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  33%|███▎      | 83/250 [00:41<03:14,  1.17s/it][batch 083] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  34%|███▎      | 84/250 [00:42<03:03,  1.11s/it][batch 084] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  34%|███▍      | 85/250 [00:43<02:57,  1.08s/it][batch 085] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  34%|███▍      | 86/250 [00:44<02:52,  1.05s/it][batch 086] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  35%|███▍      | 87/250 [00:45<02:49,  1.04s/it][batch 087] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  35%|███▌      | 88/250 [00:46<02:45,  1.02s/it][batch 088] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  36%|███▌      | 89/250 [00:47<02:44,  1.02s/it][batch 089] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  36%|███▌      | 90/250 [00:48<02:43,  1.02s/it][batch 090] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  36%|███▋      | 91/250 [00:49<02:40,  1.01s/it][batch 091] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  37%|███▋      | 92/250 [00:50<02:37,  1.00it/s][batch 092] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  37%|███▋      | 93/250 [00:51<02:39,  1.01s/it][batch 093] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  38%|███▊      | 94/250 [00:52<02:38,  1.01s/it][batch 094] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  38%|███▊      | 95/250 [00:53<02:37,  1.02s/it][batch 095] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  38%|███▊      | 96/250 [00:54<02:32,  1.01it/s][batch 096] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  39%|███▉      | 97/250 [00:55<02:31,  1.01it/s][batch 097] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  39%|███▉      | 98/250 [00:56<02:31,  1.00it/s][batch 098] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  40%|███▉      | 99/250 [00:57<02:31,  1.00s/it][batch 099] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  40%|████      | 100/250 [00:59<03:23,  1.36s/it][batch 100] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  40%|████      | 101/250 [01:01<03:43,  1.50s/it][batch 101] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  41%|████      | 102/250 [01:03<04:04,  1.65s/it][batch 102] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  41%|████      | 103/250 [01:04<03:33,  1.45s/it][batch 103] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  42%|████▏     | 104/250 [01:05<03:11,  1.31s/it][batch 104] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  42%|████▏     | 105/250 [01:06<02:57,  1.22s/it][batch 105] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  42%|████▏     | 106/250 [01:07<02:46,  1.16s/it][batch 106] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  43%|████▎     | 107/250 [01:08<02:37,  1.10s/it][batch 107] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  43%|████▎     | 108/250 [01:09<02:33,  1.08s/it][batch 108] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  44%|████▎     | 109/250 [01:10<02:27,  1.05s/it][batch 109] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  44%|████▍     | 110/250 [01:11<02:26,  1.04s/it][batch 110] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  44%|████▍     | 111/250 [01:13<03:04,  1.33s/it][batch 111] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  45%|████▍     | 112/250 [01:14<02:48,  1.22s/it][batch 112] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  45%|████▌     | 113/250 [01:15<02:39,  1.16s/it][batch 113] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  46%|████▌     | 114/250 [01:16<02:39,  1.17s/it][batch 114] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  46%|████▌     | 115/250 [01:18<03:04,  1.36s/it][batch 115] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  46%|████▋     | 116/250 [01:19<02:48,  1.26s/it][batch 116] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  47%|████▋     | 117/250 [01:20<02:36,  1.18s/it][batch 117] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  47%|████▋     | 118/250 [01:21<02:28,  1.13s/it][batch 118] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  48%|████▊     | 119/250 [01:22<02:21,  1.08s/it][batch 119] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  48%|████▊     | 120/250 [01:23<02:18,  1.06s/it][batch 120] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  48%|████▊     | 121/250 [01:24<02:16,  1.06s/it][batch 121] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  49%|████▉     | 122/250 [01:25<02:10,  1.02s/it][batch 122] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  49%|████▉     | 123/250 [01:26<02:08,  1.01s/it][batch 123] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  50%|████▉     | 124/250 [01:27<02:13,  1.06s/it][batch 124] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  50%|█████     | 125/250 [01:29<02:42,  1.30s/it][batch 125] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  50%|█████     | 126/250 [01:30<02:29,  1.21s/it][batch 126] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  51%|█████     | 127/250 [01:31<02:21,  1.15s/it][batch 127] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  51%|█████     | 128/250 [01:33<02:52,  1.41s/it][batch 128] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  52%|█████▏    | 129/250 [01:34<02:34,  1.28s/it][batch 129] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  52%|█████▏    | 130/250 [01:35<02:23,  1.20s/it][batch 130] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  52%|█████▏    | 131/250 [01:36<02:16,  1.14s/it][batch 131] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  53%|█████▎    | 132/250 [01:38<02:44,  1.40s/it][batch 132] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  53%|█████▎    | 133/250 [01:40<03:03,  1.57s/it][batch 133] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  54%|█████▎    | 134/250 [01:41<02:45,  1.43s/it][batch 134] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  54%|█████▍    | 135/250 [01:43<03:01,  1.58s/it][batch 135] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  54%|█████▍    | 136/250 [01:44<02:39,  1.40s/it][batch 136] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  55%|█████▍    | 137/250 [01:45<02:25,  1.28s/it][batch 137] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  55%|█████▌    | 138/250 [01:46<02:13,  1.19s/it][batch 138] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  56%|█████▌    | 139/250 [01:47<02:07,  1.14s/it][batch 139] selected=1
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  56%|█████▌    | 140/250 [01:49<02:33,  1.40s/it][batch 140] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  56%|█████▋    | 141/250 [01:50<02:18,  1.27s/it][batch 141] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  57%|█████▋    | 142/250 [01:51<02:10,  1.20s/it][batch 142] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  57%|█████▋    | 143/250 [01:52<02:00,  1.13s/it][batch 143] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  58%|█████▊    | 144/250 [01:53<01:56,  1.10s/it][batch 144] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  58%|█████▊    | 145/250 [01:54<01:51,  1.06s/it][batch 145] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  58%|█████▊    | 146/250 [01:55<01:48,  1.04s/it][batch 146] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  59%|█████▉    | 147/250 [01:56<01:46,  1.03s/it][batch 147] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  59%|█████▉    | 148/250 [01:57<01:44,  1.02s/it][batch 148] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  60%|█████▉    | 149/250 [01:59<02:13,  1.32s/it][batch 149] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  60%|██████    | 150/250 [02:00<02:04,  1.25s/it][batch 150] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  60%|██████    | 151/250 [02:01<01:56,  1.17s/it][batch 151] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  61%|██████    | 152/250 [02:02<01:54,  1.17s/it][batch 152] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  61%|██████    | 153/250 [02:04<02:10,  1.34s/it][batch 153] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  62%|██████▏   | 154/250 [02:05<01:58,  1.23s/it][batch 154] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  62%|██████▏   | 155/250 [02:05<01:43,  1.08s/it][batch 155] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  62%|██████▏   | 156/250 [02:07<01:47,  1.15s/it][batch 156] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  63%|██████▎   | 157/250 [02:08<01:42,  1.10s/it][batch 157] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  63%|██████▎   | 158/250 [02:09<01:38,  1.07s/it][batch 158] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  64%|██████▎   | 159/250 [02:10<01:37,  1.07s/it][batch 159] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  64%|██████▍   | 160/250 [02:13<02:28,  1.65s/it][batch 160] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  64%|██████▍   | 161/250 [02:15<02:35,  1.75s/it][batch 161] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  65%|██████▍   | 162/250 [02:16<02:13,  1.51s/it][batch 162] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  65%|██████▌   | 163/250 [02:18<02:24,  1.66s/it][batch 163] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  66%|██████▌   | 164/250 [02:19<02:06,  1.47s/it][batch 164] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  66%|██████▌   | 165/250 [02:20<01:52,  1.32s/it][batch 165] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  66%|██████▋   | 166/250 [02:21<01:42,  1.22s/it][batch 166] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  67%|██████▋   | 167/250 [02:22<01:37,  1.17s/it][batch 167] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  67%|██████▋   | 168/250 [02:23<01:30,  1.11s/it][batch 168] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  68%|██████▊   | 169/250 [02:24<01:27,  1.08s/it][batch 169] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  68%|██████▊   | 170/250 [02:25<01:24,  1.06s/it][batch 170] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  68%|██████▊   | 171/250 [02:26<01:21,  1.04s/it][batch 171] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  69%|██████▉   | 172/250 [02:28<01:43,  1.32s/it][batch 172] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  69%|██████▉   | 173/250 [02:29<01:34,  1.22s/it][batch 173] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  70%|██████▉   | 174/250 [02:30<01:27,  1.16s/it][batch 174] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  70%|███████   | 175/250 [02:31<01:24,  1.13s/it][batch 175] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  70%|███████   | 176/250 [02:33<01:41,  1.37s/it][batch 176] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  71%|███████   | 177/250 [02:34<01:31,  1.26s/it][batch 177] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  71%|███████   | 178/250 [02:35<01:26,  1.20s/it][batch 178] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  72%|███████▏  | 179/250 [02:36<01:20,  1.13s/it][batch 179] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  72%|███████▏  | 180/250 [02:38<01:37,  1.39s/it][batch 180] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  72%|███████▏  | 181/250 [02:39<01:28,  1.28s/it][batch 181] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  73%|███████▎  | 182/250 [02:40<01:20,  1.19s/it][batch 182] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  73%|███████▎  | 183/250 [02:41<01:15,  1.13s/it][batch 183] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  74%|███████▎  | 184/250 [02:42<01:11,  1.09s/it][batch 184] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  74%|███████▍  | 185/250 [02:43<01:14,  1.14s/it][batch 185] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  74%|███████▍  | 186/250 [02:45<01:24,  1.32s/it][batch 186] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  75%|███████▍  | 187/250 [02:46<01:17,  1.22s/it][batch 187] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  75%|███████▌  | 188/250 [02:48<01:31,  1.48s/it][batch 188] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  76%|███████▌  | 189/250 [02:50<01:38,  1.61s/it][batch 189] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  76%|███████▌  | 190/250 [02:53<02:02,  2.04s/it][batch 190] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  76%|███████▋  | 191/250 [02:55<01:58,  2.02s/it][batch 191] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  77%|███████▋  | 192/250 [02:59<02:32,  2.62s/it][batch 192] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  77%|███████▋  | 193/250 [03:01<02:19,  2.45s/it][batch 193] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  78%|███████▊  | 194/250 [03:03<02:08,  2.30s/it][batch 194] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  78%|███████▊  | 195/250 [03:05<02:01,  2.21s/it][batch 195] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  78%|███████▊  | 196/250 [03:07<01:55,  2.14s/it][batch 196] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  79%|███████▉  | 197/250 [03:09<01:55,  2.18s/it][batch 197] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  79%|███████▉  | 198/250 [03:11<01:46,  2.05s/it][batch 198] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  80%|███████▉  | 199/250 [03:13<01:43,  2.03s/it][batch 199] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  80%|████████  | 200/250 [03:15<01:41,  2.03s/it][batch 200] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  80%|████████  | 201/250 [03:17<01:41,  2.07s/it][batch 201] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  81%|████████  | 202/250 [03:19<01:35,  2.00s/it][batch 202] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  81%|████████  | 203/250 [03:21<01:33,  1.99s/it][batch 203] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  82%|████████▏ | 204/250 [03:23<01:32,  2.00s/it][batch 204] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  82%|████████▏ | 205/250 [03:26<01:43,  2.30s/it][batch 205] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  82%|████████▏ | 206/250 [03:29<01:50,  2.50s/it][batch 206] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  83%|████████▎ | 207/250 [03:31<01:42,  2.37s/it][batch 207] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  83%|████████▎ | 208/250 [03:33<01:34,  2.24s/it][batch 208] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  84%|████████▎ | 209/250 [03:35<01:28,  2.17s/it][batch 209] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  84%|████████▍ | 210/250 [03:37<01:25,  2.13s/it][batch 210] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  84%|████████▍ | 211/250 [03:39<01:21,  2.08s/it][batch 211] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  85%|████████▍ | 212/250 [03:41<01:18,  2.06s/it][batch 212] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  85%|████████▌ | 213/250 [03:43<01:15,  2.05s/it][batch 213] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  86%|████████▌ | 214/250 [03:44<01:03,  1.77s/it][batch 214] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  86%|████████▌ | 215/250 [03:45<00:58,  1.66s/it][batch 215] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  86%|████████▋ | 216/250 [03:47<00:54,  1.60s/it][batch 216] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  87%|████████▋ | 217/250 [03:48<00:52,  1.59s/it][batch 217] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  87%|████████▋ | 218/250 [03:50<00:49,  1.53s/it][batch 218] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  88%|████████▊ | 219/250 [03:52<00:51,  1.67s/it][batch 219] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  88%|████████▊ | 220/250 [03:53<00:45,  1.51s/it][batch 220] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  88%|████████▊ | 221/250 [03:54<00:39,  1.37s/it][batch 221] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  89%|████████▉ | 222/250 [03:55<00:35,  1.26s/it][batch 222] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  89%|████████▉ | 223/250 [03:56<00:32,  1.19s/it][batch 223] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  90%|████████▉ | 224/250 [03:58<00:35,  1.38s/it][batch 224] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  90%|█████████ | 225/250 [03:59<00:32,  1.29s/it][batch 225] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  90%|█████████ | 226/250 [04:00<00:28,  1.21s/it][batch 226] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  91%|█████████ | 227/250 [04:01<00:26,  1.17s/it][batch 227] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  91%|█████████ | 228/250 [04:02<00:27,  1.26s/it][batch 228] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  92%|█████████▏| 229/250 [04:03<00:24,  1.19s/it][batch 229] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  92%|█████████▏| 230/250 [04:04<00:23,  1.15s/it][batch 230] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  92%|█████████▏| 231/250 [04:05<00:20,  1.09s/it][batch 231] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  93%|█████████▎| 232/250 [04:07<00:20,  1.16s/it][batch 232] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  93%|█████████▎| 233/250 [04:08<00:21,  1.28s/it][batch 233] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  94%|█████████▎| 234/250 [04:10<00:21,  1.32s/it][batch 234] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  94%|█████████▍| 235/250 [04:11<00:18,  1.23s/it][batch 235] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  94%|█████████▍| 236/250 [04:13<00:20,  1.46s/it][batch 236] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  95%|█████████▍| 237/250 [04:15<00:21,  1.63s/it][batch 237] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  95%|█████████▌| 238/250 [04:16<00:17,  1.47s/it][batch 238] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  96%|█████████▌| 239/250 [04:18<00:17,  1.59s/it][batch 239] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  96%|█████████▌| 240/250 [04:19<00:14,  1.42s/it][batch 240] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  96%|█████████▋| 241/250 [04:20<00:11,  1.29s/it][batch 241] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  97%|█████████▋| 242/250 [04:21<00:09,  1.20s/it][batch 242] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  97%|█████████▋| 243/250 [04:22<00:08,  1.14s/it][batch 243] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  98%|█████████▊| 244/250 [04:23<00:06,  1.16s/it][batch 244] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  98%|█████████▊| 245/250 [04:25<00:06,  1.35s/it][batch 245] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  98%|█████████▊| 246/250 [04:26<00:04,  1.24s/it][batch 246] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  99%|█████████▉| 247/250 [04:28<00:04,  1.48s/it][batch 247] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  99%|█████████▉| 248/250 [04:29<00:02,  1.38s/it][batch 248] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7: 100%|█████████▉| 249/250 [04:31<00:01,  1.55s/it][batch 249] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7: 100%|██████████| 250/250 [04:33<00:00,  1.65s/it]llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7: 100%|██████████| 250/250 [04:33<00:00,  1.09s/it]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.7348 (1837/2500)
+  selected          : 873
+  unselected        : 1627
+  type-I            : 0.5556
+  type-II           : 0.1690
+  budget used       : 873.00/1250.00 (69.8%)
+[done] wrote outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7.csv
+[ablation] dataset=math500 variant=independent_verify
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7.csv
+[replay] completed=0/250
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   0%|          | 0/250 [00:00<?, ?it/s][batch 000] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   0%|          | 1/250 [00:01<06:55,  1.67s/it][batch 001] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   1%|          | 2/250 [00:02<05:45,  1.39s/it][batch 002] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   1%|          | 3/250 [00:04<06:27,  1.57s/it][batch 003] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   2%|▏         | 4/250 [00:05<05:33,  1.36s/it][batch 004] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   2%|▏         | 5/250 [00:06<04:59,  1.22s/it][batch 005] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   2%|▏         | 6/250 [00:07<04:38,  1.14s/it][batch 006] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   3%|▎         | 7/250 [00:08<04:27,  1.10s/it][batch 007] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   3%|▎         | 8/250 [00:09<04:17,  1.07s/it][batch 008] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   4%|▎         | 9/250 [00:10<04:13,  1.05s/it][batch 009] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   4%|▍         | 10/250 [00:11<04:08,  1.03s/it][batch 010] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   4%|▍         | 11/250 [00:12<04:03,  1.02s/it][batch 011] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   5%|▍         | 12/250 [00:13<04:01,  1.01s/it][batch 012] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   5%|▌         | 13/250 [00:14<04:11,  1.06s/it][batch 013] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   6%|▌         | 14/250 [00:16<05:08,  1.31s/it][batch 014] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   6%|▌         | 15/250 [00:17<04:42,  1.20s/it][batch 015] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   6%|▋         | 16/250 [00:18<04:26,  1.14s/it][batch 016] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   7%|▋         | 17/250 [00:19<04:15,  1.10s/it][batch 017] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   7%|▋         | 18/250 [00:20<04:08,  1.07s/it][batch 018] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   8%|▊         | 19/250 [00:21<04:02,  1.05s/it][batch 019] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   8%|▊         | 20/250 [00:22<03:58,  1.04s/it][batch 020] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   8%|▊         | 21/250 [00:23<04:03,  1.06s/it][batch 021] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   9%|▉         | 22/250 [00:25<05:00,  1.32s/it][batch 022] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   9%|▉         | 23/250 [00:26<04:35,  1.21s/it][batch 023] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  10%|▉         | 24/250 [00:27<04:20,  1.15s/it][batch 024] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  10%|█         | 25/250 [00:28<04:08,  1.10s/it][batch 025] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  10%|█         | 26/250 [00:29<03:46,  1.01s/it][batch 026] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  11%|█         | 27/250 [00:30<03:28,  1.07it/s][batch 027] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  11%|█         | 28/250 [00:31<03:24,  1.09it/s][batch 028] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  12%|█▏        | 29/250 [00:31<03:10,  1.16it/s][batch 029] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  12%|█▏        | 30/250 [00:33<04:13,  1.15s/it][batch 030] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  12%|█▏        | 31/250 [00:34<04:01,  1.10s/it][batch 031] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  13%|█▎        | 32/250 [00:35<03:54,  1.07s/it][batch 032] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  13%|█▎        | 33/250 [00:36<03:50,  1.06s/it][batch 033] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  14%|█▎        | 34/250 [00:37<03:43,  1.04s/it][batch 034] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  14%|█▍        | 35/250 [00:38<03:40,  1.03s/it][batch 035] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  14%|█▍        | 36/250 [00:39<03:37,  1.02s/it][batch 036] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  15%|█▍        | 37/250 [00:40<03:36,  1.02s/it][batch 037] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  15%|█▌        | 38/250 [00:41<03:34,  1.01s/it][batch 038] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  16%|█▌        | 39/250 [00:42<03:38,  1.03s/it][batch 039] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  16%|█▌        | 40/250 [00:44<04:34,  1.31s/it][batch 040] selected=1
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  16%|█▋        | 41/250 [00:45<04:11,  1.20s/it][batch 041] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  17%|█▋        | 42/250 [00:46<03:59,  1.15s/it][batch 042] selected=1
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  17%|█▋        | 43/250 [00:47<03:48,  1.10s/it][batch 043] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  18%|█▊        | 44/250 [00:48<03:41,  1.07s/it][batch 044] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  18%|█▊        | 45/250 [00:49<03:35,  1.05s/it][batch 045] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  18%|█▊        | 46/250 [00:50<03:30,  1.03s/it][batch 046] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  19%|█▉        | 47/250 [00:51<03:26,  1.02s/it][batch 047] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  19%|█▉        | 48/250 [00:52<03:26,  1.02s/it][batch 048] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  20%|█▉        | 49/250 [00:53<03:26,  1.03s/it][batch 049] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  20%|██        | 50/250 [00:54<03:20,  1.00s/it][batch 050] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  20%|██        | 51/250 [00:55<03:19,  1.00s/it][batch 051] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  21%|██        | 52/250 [00:56<03:18,  1.00s/it][batch 052] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  21%|██        | 53/250 [00:57<03:16,  1.00it/s][batch 053] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  22%|██▏       | 54/250 [00:58<03:16,  1.00s/it][batch 054] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  22%|██▏       | 55/250 [00:59<02:58,  1.09it/s][batch 055] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  22%|██▏       | 56/250 [01:00<03:19,  1.03s/it][batch 056] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  23%|██▎       | 57/250 [01:02<04:14,  1.32s/it][batch 057] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  23%|██▎       | 58/250 [01:03<03:55,  1.22s/it][batch 058] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  24%|██▎       | 59/250 [01:04<03:45,  1.18s/it][batch 059] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  24%|██▍       | 60/250 [01:06<04:32,  1.43s/it][batch 060] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  24%|██▍       | 61/250 [01:08<04:57,  1.57s/it][batch 061] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  25%|██▍       | 62/250 [01:09<04:23,  1.40s/it][batch 062] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  25%|██▌       | 63/250 [01:10<03:58,  1.28s/it][batch 063] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  26%|██▌       | 64/250 [01:11<03:42,  1.19s/it][batch 064] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  26%|██▌       | 65/250 [01:12<03:31,  1.14s/it][batch 065] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  26%|██▋       | 66/250 [01:13<03:22,  1.10s/it][batch 066] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  27%|██▋       | 67/250 [01:14<03:16,  1.07s/it][batch 067] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  27%|██▋       | 68/250 [01:15<03:10,  1.05s/it][batch 068] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  28%|██▊       | 69/250 [01:16<03:06,  1.03s/it][batch 069] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  28%|██▊       | 70/250 [01:17<03:03,  1.02s/it][batch 070] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  28%|██▊       | 71/250 [01:18<03:01,  1.02s/it][batch 071] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  29%|██▉       | 72/250 [01:19<03:00,  1.01s/it][batch 072] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  29%|██▉       | 73/250 [01:20<02:59,  1.01s/it][batch 073] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  30%|██▉       | 74/250 [01:21<03:09,  1.08s/it][batch 074] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  30%|███       | 75/250 [01:23<03:43,  1.28s/it][batch 075] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  30%|███       | 76/250 [01:24<03:18,  1.14s/it][batch 076] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  31%|███       | 77/250 [01:25<03:04,  1.07s/it][batch 077] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  31%|███       | 78/250 [01:26<03:26,  1.20s/it][batch 078] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  32%|███▏      | 79/250 [01:28<03:57,  1.39s/it][batch 079] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  32%|███▏      | 80/250 [01:30<04:25,  1.56s/it][batch 080] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  32%|███▏      | 81/250 [01:31<03:56,  1.40s/it][batch 081] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  33%|███▎      | 82/250 [01:32<03:35,  1.28s/it][batch 082] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  33%|███▎      | 83/250 [01:33<03:24,  1.23s/it][batch 083] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  34%|███▎      | 84/250 [01:34<03:07,  1.13s/it][batch 084] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  34%|███▍      | 85/250 [01:35<03:00,  1.09s/it][batch 085] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  34%|███▍      | 86/250 [01:36<02:55,  1.07s/it][batch 086] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  35%|███▍      | 87/250 [01:37<02:49,  1.04s/it][batch 087] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  35%|███▌      | 88/250 [01:38<02:47,  1.03s/it][batch 088] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  36%|███▌      | 89/250 [01:39<02:43,  1.02s/it][batch 089] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  36%|███▌      | 90/250 [01:40<02:41,  1.01s/it][batch 090] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  36%|███▋      | 91/250 [01:41<02:43,  1.03s/it][batch 091] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  37%|███▋      | 92/250 [01:43<03:25,  1.30s/it][batch 092] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  37%|███▋      | 93/250 [01:44<03:10,  1.21s/it][batch 093] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  38%|███▊      | 94/250 [01:45<02:58,  1.14s/it][batch 094] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  38%|███▊      | 95/250 [01:46<02:53,  1.12s/it][batch 095] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  38%|███▊      | 96/250 [01:48<03:32,  1.38s/it][batch 096] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  39%|███▉      | 97/250 [01:49<03:11,  1.25s/it][batch 097] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  39%|███▉      | 98/250 [01:50<02:59,  1.18s/it][batch 098] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  40%|███▉      | 99/250 [01:51<02:50,  1.13s/it][batch 099] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  40%|████      | 100/250 [01:52<02:51,  1.15s/it][batch 100] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  40%|████      | 101/250 [01:54<03:20,  1.35s/it][batch 101] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  41%|████      | 102/250 [01:55<03:02,  1.23s/it][batch 102] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  41%|████      | 103/250 [01:56<02:51,  1.17s/it][batch 103] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  42%|████▏     | 104/250 [01:57<02:43,  1.12s/it][batch 104] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  42%|████▏     | 105/250 [01:58<02:36,  1.08s/it][batch 105] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  42%|████▏     | 106/250 [01:59<02:32,  1.06s/it][batch 106] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  43%|████▎     | 107/250 [02:00<02:29,  1.04s/it][batch 107] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  43%|████▎     | 108/250 [02:01<02:26,  1.03s/it][batch 108] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  44%|████▎     | 109/250 [02:03<03:07,  1.33s/it][batch 109] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  44%|████▍     | 110/250 [02:04<02:51,  1.23s/it][batch 110] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  44%|████▍     | 111/250 [02:05<02:39,  1.15s/it][batch 111] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  45%|████▍     | 112/250 [02:06<02:39,  1.15s/it][batch 112] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  45%|████▌     | 113/250 [02:08<03:06,  1.36s/it][batch 113] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  46%|████▌     | 114/250 [02:09<02:53,  1.27s/it][batch 114] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  46%|████▌     | 115/250 [02:10<02:37,  1.17s/it][batch 115] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  46%|████▋     | 116/250 [02:11<02:30,  1.13s/it][batch 116] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  47%|████▋     | 117/250 [02:12<02:25,  1.09s/it][batch 117] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  47%|████▋     | 118/250 [02:14<02:58,  1.36s/it][batch 118] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  48%|████▊     | 119/250 [02:15<02:44,  1.25s/it][batch 119] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  48%|████▊     | 120/250 [02:16<02:33,  1.18s/it][batch 120] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  48%|████▊     | 121/250 [02:17<02:23,  1.12s/it][batch 121] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  49%|████▉     | 122/250 [02:18<02:19,  1.09s/it][batch 122] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  49%|████▉     | 123/250 [02:19<02:13,  1.05s/it][batch 123] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  50%|████▉     | 124/250 [02:20<02:11,  1.04s/it][batch 124] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  50%|█████     | 125/250 [02:21<02:10,  1.04s/it][batch 125] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  50%|█████     | 126/250 [02:23<02:44,  1.32s/it][batch 126] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  51%|█████     | 127/250 [02:24<02:31,  1.23s/it][batch 127] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  51%|█████     | 128/250 [02:25<02:20,  1.16s/it][batch 128] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  52%|█████▏    | 129/250 [02:26<02:14,  1.12s/it][batch 129] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  52%|█████▏    | 130/250 [02:27<02:08,  1.07s/it][batch 130] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  52%|█████▏    | 131/250 [02:28<02:04,  1.05s/it][batch 131] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  53%|█████▎    | 132/250 [02:29<02:02,  1.04s/it][batch 132] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  53%|█████▎    | 133/250 [02:32<03:10,  1.63s/it][batch 133] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  54%|█████▎    | 134/250 [02:34<03:22,  1.74s/it][batch 134] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  54%|█████▍    | 135/250 [02:35<02:53,  1.51s/it][batch 135] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  54%|█████▍    | 136/250 [02:36<02:35,  1.37s/it][batch 136] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  55%|█████▍    | 137/250 [02:37<02:22,  1.26s/it][batch 137] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  55%|█████▌    | 138/250 [02:39<02:45,  1.48s/it][batch 138] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  56%|█████▌    | 139/250 [02:40<02:28,  1.33s/it][batch 139] selected=1
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  56%|█████▌    | 140/250 [02:41<02:16,  1.24s/it][batch 140] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  56%|█████▋    | 141/250 [02:43<02:39,  1.46s/it][batch 141] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  57%|█████▋    | 142/250 [02:44<02:21,  1.31s/it][batch 142] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  57%|█████▋    | 143/250 [02:45<02:10,  1.22s/it][batch 143] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  58%|█████▊    | 144/250 [02:46<02:06,  1.20s/it][batch 144] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  58%|█████▊    | 145/250 [02:48<02:27,  1.40s/it][batch 145] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  58%|█████▊    | 146/250 [02:49<02:12,  1.27s/it][batch 146] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  59%|█████▉    | 147/250 [02:50<02:03,  1.20s/it][batch 147] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  59%|█████▉    | 148/250 [02:51<01:55,  1.13s/it][batch 148] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  60%|█████▉    | 149/250 [02:52<01:51,  1.11s/it][batch 149] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  60%|██████    | 150/250 [02:53<01:45,  1.06s/it][batch 150] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  60%|██████    | 151/250 [02:54<01:44,  1.05s/it][batch 151] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  61%|██████    | 152/250 [02:55<01:40,  1.03s/it][batch 152] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  61%|██████    | 153/250 [02:56<01:40,  1.04s/it][batch 153] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  62%|██████▏   | 154/250 [02:57<01:39,  1.04s/it][batch 154] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  62%|██████▏   | 155/250 [02:58<01:34,  1.00it/s][batch 155] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  62%|██████▏   | 156/250 [02:59<01:34,  1.00s/it][batch 156] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  63%|██████▎   | 157/250 [03:00<01:33,  1.01s/it][batch 157] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  63%|██████▎   | 158/250 [03:01<01:32,  1.00s/it][batch 158] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  64%|██████▎   | 159/250 [03:03<02:00,  1.32s/it][batch 159] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  64%|██████▍   | 160/250 [03:05<01:56,  1.29s/it][batch 160] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  64%|██████▍   | 161/250 [03:06<02:06,  1.42s/it][batch 161] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  65%|██████▍   | 162/250 [03:07<01:52,  1.28s/it][batch 162] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  65%|██████▌   | 163/250 [03:08<01:49,  1.26s/it][batch 163] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  66%|██████▌   | 164/250 [03:09<01:36,  1.12s/it][batch 164] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  66%|██████▌   | 165/250 [03:10<01:32,  1.09s/it][batch 165] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  66%|██████▋   | 166/250 [03:11<01:29,  1.07s/it][batch 166] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  67%|██████▋   | 167/250 [03:13<01:51,  1.34s/it][batch 167] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  67%|██████▋   | 168/250 [03:14<01:41,  1.23s/it][batch 168] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  68%|██████▊   | 169/250 [03:15<01:34,  1.17s/it][batch 169] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  68%|██████▊   | 170/250 [03:16<01:32,  1.15s/it][batch 170] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  68%|██████▊   | 171/250 [03:17<01:24,  1.07s/it][batch 171] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  69%|██████▉   | 172/250 [03:18<01:21,  1.05s/it][batch 172] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  69%|██████▉   | 173/250 [03:19<01:19,  1.03s/it][batch 173] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  70%|██████▉   | 174/250 [03:21<01:40,  1.32s/it][batch 174] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  70%|███████   | 175/250 [03:23<01:54,  1.52s/it][batch 175] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  70%|███████   | 176/250 [03:24<01:41,  1.37s/it][batch 176] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  71%|███████   | 177/250 [03:25<01:34,  1.29s/it][batch 177] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  71%|███████   | 178/250 [03:27<01:35,  1.33s/it][batch 178] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  72%|███████▏  | 179/250 [03:28<01:37,  1.37s/it][batch 179] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  72%|███████▏  | 180/250 [03:29<01:28,  1.26s/it][batch 180] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  72%|███████▏  | 181/250 [03:30<01:21,  1.18s/it][batch 181] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  73%|███████▎  | 182/250 [03:31<01:16,  1.13s/it][batch 182] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  73%|███████▎  | 183/250 [03:33<01:33,  1.40s/it][batch 183] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  74%|███████▎  | 184/250 [03:34<01:24,  1.28s/it][batch 184] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  74%|███████▍  | 185/250 [03:35<01:17,  1.19s/it][batch 185] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  74%|███████▍  | 186/250 [03:36<01:12,  1.13s/it][batch 186] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  75%|███████▍  | 187/250 [03:37<01:08,  1.09s/it][batch 187] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  75%|███████▌  | 188/250 [03:38<01:05,  1.06s/it][batch 188] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  76%|███████▌  | 189/250 [03:39<01:04,  1.05s/it][batch 189] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  76%|███████▌  | 190/250 [03:40<01:02,  1.04s/it][batch 190] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  76%|███████▋  | 191/250 [03:41<01:02,  1.06s/it][batch 191] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  77%|███████▋  | 192/250 [03:43<01:15,  1.30s/it][batch 192] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  77%|███████▋  | 193/250 [03:44<01:09,  1.22s/it][batch 193] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  78%|███████▊  | 194/250 [03:45<01:03,  1.14s/it][batch 194] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  78%|███████▊  | 195/250 [03:46<01:03,  1.15s/it][batch 195] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  78%|███████▊  | 196/250 [03:47<00:57,  1.06s/it][batch 196] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  79%|███████▉  | 197/250 [03:48<00:55,  1.04s/it][batch 197] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  79%|███████▉  | 198/250 [03:49<00:53,  1.03s/it][batch 198] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  80%|███████▉  | 199/250 [03:50<00:52,  1.03s/it][batch 199] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  80%|████████  | 200/250 [03:51<00:50,  1.01s/it][batch 200] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  80%|████████  | 201/250 [03:53<01:04,  1.32s/it][batch 201] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  81%|████████  | 202/250 [03:54<00:56,  1.18s/it][batch 202] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  81%|████████  | 203/250 [03:55<00:50,  1.08s/it][batch 203] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  82%|████████▏ | 204/250 [03:56<00:47,  1.03s/it][batch 204] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  82%|████████▏ | 205/250 [03:57<00:43,  1.03it/s][batch 205] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  82%|████████▏ | 206/250 [03:58<00:41,  1.06it/s][batch 206] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  83%|████████▎ | 207/250 [03:58<00:39,  1.09it/s][batch 207] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  83%|████████▎ | 208/250 [03:59<00:37,  1.11it/s][batch 208] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  84%|████████▎ | 209/250 [04:00<00:36,  1.13it/s][batch 209] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  84%|████████▍ | 210/250 [04:01<00:34,  1.16it/s][batch 210] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  84%|████████▍ | 211/250 [04:02<00:38,  1.02it/s][batch 211] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  85%|████████▍ | 212/250 [04:03<00:38,  1.00s/it][batch 212] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  85%|████████▌ | 213/250 [04:04<00:34,  1.06it/s][batch 213] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  86%|████████▌ | 214/250 [04:05<00:32,  1.11it/s][batch 214] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  86%|████████▌ | 215/250 [04:06<00:30,  1.15it/s][batch 215] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  86%|████████▋ | 216/250 [04:07<00:28,  1.18it/s][batch 216] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  87%|████████▋ | 217/250 [04:07<00:29,  1.14it/s][batch 217] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  87%|████████▋ | 218/250 [04:09<00:32,  1.01s/it][batch 218] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  88%|████████▊ | 219/250 [04:10<00:31,  1.02s/it][batch 219] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  88%|████████▊ | 220/250 [04:11<00:30,  1.02s/it][batch 220] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  88%|████████▊ | 221/250 [04:12<00:33,  1.15s/it][batch 221] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  89%|████████▉ | 222/250 [04:14<00:32,  1.17s/it][batch 222] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  89%|████████▉ | 223/250 [04:15<00:33,  1.23s/it][batch 223] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  90%|████████▉ | 224/250 [04:16<00:30,  1.16s/it][batch 224] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  90%|█████████ | 225/250 [04:17<00:26,  1.07s/it][batch 225] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  90%|█████████ | 226/250 [04:18<00:23,  1.01it/s][batch 226] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  91%|█████████ | 227/250 [04:18<00:22,  1.03it/s][batch 227] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  91%|█████████ | 228/250 [04:19<00:20,  1.07it/s][batch 228] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  92%|█████████▏| 229/250 [04:20<00:18,  1.11it/s][batch 229] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  92%|█████████▏| 230/250 [04:21<00:19,  1.03it/s][batch 230] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  92%|█████████▏| 231/250 [04:24<00:30,  1.59s/it][batch 231] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  93%|█████████▎| 232/250 [04:25<00:25,  1.43s/it][batch 232] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  93%|█████████▎| 233/250 [04:27<00:22,  1.35s/it][batch 233] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  94%|█████████▎| 234/250 [04:27<00:19,  1.22s/it][batch 234] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  94%|█████████▍| 235/250 [04:28<00:16,  1.13s/it][batch 235] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  94%|█████████▍| 236/250 [04:29<00:14,  1.03s/it][batch 236] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  95%|█████████▍| 237/250 [04:30<00:13,  1.03s/it][batch 237] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  95%|█████████▌| 238/250 [04:31<00:12,  1.02s/it][batch 238] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  96%|█████████▌| 239/250 [04:32<00:11,  1.05s/it][batch 239] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  96%|█████████▌| 240/250 [04:33<00:09,  1.01it/s][batch 240] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  96%|█████████▋| 241/250 [04:34<00:08,  1.05it/s][batch 241] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  97%|█████████▋| 242/250 [04:35<00:07,  1.09it/s][batch 242] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  97%|█████████▋| 243/250 [04:36<00:06,  1.04it/s][batch 243] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  98%|█████████▊| 244/250 [04:37<00:05,  1.06it/s][batch 244] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  98%|█████████▊| 245/250 [04:38<00:04,  1.07it/s][batch 245] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  98%|█████████▊| 246/250 [04:39<00:03,  1.10it/s][batch 246] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  99%|█████████▉| 247/250 [04:39<00:02,  1.12it/s][batch 247] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  99%|█████████▉| 248/250 [04:40<00:01,  1.13it/s][batch 248] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7: 100%|█████████▉| 249/250 [04:41<00:00,  1.15it/s][batch 249] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7: 100%|██████████| 250/250 [04:42<00:00,  1.04it/s]llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7: 100%|██████████| 250/250 [04:42<00:00,  1.13s/it]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.7348 (1837/2500)
+  selected          : 857
+  unselected        : 1643
+  type-I            : 0.5426
+  type-II           : 0.1649
+  budget used       : 857.00/1250.00 (68.6%)
+[done] wrote outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7.csv
+[ablation] dataset=math500 variant=risk_rank_full_budget
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7.csv
+[replay] completed=0/250
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   0%|          | 0/250 [00:00<?, ?it/s][batch 000] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   0%|          | 1/250 [00:01<05:43,  1.38s/it][batch 001] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   1%|          | 2/250 [00:02<04:28,  1.08s/it][batch 002] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   1%|          | 3/250 [00:03<04:58,  1.21s/it][batch 003] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   2%|▏         | 4/250 [00:04<04:39,  1.14s/it][batch 004] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   2%|▏         | 5/250 [00:05<04:24,  1.08s/it][batch 005] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   2%|▏         | 6/250 [00:06<04:18,  1.06s/it][batch 006] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   3%|▎         | 7/250 [00:07<04:11,  1.03s/it][batch 007] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   3%|▎         | 8/250 [00:08<04:08,  1.03s/it][batch 008] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   4%|▎         | 9/250 [00:09<04:05,  1.02s/it][batch 009] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   4%|▍         | 10/250 [00:10<04:03,  1.01s/it][batch 010] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   4%|▍         | 11/250 [00:11<03:43,  1.07it/s][batch 011] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   5%|▍         | 12/250 [00:12<03:36,  1.10it/s][batch 012] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   5%|▌         | 13/250 [00:13<04:09,  1.05s/it][batch 013] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   6%|▌         | 14/250 [00:14<03:47,  1.04it/s][batch 014] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   6%|▌         | 15/250 [00:15<03:39,  1.07it/s][batch 015] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   6%|▋         | 16/250 [00:16<03:28,  1.12it/s][batch 016] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   7%|▋         | 17/250 [00:16<03:19,  1.17it/s][batch 017] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   7%|▋         | 18/250 [00:17<03:13,  1.20it/s][batch 018] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   8%|▊         | 19/250 [00:18<03:25,  1.12it/s][batch 019] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   8%|▊         | 20/250 [00:19<03:17,  1.16it/s][batch 020] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   8%|▊         | 21/250 [00:20<03:11,  1.20it/s][batch 021] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   9%|▉         | 22/250 [00:20<03:05,  1.23it/s][batch 022] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   9%|▉         | 23/250 [00:21<03:03,  1.23it/s][batch 023] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  10%|▉         | 24/250 [00:22<03:04,  1.22it/s][batch 024] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  10%|█         | 25/250 [00:23<03:18,  1.13it/s][batch 025] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  10%|█         | 26/250 [00:24<03:10,  1.17it/s][batch 026] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  11%|█         | 27/250 [00:25<03:14,  1.15it/s][batch 027] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  11%|█         | 28/250 [00:26<03:09,  1.17it/s][batch 028] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  12%|█▏        | 29/250 [00:27<03:23,  1.08it/s][batch 029] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  12%|█▏        | 30/250 [00:28<03:55,  1.07s/it][batch 030] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  12%|█▏        | 31/250 [00:29<03:49,  1.05s/it][batch 031] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  13%|█▎        | 32/250 [00:30<03:31,  1.03it/s][batch 032] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  13%|█▎        | 33/250 [00:31<03:22,  1.07it/s][batch 033] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  14%|█▎        | 34/250 [00:32<03:27,  1.04it/s][batch 034] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  14%|█▍        | 35/250 [00:33<03:52,  1.08s/it][batch 035] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  14%|█▍        | 36/250 [00:34<03:45,  1.05s/it][batch 036] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  15%|█▍        | 37/250 [00:35<03:27,  1.03it/s][batch 037] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  15%|█▌        | 38/250 [00:36<03:25,  1.03it/s][batch 038] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  16%|█▌        | 39/250 [00:37<03:13,  1.09it/s][batch 039] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  16%|█▌        | 40/250 [00:38<03:48,  1.09s/it][batch 040] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  16%|█▋        | 41/250 [00:39<03:40,  1.05s/it][batch 041] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  17%|█▋        | 42/250 [00:40<03:36,  1.04s/it][batch 042] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  17%|█▋        | 43/250 [00:41<03:33,  1.03s/it][batch 043] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  18%|█▊        | 44/250 [00:42<03:18,  1.04it/s][batch 044] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  18%|█▊        | 45/250 [00:45<05:49,  1.70s/it][batch 045] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  18%|█▊        | 46/250 [00:47<05:50,  1.72s/it][batch 046] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  19%|█▉        | 47/250 [00:48<05:06,  1.51s/it][batch 047] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  19%|█▉        | 48/250 [00:49<04:33,  1.36s/it][batch 048] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  20%|█▉        | 49/250 [00:50<04:10,  1.25s/it][batch 049] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  20%|██        | 50/250 [00:51<03:53,  1.17s/it][batch 050] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  20%|██        | 51/250 [00:52<03:32,  1.07s/it][batch 051] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  21%|██        | 52/250 [00:53<03:39,  1.11s/it][batch 052] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  21%|██        | 53/250 [00:54<03:30,  1.07s/it][batch 053] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  22%|██▏       | 54/250 [00:55<03:24,  1.05s/it][batch 054] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  22%|██▏       | 55/250 [00:56<03:37,  1.12s/it][batch 055] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  22%|██▏       | 56/250 [00:57<03:19,  1.03s/it][batch 056] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  23%|██▎       | 57/250 [00:59<04:25,  1.37s/it][batch 057] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  23%|██▎       | 58/250 [01:00<03:56,  1.23s/it][batch 058] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  24%|██▎       | 59/250 [01:01<03:37,  1.14s/it][batch 059] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  24%|██▍       | 60/250 [01:02<03:22,  1.07s/it][batch 060] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  24%|██▍       | 61/250 [01:03<03:18,  1.05s/it][batch 061] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  25%|██▍       | 62/250 [01:04<03:06,  1.01it/s][batch 062] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  25%|██▌       | 63/250 [01:05<02:54,  1.07it/s][batch 063] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  26%|██▌       | 64/250 [01:06<03:16,  1.06s/it][batch 064] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  26%|██▌       | 65/250 [01:07<03:13,  1.04s/it][batch 065] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  26%|██▋       | 66/250 [01:08<03:09,  1.03s/it][batch 066] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  27%|██▋       | 67/250 [01:10<04:00,  1.32s/it][batch 067] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  27%|██▋       | 68/250 [01:11<03:42,  1.22s/it][batch 068] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  28%|██▊       | 69/250 [01:12<03:34,  1.18s/it][batch 069] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  28%|██▊       | 70/250 [01:14<04:13,  1.41s/it][batch 070] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  28%|██▊       | 71/250 [01:15<03:50,  1.29s/it][batch 071] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  29%|██▉       | 72/250 [01:16<03:33,  1.20s/it][batch 072] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  29%|██▉       | 73/250 [01:17<03:20,  1.13s/it][batch 073] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  30%|██▉       | 74/250 [01:18<03:12,  1.09s/it][batch 074] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  30%|███       | 75/250 [01:19<03:05,  1.06s/it][batch 075] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  30%|███       | 76/250 [01:20<03:01,  1.04s/it][batch 076] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  31%|███       | 77/250 [01:21<02:49,  1.02it/s][batch 077] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  31%|███       | 78/250 [01:22<02:35,  1.11it/s][batch 078] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  32%|███▏      | 79/250 [01:23<03:03,  1.07s/it][batch 079] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  32%|███▏      | 80/250 [01:24<03:01,  1.07s/it][batch 080] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  32%|███▏      | 81/250 [01:25<02:54,  1.03s/it][batch 081] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  33%|███▎      | 82/250 [01:26<02:52,  1.03s/it][batch 082] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  33%|███▎      | 83/250 [01:29<04:29,  1.61s/it][batch 083] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  34%|███▎      | 84/250 [01:30<03:57,  1.43s/it][batch 084] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  34%|███▍      | 85/250 [01:31<03:34,  1.30s/it][batch 085] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  34%|███▍      | 86/250 [01:32<03:19,  1.21s/it][batch 086] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  35%|███▍      | 87/250 [01:33<03:06,  1.14s/it][batch 087] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  35%|███▌      | 88/250 [01:34<02:58,  1.10s/it][batch 088] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  36%|███▌      | 89/250 [01:35<02:51,  1.07s/it][batch 089] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  36%|███▌      | 90/250 [01:36<02:47,  1.05s/it][batch 090] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  36%|███▋      | 91/250 [01:37<02:45,  1.04s/it][batch 091] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  37%|███▋      | 92/250 [01:38<02:42,  1.03s/it][batch 092] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  37%|███▋      | 93/250 [01:39<02:39,  1.02s/it][batch 093] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  38%|███▊      | 94/250 [01:40<02:39,  1.02s/it][batch 094] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  38%|███▊      | 95/250 [01:41<02:38,  1.02s/it][batch 095] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  38%|███▊      | 96/250 [01:42<02:37,  1.02s/it][batch 096] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  39%|███▉      | 97/250 [01:43<02:31,  1.01it/s][batch 097] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  39%|███▉      | 98/250 [01:44<02:30,  1.01it/s][batch 098] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  40%|███▉      | 99/250 [01:45<02:32,  1.01s/it][batch 099] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  40%|████      | 100/250 [01:46<02:32,  1.02s/it][batch 100] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  40%|████      | 101/250 [01:47<02:28,  1.01it/s][batch 101] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  41%|████      | 102/250 [01:48<02:38,  1.07s/it][batch 102] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  41%|████      | 103/250 [01:50<02:52,  1.18s/it][batch 103] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  42%|████▏     | 104/250 [01:51<02:41,  1.11s/it][batch 104] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  42%|████▏     | 105/250 [01:52<02:53,  1.20s/it][batch 105] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  42%|████▏     | 106/250 [01:53<02:44,  1.14s/it][batch 106] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  43%|████▎     | 107/250 [01:54<02:39,  1.12s/it][batch 107] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  43%|████▎     | 108/250 [01:55<02:30,  1.06s/it][batch 108] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  44%|████▎     | 109/250 [01:56<02:16,  1.03it/s][batch 109] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  44%|████▍     | 110/250 [01:57<02:10,  1.07it/s][batch 110] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  44%|████▍     | 111/250 [01:58<02:29,  1.07s/it][batch 111] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  45%|████▍     | 112/250 [01:59<02:23,  1.04s/it][batch 112] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  45%|████▌     | 113/250 [02:00<02:21,  1.03s/it][batch 113] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  46%|████▌     | 114/250 [02:01<02:16,  1.01s/it][batch 114] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  46%|████▌     | 115/250 [02:02<02:10,  1.04it/s][batch 115] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  46%|████▋     | 116/250 [02:03<02:17,  1.03s/it][batch 116] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  47%|████▋     | 117/250 [02:04<02:08,  1.03it/s][batch 117] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  47%|████▋     | 118/250 [02:05<02:02,  1.07it/s][batch 118] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  48%|████▊     | 119/250 [02:06<02:06,  1.03it/s][batch 119] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  48%|████▊     | 120/250 [02:07<02:06,  1.03it/s][batch 120] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  48%|████▊     | 121/250 [02:08<02:17,  1.07s/it][batch 121] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  49%|████▉     | 122/250 [02:09<02:13,  1.05s/it][batch 122] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  49%|████▉     | 123/250 [02:10<02:10,  1.03s/it][batch 123] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  50%|████▉     | 124/250 [02:11<02:08,  1.02s/it][batch 124] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  50%|█████     | 125/250 [02:12<02:08,  1.03s/it][batch 125] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  50%|█████     | 126/250 [02:13<02:05,  1.01s/it][batch 126] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  51%|█████     | 127/250 [02:14<02:05,  1.02s/it][batch 127] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  51%|█████     | 128/250 [02:15<02:01,  1.00it/s][batch 128] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  52%|█████▏    | 129/250 [02:16<01:55,  1.05it/s][batch 129] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  52%|█████▏    | 130/250 [02:17<01:50,  1.09it/s][batch 130] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  52%|█████▏    | 131/250 [02:18<02:06,  1.06s/it][batch 131] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  53%|█████▎    | 132/250 [02:19<02:00,  1.02s/it][batch 132] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  53%|█████▎    | 133/250 [02:20<01:51,  1.04it/s][batch 133] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  54%|█████▎    | 134/250 [02:21<01:51,  1.04it/s][batch 134] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  54%|█████▍    | 135/250 [02:22<01:43,  1.11it/s][batch 135] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  54%|█████▍    | 136/250 [02:23<01:39,  1.14it/s][batch 136] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  55%|█████▍    | 137/250 [02:23<01:37,  1.15it/s][batch 137] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  55%|█████▌    | 138/250 [02:24<01:38,  1.14it/s][batch 138] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  56%|█████▌    | 139/250 [02:25<01:34,  1.17it/s][batch 139] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  56%|█████▌    | 140/250 [02:26<01:33,  1.17it/s][batch 140] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  56%|█████▋    | 141/250 [02:27<01:32,  1.18it/s][batch 141] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  57%|█████▋    | 142/250 [02:28<01:50,  1.02s/it][batch 142] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  57%|█████▋    | 143/250 [02:29<01:48,  1.01s/it][batch 143] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  58%|█████▊    | 144/250 [02:30<01:47,  1.01s/it][batch 144] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  58%|█████▊    | 145/250 [02:31<01:45,  1.01s/it][batch 145] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  58%|█████▊    | 146/250 [02:32<01:44,  1.00s/it][batch 146] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  59%|█████▉    | 147/250 [02:33<01:43,  1.00s/it][batch 147] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  59%|█████▉    | 148/250 [02:34<01:43,  1.01s/it][batch 148] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  60%|█████▉    | 149/250 [02:35<01:41,  1.01s/it][batch 149] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  60%|██████    | 150/250 [02:36<01:41,  1.01s/it][batch 150] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  60%|██████    | 151/250 [02:37<01:40,  1.01s/it][batch 151] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  61%|██████    | 152/250 [02:39<02:06,  1.29s/it][batch 152] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  61%|██████    | 153/250 [02:40<01:57,  1.21s/it][batch 153] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  62%|██████▏   | 154/250 [02:41<01:49,  1.14s/it][batch 154] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  62%|██████▏   | 155/250 [02:42<01:44,  1.10s/it][batch 155] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  62%|██████▏   | 156/250 [02:43<01:41,  1.08s/it][batch 156] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  63%|██████▎   | 157/250 [02:44<01:38,  1.06s/it][batch 157] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  63%|██████▎   | 158/250 [02:45<01:35,  1.04s/it][batch 158] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  64%|██████▎   | 159/250 [02:46<01:33,  1.03s/it][batch 159] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  64%|██████▍   | 160/250 [02:47<01:32,  1.03s/it][batch 160] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  64%|██████▍   | 161/250 [02:49<01:59,  1.35s/it][batch 161] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  65%|██████▍   | 162/250 [02:51<02:12,  1.51s/it][batch 162] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  65%|██████▌   | 163/250 [02:52<01:57,  1.35s/it][batch 163] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  66%|██████▌   | 164/250 [02:53<01:47,  1.25s/it][batch 164] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  66%|██████▌   | 165/250 [02:54<01:41,  1.19s/it][batch 165] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  66%|██████▋   | 166/250 [02:55<01:34,  1.12s/it][batch 166] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  67%|██████▋   | 167/250 [02:56<01:29,  1.08s/it][batch 167] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  67%|██████▋   | 168/250 [02:57<01:28,  1.07s/it][batch 168] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  68%|██████▊   | 169/250 [02:59<01:48,  1.34s/it][batch 169] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  68%|██████▊   | 170/250 [03:00<01:38,  1.24s/it][batch 170] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  68%|██████▊   | 171/250 [03:01<01:31,  1.16s/it][batch 171] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  69%|██████▉   | 172/250 [03:02<01:26,  1.11s/it][batch 172] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  69%|██████▉   | 173/250 [03:03<01:23,  1.08s/it][batch 173] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  70%|██████▉   | 174/250 [03:04<01:20,  1.05s/it][batch 174] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  70%|███████   | 175/250 [03:05<01:18,  1.04s/it][batch 175] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  70%|███████   | 176/250 [03:06<01:15,  1.02s/it][batch 176] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  71%|███████   | 177/250 [03:07<01:14,  1.02s/it][batch 177] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  71%|███████   | 178/250 [03:09<01:34,  1.31s/it][batch 178] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  72%|███████▏  | 179/250 [03:10<01:26,  1.22s/it][batch 179] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  72%|███████▏  | 180/250 [03:11<01:20,  1.15s/it][batch 180] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  72%|███████▏  | 181/250 [03:12<01:16,  1.11s/it][batch 181] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  73%|███████▎  | 182/250 [03:13<01:13,  1.08s/it][batch 182] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  73%|███████▎  | 183/250 [03:14<01:10,  1.06s/it][batch 183] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  74%|███████▎  | 184/250 [03:15<01:08,  1.04s/it][batch 184] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  74%|███████▍  | 185/250 [03:16<01:05,  1.01s/it][batch 185] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  74%|███████▍  | 186/250 [03:17<01:05,  1.03s/it][batch 186] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  75%|███████▍  | 187/250 [03:19<01:22,  1.31s/it][batch 187] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  75%|███████▌  | 188/250 [03:20<01:15,  1.22s/it][batch 188] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  76%|███████▌  | 189/250 [03:21<01:10,  1.16s/it][batch 189] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  76%|███████▌  | 190/250 [03:22<01:04,  1.08s/it][batch 190] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  76%|███████▋  | 191/250 [03:23<01:03,  1.08s/it][batch 191] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  77%|███████▋  | 192/250 [03:24<01:04,  1.11s/it][batch 192] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  77%|███████▋  | 193/250 [03:25<00:59,  1.04s/it][batch 193] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  78%|███████▊  | 194/250 [03:26<00:55,  1.01it/s][batch 194] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  78%|███████▊  | 195/250 [03:27<00:53,  1.03it/s][batch 195] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  78%|███████▊  | 196/250 [03:28<00:55,  1.02s/it][batch 196] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  79%|███████▉  | 197/250 [03:29<00:54,  1.03s/it][batch 197] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  79%|███████▉  | 198/250 [03:30<00:53,  1.03s/it][batch 198] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  80%|███████▉  | 199/250 [03:31<00:51,  1.01s/it][batch 199] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  80%|████████  | 200/250 [03:32<00:48,  1.03it/s][batch 200] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  80%|████████  | 201/250 [03:33<00:46,  1.06it/s][batch 201] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  81%|████████  | 202/250 [03:34<00:44,  1.08it/s][batch 202] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  81%|████████  | 203/250 [03:35<00:49,  1.05s/it][batch 203] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  82%|████████▏ | 204/250 [03:36<00:46,  1.00s/it][batch 204] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  82%|████████▏ | 205/250 [03:37<00:45,  1.01s/it][batch 205] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  82%|████████▏ | 206/250 [03:38<00:45,  1.03s/it][batch 206] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  83%|████████▎ | 207/250 [03:39<00:43,  1.02s/it][batch 207] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  83%|████████▎ | 208/250 [03:40<00:41,  1.02it/s][batch 208] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  84%|████████▎ | 209/250 [03:41<00:39,  1.04it/s][batch 209] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  84%|████████▍ | 210/250 [03:42<00:41,  1.03s/it][batch 210] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  84%|████████▍ | 211/250 [03:43<00:40,  1.03s/it][batch 211] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  85%|████████▍ | 212/250 [03:44<00:39,  1.03s/it][batch 212] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  85%|████████▌ | 213/250 [03:45<00:37,  1.01s/it][batch 213] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  86%|████████▌ | 214/250 [03:46<00:36,  1.00s/it][batch 214] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  86%|████████▌ | 215/250 [03:47<00:35,  1.01s/it][batch 215] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  86%|████████▋ | 216/250 [03:49<00:44,  1.30s/it][batch 216] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  87%|████████▋ | 217/250 [03:50<00:40,  1.21s/it][batch 217] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  87%|████████▋ | 218/250 [03:51<00:36,  1.14s/it][batch 218] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  88%|████████▊ | 219/250 [03:52<00:34,  1.11s/it][batch 219] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  88%|████████▊ | 220/250 [03:53<00:31,  1.05s/it][batch 220] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  88%|████████▊ | 221/250 [03:54<00:29,  1.01s/it][batch 221] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  89%|████████▉ | 222/250 [03:55<00:26,  1.06it/s][batch 222] selected=4
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  89%|████████▉ | 223/250 [03:56<00:24,  1.09it/s][batch 223] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  90%|████████▉ | 224/250 [03:57<00:23,  1.09it/s][batch 224] selected=2
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  90%|█████████ | 225/250 [03:58<00:28,  1.13s/it][batch 225] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  90%|█████████ | 226/250 [03:59<00:26,  1.10s/it][batch 226] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  91%|█████████ | 227/250 [04:00<00:24,  1.07s/it][batch 227] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  91%|█████████ | 228/250 [04:01<00:23,  1.07s/it][batch 228] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  92%|█████████▏| 229/250 [04:02<00:21,  1.02s/it][batch 229] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  92%|█████████▏| 230/250 [04:03<00:20,  1.04s/it][batch 230] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  92%|█████████▏| 231/250 [04:04<00:19,  1.00s/it][batch 231] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  93%|█████████▎| 232/250 [04:05<00:17,  1.03it/s][batch 232] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  93%|█████████▎| 233/250 [04:06<00:16,  1.04it/s][batch 233] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  94%|█████████▎| 234/250 [04:07<00:16,  1.03s/it][batch 234] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  94%|█████████▍| 235/250 [04:09<00:17,  1.20s/it][batch 235] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  94%|█████████▍| 236/250 [04:10<00:15,  1.14s/it][batch 236] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  95%|█████████▍| 237/250 [04:11<00:14,  1.09s/it][batch 237] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  95%|█████████▌| 238/250 [04:12<00:12,  1.04s/it][batch 238] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  96%|█████████▌| 239/250 [04:13<00:12,  1.17s/it][batch 239] selected=3
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  96%|█████████▌| 240/250 [04:14<00:11,  1.11s/it][batch 240] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  96%|█████████▋| 241/250 [04:15<00:09,  1.07s/it][batch 241] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  97%|█████████▋| 242/250 [04:16<00:08,  1.04s/it][batch 242] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  97%|█████████▋| 243/250 [04:17<00:07,  1.00s/it][batch 243] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  98%|█████████▊| 244/250 [04:18<00:06,  1.06s/it][batch 244] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  98%|█████████▊| 245/250 [04:19<00:05,  1.04s/it][batch 245] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  98%|█████████▊| 246/250 [04:20<00:04,  1.05s/it][batch 246] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  99%|█████████▉| 247/250 [04:21<00:03,  1.01s/it][batch 247] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  99%|█████████▉| 248/250 [04:22<00:01,  1.00it/s][batch 248] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7: 100%|█████████▉| 249/250 [04:23<00:01,  1.02s/it][batch 249] selected=5
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7: 100%|██████████| 250/250 [04:24<00:00,  1.00s/it]llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7: 100%|██████████| 250/250 [04:24<00:00,  1.06s/it]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.7348 (1837/2500)
+  selected          : 1160
+  unselected        : 1340
+  type-I            : 0.6069
+  type-II           : 0.1545
+  budget used       : 1160.00/1250.00 (92.8%)
+[done] wrote outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7.csv

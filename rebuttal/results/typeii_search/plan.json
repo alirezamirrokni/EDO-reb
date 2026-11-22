@@ -1,0 +1,142 @@
+{
+  "stages": [
+    "minilm",
+    "0.6B",
+    "1.7B",
+    "4B"
+  ],
+  "gammas": [
+    0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.068,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2,
+    3,
+    5,
+    10
+  ],
+  "learning_rates": [
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    8
+  ],
+  "warm_start_rounds": [
+    0,
+    5,
+    10
+  ],
+  "type_i_allowance": 0.03,
+  "settings": [
+    {
+      "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat",
+      "type_i_cap": 0.6773333333333332,
+      "epsilon_grid": [
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.3,
+        0.325,
+        0.35,
+        0.375,
+        0.4,
+        0.425,
+        0.45,
+        0.475,
+        0.5,
+        0.525,
+        0.55,
+        0.575,
+        0.6,
+        0.625,
+        0.65,
+        0.675,
+        0.6773333333333332
+      ]
+    },
+    {
+      "key": "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat",
+      "type_i_cap": 0.20593333333333333,
+      "epsilon_grid": [
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2,
+        0.20593333333333333
+      ]
+    },
+    {
+      "key": "or-qwen3-32b_math500-full_n2500_norepeat",
+      "type_i_cap": 0.635,
+      "epsilon_grid": [
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.3,
+        0.325,
+        0.35,
+        0.375,
+        0.4,
+        0.425,
+        0.45,
+        0.475,
+        0.5,
+        0.525,
+        0.55,
+        0.575,
+        0.6,
+        0.625,
+        0.635
+      ]
+    },
+    {
+      "key": "or-qwen3-32b_popqa-test_n2500_seed42_norepeat",
+      "type_i_cap": 0.12019999999999999,
+      "epsilon_grid": [
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.12019999999999999
+      ]
+    }
+  ],
+  "objective": "Minimum mean Type-II across all four combinations; all three EDIT methods feasible at equal per-combination epsilon. Per-combination REP gamma; shared learning rate and warm-up.",
+  "comparator_tuning": "EDIT-LLM and EDIT-RAND each minimize Type-II over the same gamma and warm-up grid at each epsilon; comparator parameters may differ by combination.",
+  "evaluation": "Exploratory tuning on these streams; all 250 rounds included, no held-out performance claim."
+}

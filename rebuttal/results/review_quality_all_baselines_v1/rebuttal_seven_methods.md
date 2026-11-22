@@ -1,0 +1,39 @@
+| Dataset | Method | Type-I mean [95% CI] (%) | Type-II mean [95% CI] (%) | Paired Δ Type-I [95% CI] (pp) | Paired Δ Type-II [95% CI] (pp) | Cost | Pooled precision (%) | Coverage (%) |
+|---|---|---|---|---|---|---:|---:|---:|
+| MATH-500 | EDIT | 44.23 [43.60, 44.87] | 14.78 [14.51, 15.05] | — | — | 3.30 | 50.63 | 32.95 |
+| MATH-500 | Online Conformal Selection | 49.75 [49.02, 50.48] | 11.65 [11.22, 12.08] | 5.53 [4.69, 6.37] | -3.14 [-3.51, -2.76] | 4.08 | 49.22 | 40.77 |
+| MATH-500 | Conformal Alignment | 38.48 [37.52, 39.39] | 19.24 [18.96, 19.52] | -5.75 [-6.69, -4.81] | 4.46 [4.15, 4.77] | 2.30 | 48.70 | 22.99 |
+| MATH-500 | Stream Active Learning | 55.64 [55.11, 56.20] | 12.89 [12.40, 13.42] | 11.41 [10.55, 12.27] | -1.89 [-2.38, -1.35] | 4.57 | 44.20 | 45.71 |
+| MATH-500 | Thompson Sampling | 56.04 [55.60, 56.49] | 10.04 [9.60, 10.49] | 11.81 [11.10, 12.56] | -4.74 [-5.07, -4.42] | 5.00 | 43.96 | 50.00 |
+| MATH-500 | Top-K | 56.04 [55.60, 56.49] | 10.04 [9.60, 10.49] | 11.81 [11.10, 12.56] | -4.74 [-5.07, -4.42] | 5.00 | 43.96 | 50.00 |
+| MATH-500 | Fixed Threshold | 45.54 [44.77, 46.33] | 16.56 [16.32, 16.78] | 1.31 [0.86, 1.78] | 1.77 [1.57, 1.97] | 2.92 | 50.63 | 29.18 |
+| MMLU-Pro | EDIT | 35.12 [34.66, 35.58] | 31.86 [31.36, 32.39] | — | — | 4.74 | 64.53 | 47.39 |
+| MMLU-Pro | Online Conformal Selection | 36.10 [35.69, 36.51] | 31.42 [31.06, 31.78] | 0.97 [0.66, 1.28] | -0.44 [-0.74, -0.16] | 4.93 | 63.84 | 49.26 |
+| MMLU-Pro | Conformal Alignment | 33.46 [32.92, 33.99] | 31.49 [31.11, 31.88] | -1.66 [-2.07, -1.26] | -0.37 [-0.65, -0.12] | 4.66 | 66.01 | 46.59 |
+| MMLU-Pro | Stream Active Learning | 44.95 [44.17, 45.75] | 41.10 [40.38, 41.85] | 9.82 [8.97, 10.68] | 9.24 [8.45, 10.07] | 4.70 | 54.74 | 47.03 |
+| MMLU-Pro | Thompson Sampling | 36.41 [36.01, 36.81] | 31.21 [30.81, 31.61] | 1.29 [1.00, 1.58] | -0.65 [-0.94, -0.37] | 5.00 | 63.59 | 50.00 |
+| MMLU-Pro | Top-K | 36.41 [36.01, 36.81] | 31.21 [30.81, 31.61] | 1.29 [1.00, 1.58] | -0.65 [-0.94, -0.37] | 5.00 | 63.59 | 50.00 |
+| MMLU-Pro | Fixed Threshold | 33.38 [32.81, 33.97] | 31.88 [31.50, 32.27] | -1.74 [-2.08, -1.41] | 0.02 [-0.24, 0.25] | 4.54 | 66.63 | 45.45 |
+| PopQA | EDIT | 33.04 [32.44, 33.68] | 46.85 [46.39, 47.32] | — | — | 4.28 | 65.19 | 43.71 |
+| PopQA | Online Conformal Selection | 36.40 [35.90, 36.90] | 47.31 [46.78, 47.85] | 3.36 [2.76, 3.92] | 0.46 [0.16, 0.78] | 4.91 | 63.18 | 50.12 |
+| PopQA | Conformal Alignment | 31.44 [30.82, 32.08] | 48.08 [47.57, 48.59] | -1.59 [-2.41, -0.80] | 1.23 [0.76, 1.71] | 4.12 | 65.26 | 42.03 |
+| PopQA | Stream Active Learning | 44.69 [43.93, 45.50] | 55.02 [54.35, 55.72] | 11.65 [10.77, 12.52] | 8.17 [7.42, 8.94] | 4.75 | 55.19 | 48.47 |
+| PopQA | Thompson Sampling | 37.12 [36.51, 37.74] | 47.32 [46.77, 47.87] | 4.09 [3.62, 4.51] | 0.47 [0.17, 0.75] | 4.92 | 62.87 | 50.20 |
+| PopQA | Top-K | 36.85 [36.33, 37.39] | 47.04 [46.57, 47.51] | 3.81 [3.42, 4.19] | 0.19 [-0.02, 0.39] | 4.92 | 63.15 | 50.20 |
+| PopQA | Fixed Threshold | 33.52 [32.87, 34.19] | 47.54 [47.15, 47.94] | 0.48 [0.19, 0.78] | 0.69 [0.47, 0.90] | 4.05 | 65.22 | 41.33 |
+| GPQA | EDIT | 28.40 [28.00, 28.81] | 44.19 [43.78, 44.63] | — | — | 2.20 | 52.22 | 22.11 |
+| GPQA | Online Conformal Selection | 50.72 [50.21, 51.21] | 43.25 [42.81, 43.69] | 22.32 [21.69, 22.97] | -0.94 [-1.38, -0.51] | 4.88 | 48.67 | 49.06 |
+| GPQA | Conformal Alignment | 27.16 [26.54, 27.79] | 45.63 [45.43, 45.82] | -1.24 [-1.99, -0.49] | 1.44 [0.94, 1.91] | 2.14 | 47.61 | 21.52 |
+| GPQA | Stream Active Learning | 53.59 [52.59, 54.59] | 45.65 [44.70, 46.63] | 25.19 [24.15, 26.23] | 1.46 [0.38, 2.52] | 4.85 | 46.22 | 48.69 |
+| GPQA | Thompson Sampling | 51.90 [51.36, 52.43] | 43.81 [43.27, 44.36] | 23.50 [22.86, 24.13] | -0.38 [-0.93, 0.17] | 5.00 | 48.10 | 50.22 |
+| GPQA | Top-K | 51.29 [50.84, 51.73] | 43.21 [42.77, 43.64] | 22.89 [22.35, 23.42] | -0.99 [-1.44, -0.54] | 5.00 | 48.71 | 50.22 |
+| GPQA | Fixed Threshold | 20.06 [19.25, 20.85] | 46.17 [46.08, 46.26] | -8.34 [-9.25, -7.44] | 1.98 [1.57, 2.37] | 0.80 | 44.41 | 7.99 |
+| RAGTruth | EDIT | 40.13 [39.75, 40.50] | 18.40 [18.08, 18.76] | — | — | 4.36 | 58.38 | 43.59 |
+| RAGTruth | Online Conformal Selection | 35.08 [34.38, 35.78] | 19.91 [19.44, 20.42] | -5.05 [-5.81, -4.34] | 1.50 [1.10, 1.87] | 3.87 | 59.54 | 38.74 |
+| RAGTruth | Conformal Alignment | 47.02 [46.60, 47.45] | 18.59 [18.18, 19.03] | 6.89 [6.29, 7.49] | 0.19 [-0.15, 0.49] | 4.99 | 53.00 | 49.92 |
+| RAGTruth | Stream Active Learning | 64.78 [63.59, 65.84] | 36.05 [35.26, 36.78] | 24.66 [23.35, 25.86] | 17.65 [16.80, 18.46] | 4.36 | 35.51 | 43.64 |
+| RAGTruth | Thompson Sampling | 47.02 [46.61, 47.45] | 18.58 [18.16, 19.01] | 6.90 [6.29, 7.49] | 0.17 [-0.16, 0.47] | 5.00 | 52.98 | 50.00 |
+| RAGTruth | Top-K | 47.02 [46.61, 47.45] | 18.58 [18.16, 19.01] | 6.90 [6.29, 7.49] | 0.17 [-0.16, 0.47] | 5.00 | 52.98 | 50.00 |
+| RAGTruth | Fixed Threshold | 47.02 [46.61, 47.45] | 18.58 [18.16, 19.01] | 6.90 [6.29, 7.49] | 0.17 [-0.16, 0.47] | 5.00 | 52.98 | 50.00 |
+
+Primary target epsilon=0.40; all rounds and records included. Means over 30 paired stream orders for the prespecified original probe fit, with disjoint probe fitting, calibration and policy validation. Five-fold cross-fitting covers each primary task; RAGTruth retains its official split. Errors, precision and coverage are percentages; cost is reviews per round with ceiling five. Both deltas are baseline minus EDIT in percentage points; positive favors EDIT for the corresponding error. Both marginal and paired intervals are two-sided pointwise percentile-bootstrap 95% CIs (20,000 resamples, seed 20261116), using identical seed-paired stream orders and identical resampling indices for both errors. Paired intervals are bootstrapped from per-order differences, not subtracted marginal bounds. Existing valid Type-I marginal and Type-II difference intervals and all corrected means are preserved. Intervals quantify ordering uncertainty conditional on records and the fitted probe. Feasibility is not established merely by a mean below the target: refer to the full uncertainty analyses. Baselines use common calibrated scores. Conformal Alignment uses the common disjoint offline calibration set instead of full-label test warm-up; Thompson is an explicitly one-dimensional score-space posterior exploration variant with frozen mean, not the original full-embedding implementation. Historical data were previously inspected; added baseline evaluation followed the initial EDIT analysis. All tolerance, source-resampling and probe-training sensitivities must accompany broad robustness claims.

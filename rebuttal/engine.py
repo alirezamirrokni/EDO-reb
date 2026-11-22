@@ -20,12 +20,21 @@ from utils import load_yaml, sigmoid  # noqa: E402
 
 FEAT_DIR = HERE / "features"
 RESULTS = HERE / "results"
-PREFIX = "llama-3.3-70b-versatile_"
+
+
+def results_dir(model):
+    return RESULTS if model == "llama" else RESULTS / model
+PREFIXES = {"llama": "llama-3.3-70b-versatile_", "qwen": "qwen-qwen3-32b_", "mistral": "or-mistral-small-3.2-24b_"}
+PREFIX = PREFIXES["llama"]
 SETTINGS = {
     "MATH-500": "math500-test",
     "MMLU-Pro": "mmlupro-test_n500_seed42",
     "PopQA": "popqa-test_n500_seed42",
     "GPQA": "gpqa-train_main_n448",
+}
+SHIFT_SETTINGS = {
+    "MMLU-Pro shift": "mmlupro-test_n600_seed42_multishift",
+    "PopQA shift": "popqa-test_n600_seed42_popshift",
 }
 
 
@@ -66,23 +75,30 @@ class Setting:
     """One unit-cost dataset: stored pool and labels, cached MiniLM features, and the paper's stream (seed 7)
     or a synthetic stream drawn with replacement from the pool (other seeds)."""
 
-    def __init__(self, name):
+    def __init__(self, name, model="llama"):
         self.name = name
-        self.dir = SETTINGS[name]
-        self.cfg = load_yaml(REPO / f"configs/{PREFIX}{self.dir}/ours.yaml")
-        out = REPO / f"outputs/{PREFIX}{self.dir}"
+        self.dir = {**SETTINGS, **SHIFT_SETTINGS}[name]
+        self.prefix = PREFIXES[model]
+        self.cfg = load_yaml(REPO / f"configs/{self.prefix}{self.dir}/ours.yaml")
+        out = REPO / f"outputs/{self.prefix}{self.dir}"
         gen = sorted(out.glob("gen_*.csv"))[0]
         self.pool = pd.read_csv(gen).drop_duplicates("example_id", keep="last").reset_index(drop=True)
         variant = self.cfg["policy"].get("cost_variant", "constant")
         ctx = prepare_cost_context(self.pool, variant)
         self.costs = np.array([compute_cost(r, variant, ctx) for r in self.pool.to_dict("records")], dtype=float)
         self.A = self.pool["A"].astype(int).to_numpy()
-        self.paper_stream = stream_from_existing_run(sorted(out.glob("ours_*MiniLM*.csv"))[0], self.pool)
+        ref_run = sorted(out.glob("ours_*MiniLM*.csv"))[0]
+        self.paper_stream = stream_from_existing_run(ref_run, self.pool)
+        ref_cfg = pd.read_csv(ref_run, usecols=["config"], nrows=1)["config"].iloc[0]
+        self.cfg["policy"]["theta_step_size"] = float(ref_cfg.rsplit("_theta", 1)[1].replace("p", "."))
         self.features = self._features()
+        phases = (self.cfg["data"].get("shift_stream") or {}).get("phases") or []
+        self.phase_names = [p["name"] for p in phases]
+        self.phase_edges = np.cumsum([0] + [int(p["num_batches"]) for p in phases]) if phases else None
 
     def _features(self):
         FEAT_DIR.mkdir(exist_ok=True)
-        path = FEAT_DIR / f"{PREFIX}{self.dir}.npz"
+        path = FEAT_DIR / f"{self.prefix}{self.dir}.npz"
         ids = self.pool["example_id"].astype(int).to_numpy()
         if path.exists():
             z = np.load(path)
@@ -99,10 +115,12 @@ class Setting:
     def stream(self, seed):
         if seed == 7:
             return self.paper_stream
+        if self.phase_edges is not None:
+            raise ValueError("shift settings only have the paper stream (seed 7)")
         rng = np.random.default_rng(int(seed))
         return rng.choice(len(self.pool), size=self.paper_stream.shape, replace=True)
 
-    def run(self, method, seed=7, **params):
+    def run(self, method, seed=7, score_model=None, rounds=None, **params):
         from baselines import CLASSES
 
         cfg = copy.deepcopy(self.cfg)
@@ -110,8 +128,10 @@ class Setting:
         for k, v in params.items():
             cfg["policy"][k] = float(v)
         cls = {"edit": OursSelection, "topk": TopKSelection, "tau": FixedThreshold, **CLASSES}[method]
-        m = cls(cfg, score_model=Features(self.features), state=None)
+        m = cls(cfg, score_model=score_model or Features(self.features), state=None)
         stream = self.stream(seed)
+        if rounds is not None:
+            stream = stream[:rounds]
         sel = np.zeros(stream.shape, dtype=int)
         for t in range(stream.shape[0]):
             idx = stream[t]
@@ -122,9 +142,10 @@ class Setting:
             sel[t] = out["selected"].to_numpy(dtype=int)
         return stream, sel
 
-    def metrics(self, stream, sel, t0=0):
+    def metrics(self, stream, sel, t0=0, t1=None):
         T, n = stream.shape
         df = pd.DataFrame(
             {"t": np.repeat(np.arange(T), n), "A": self.A[stream].ravel(), "cost": self.costs[stream].ravel(), "selected": sel.ravel()}
         )
-        return compute_metrics(df[df.t >= t0])
+        t1 = T if t1 is None else t1
+        return compute_metrics(df[(df.t >= t0) & (df.t < t1)])

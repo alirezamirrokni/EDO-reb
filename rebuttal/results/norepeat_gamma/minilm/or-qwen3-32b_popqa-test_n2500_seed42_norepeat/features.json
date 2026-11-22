@@ -1,0 +1,16 @@
+{
+  "fingerprint": "f62abd9a7cc2fb97e186c894bd867648861c237eb53ad235a2cdd34686270d0d",
+  "completed_rows": 2500,
+  "encoder": {
+    "provider": "minilm",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "max_length": 512,
+    "encode_batch_size": 64,
+    "pooling": "mean",
+    "torch_dtype": "auto",
+    "device": "auto",
+    "normalize_features": true,
+    "cache_dir": null,
+    "dataset_name": "popqa"
+  }
+}

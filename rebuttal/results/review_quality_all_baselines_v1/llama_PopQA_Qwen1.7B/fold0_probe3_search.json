@@ -1,0 +1,1523 @@
+[
+  {
+    "epsilon": 0.2,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.2,
+      "dual_step": 0.063
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.2,
+      "dual_step": 0.25
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.2,
+      "dual_step": 1.0
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.02
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.04
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.06
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.08
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.1
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.12
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.14
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.16
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.18
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.2
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.22
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.24
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.26
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.28
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.3
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4383333333333334,
+    "cost": 4.866666666666666
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.32
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4374074074074074,
+    "cost": 4.833333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.34
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4374074074074074,
+    "cost": 4.833333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.36
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.43728835978835984,
+    "cost": 4.566666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.38
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.43728835978835984,
+    "cost": 4.566666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.4
+    },
+    "type_i": 0.38388888888888895,
+    "type_ii": 0.4453439153439154,
+    "cost": 4.333333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.42
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.45089947089947097,
+    "cost": 4.266666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.44
+    },
+    "type_i": 0.4166666666666667,
+    "type_ii": 0.4675661375661376,
+    "cost": 4.033333333333334
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.46
+    },
+    "type_i": 0.40666666666666657,
+    "type_ii": 0.4727248677248677,
+    "cost": 3.7000000000000006
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.48
+    },
+    "type_i": 0.34388888888888886,
+    "type_ii": 0.4931746031746032,
+    "cost": 3.233333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.5
+    },
+    "type_i": 0.36166666666666664,
+    "type_ii": 0.5020238095238095,
+    "cost": 2.6333333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.52
+    },
+    "type_i": 0.2922222222222222,
+    "type_ii": 0.4971693121693121,
+    "cost": 2.3000000000000003
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.54
+    },
+    "type_i": 0.24833333333333332,
+    "type_ii": 0.5090740740740741,
+    "cost": 1.9000000000000001
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.56
+    },
+    "type_i": 0.22833333333333336,
+    "type_ii": 0.5167328042328042,
+    "cost": 1.5999999999999999
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.58
+    },
+    "type_i": 0.2172222222222222,
+    "type_ii": 0.5162698412698412,
+    "cost": 1.4666666666666668
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.6
+    },
+    "type_i": 0.22055555555555553,
+    "type_ii": 0.5177513227513227,
+    "cost": 1.2333333333333334
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.62
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.64
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.66
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.68
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.7
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.72
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.74
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.76
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.78
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.8
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5133333333333333,
+    "type_ii": 0.5733333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5805555555555556,
+    "type_ii": 0.6234920634920634,
+    "cost": 4.733333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.525,
+    "type_ii": 0.5833333333333334,
+    "cost": 4.9
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5166666666666667,
+    "type_ii": 0.5688888888888889,
+    "cost": 4.733333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 1.0
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 3.0
+    },
+    "type_i": 0.38000000000000006,
+    "type_ii": 0.4400000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.4,
+      "dual_step": 0.063
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.4,
+      "dual_step": 0.25
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.4,
+      "dual_step": 1.0
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.02
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.04
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.06
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.08
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.1
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.12
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.14
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.16
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.18
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.2
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.22
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.24
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.26
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.28
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.3
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4383333333333334,
+    "cost": 4.866666666666666
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.32
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4374074074074074,
+    "cost": 4.833333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.34
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4374074074074074,
+    "cost": 4.833333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.36
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.43728835978835984,
+    "cost": 4.566666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.38
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.43728835978835984,
+    "cost": 4.566666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.4
+    },
+    "type_i": 0.38388888888888895,
+    "type_ii": 0.4453439153439154,
+    "cost": 4.333333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.42
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.45089947089947097,
+    "cost": 4.266666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.44
+    },
+    "type_i": 0.4166666666666667,
+    "type_ii": 0.4675661375661376,
+    "cost": 4.033333333333334
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.46
+    },
+    "type_i": 0.40666666666666657,
+    "type_ii": 0.4727248677248677,
+    "cost": 3.7000000000000006
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.48
+    },
+    "type_i": 0.34388888888888886,
+    "type_ii": 0.4931746031746032,
+    "cost": 3.233333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.5
+    },
+    "type_i": 0.36166666666666664,
+    "type_ii": 0.5020238095238095,
+    "cost": 2.6333333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.52
+    },
+    "type_i": 0.2922222222222222,
+    "type_ii": 0.4971693121693121,
+    "cost": 2.3000000000000003
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.54
+    },
+    "type_i": 0.24833333333333332,
+    "type_ii": 0.5090740740740741,
+    "cost": 1.9000000000000001
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.56
+    },
+    "type_i": 0.22833333333333336,
+    "type_ii": 0.5167328042328042,
+    "cost": 1.5999999999999999
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.58
+    },
+    "type_i": 0.2172222222222222,
+    "type_ii": 0.5162698412698412,
+    "cost": 1.4666666666666668
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.6
+    },
+    "type_i": 0.22055555555555553,
+    "type_ii": 0.5177513227513227,
+    "cost": 1.2333333333333334
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.62
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.64
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.66
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.68
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.7
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.72
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.74
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.76
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.78
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "params": {
+      "q": 0.8
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5133333333333333,
+    "type_ii": 0.5733333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5805555555555556,
+    "type_ii": 0.6234920634920634,
+    "cost": 4.733333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.525,
+    "type_ii": 0.5833333333333334,
+    "cost": 4.9
+  },
+  {
+    "epsilon": 0.4,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5166666666666667,
+    "type_ii": 0.5688888888888889,
+    "cost": 4.733333333333333
+  },
+  {
+    "epsilon": 0.4,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 1.0
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 3.0
+    },
+    "type_i": 0.38000000000000006,
+    "type_ii": 0.4400000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.6,
+      "dual_step": 0.063
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.6,
+      "dual_step": 0.25
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.6,
+      "dual_step": 1.0
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.02
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.04
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.06
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.08
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.1
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.12
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.14
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.16
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.18
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.2
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.22
+    },
+    "type_i": 0.37166666666666665,
+    "type_ii": 0.4322222222222223,
+    "cost": 4.966666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.24
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.26
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.28
+    },
+    "type_i": 0.375,
+    "type_ii": 0.43555555555555553,
+    "cost": 4.933333333333334
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.3
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4383333333333334,
+    "cost": 4.866666666666666
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.32
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4374074074074074,
+    "cost": 4.833333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.34
+    },
+    "type_i": 0.3833333333333333,
+    "type_ii": 0.4374074074074074,
+    "cost": 4.833333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.36
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.43728835978835984,
+    "cost": 4.566666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.38
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.43728835978835984,
+    "cost": 4.566666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.4
+    },
+    "type_i": 0.38388888888888895,
+    "type_ii": 0.4453439153439154,
+    "cost": 4.333333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.42
+    },
+    "type_i": 0.3855555555555556,
+    "type_ii": 0.45089947089947097,
+    "cost": 4.266666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.44
+    },
+    "type_i": 0.4166666666666667,
+    "type_ii": 0.4675661375661376,
+    "cost": 4.033333333333334
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.46
+    },
+    "type_i": 0.40666666666666657,
+    "type_ii": 0.4727248677248677,
+    "cost": 3.7000000000000006
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.48
+    },
+    "type_i": 0.34388888888888886,
+    "type_ii": 0.4931746031746032,
+    "cost": 3.233333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.5
+    },
+    "type_i": 0.36166666666666664,
+    "type_ii": 0.5020238095238095,
+    "cost": 2.6333333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.52
+    },
+    "type_i": 0.2922222222222222,
+    "type_ii": 0.4971693121693121,
+    "cost": 2.3000000000000003
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.54
+    },
+    "type_i": 0.24833333333333332,
+    "type_ii": 0.5090740740740741,
+    "cost": 1.9000000000000001
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.56
+    },
+    "type_i": 0.22833333333333336,
+    "type_ii": 0.5167328042328042,
+    "cost": 1.5999999999999999
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.58
+    },
+    "type_i": 0.2172222222222222,
+    "type_ii": 0.5162698412698412,
+    "cost": 1.4666666666666668
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.6
+    },
+    "type_i": 0.22055555555555553,
+    "type_ii": 0.5177513227513227,
+    "cost": 1.2333333333333334
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.62
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.64
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.66
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.68
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.7
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.72
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.74
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.76
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.78
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "params": {
+      "q": 0.8
+    },
+    "type_i": 0.0,
+    "type_ii": 0.53,
+    "cost": 0.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5133333333333333,
+    "type_ii": 0.5733333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5805555555555556,
+    "type_ii": 0.6234920634920634,
+    "cost": 4.733333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.525,
+    "type_ii": 0.5833333333333334,
+    "cost": 4.9
+  },
+  {
+    "epsilon": 0.6,
+    "method": "zliobaite",
+    "params": {
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5166666666666667,
+    "type_ii": 0.5688888888888889,
+    "cost": 4.733333333333333
+  },
+  {
+    "epsilon": 0.6,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 1.0
+    },
+    "type_i": 0.37333333333333335,
+    "type_ii": 0.4333333333333334,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "thompson_score_space",
+    "params": {
+      "v": 3.0
+    },
+    "type_i": 0.38000000000000006,
+    "type_ii": 0.4400000000000001,
+    "cost": 5.0
+  }
+]

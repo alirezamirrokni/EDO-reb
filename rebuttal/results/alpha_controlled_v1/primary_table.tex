@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Model & Encoder & I$_A$ & I$_F$ & II$_A$ & II$_F$ & Cost A/F & $\Delta$ [95\% CI] & $p$ & $p_{\rm Holm}$ & Wins \\
+\midrule
+Llama-3.3-70B & Qwen3-1.7B & 38.51 & 44.05 & 13.77 & 16.29 & 2.94/2.03 & 2.51 [2.19, 2.82] & 0.0000 & 0.0000 & 100.0\% \\
+Llama-3.3-70B & MiniLM & 38.65 & 32.18 & 16.14 & 19.90 & 2.68/1.09 & 3.76 [3.39, 4.12] & 0.0000 & 0.0000 & 100.0\% \\
+Qwen3-32B & Qwen3-1.7B & 42.17 & 42.17 & 13.80 & 13.80 & 3.14/3.14 & 0.00 [0.00, 0.00] & 1.0000 & 1.0000 & 0.0\% \\
+Qwen3-32B & MiniLM & 40.00 & 41.10 & 16.82 & 16.50 & 2.58/2.63 & -0.32 [-0.66, 0.01] & 0.0772 & 0.1545 & 36.7\% \\
+\bottomrule
+\end{tabular}
+\caption{Same-initial-threshold ablation on MATH at prespecified $\epsilon=0.40$. A: adaptive; F: frozen. Errors and effects are percentage points; cost is reviews per round. Positive $\Delta=\mathrm{II}_F-\mathrm{II}_A$ favors adaptation. Percentile paired-bootstrap CIs and two-sided sign-flip tests use 30 stream permutations; Holm correction covers four primary comparisons. Inference is conditional on the fixed historical test pools and concerns stream ordering. Training feasibility and secondary comparisons are reported separately.}
+\label{tab:alpha-controlled}
+\end{table*}

@@ -150,10 +150,14 @@ def _method_params(cfg: Dict[str, Any]) -> list[str]:
         ]
 
     if method == "llm_select":
-        return [
+        params = [
             _selector_llm_name(cfg),
-            f"seed{seed}",
         ]
+        prompt_variant = policy.get("prompt_variant", None)
+        if prompt_variant not in {None, "", "legacy"}:
+            params.append(f"prompt{safe_name(prompt_variant)}")
+        params.append(f"seed{seed}")
+        return params
 
     params = [f"seed{seed}"]
     for key in sorted(policy):

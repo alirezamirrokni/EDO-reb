@@ -1,0 +1,610 @@
+[
+  {
+    "epsilon": 0.0,
+    "method": "conformal",
+    "params": {
+      "q": 0.52,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "epsilon": 0.0,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.02,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.05104028331119964,
+    "type_ii": 0.4041042180484411,
+    "mean_review_cost": 0.7410358565737053
+  },
+  {
+    "epsilon": 0.0,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "epsilon": 0.0,
+    "method": "tau",
+    "params": {
+      "tau": 0.54
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "epsilon": 0.0,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "epsilon": 0.0,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "epsilon": 0.0,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.01,
+    "method": "conformal",
+    "params": {
+      "q": 0.52,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "epsilon": 0.01,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.02,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.05104028331119964,
+    "type_ii": 0.4041042180484411,
+    "mean_review_cost": 0.7410358565737053
+  },
+  {
+    "epsilon": 0.01,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "epsilon": 0.01,
+    "method": "tau",
+    "params": {
+      "tau": 0.54
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "epsilon": 0.01,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "epsilon": 0.01,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "epsilon": 0.01,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.02,
+    "method": "conformal",
+    "params": {
+      "q": 0.52,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "epsilon": 0.02,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.02,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.05104028331119964,
+    "type_ii": 0.4041042180484411,
+    "mean_review_cost": 0.7410358565737053
+  },
+  {
+    "epsilon": 0.02,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "epsilon": 0.02,
+    "method": "tau",
+    "params": {
+      "tau": 0.54
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "epsilon": 0.02,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "epsilon": 0.02,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "epsilon": 0.02,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.05,
+    "method": "conformal",
+    "params": {
+      "q": 0.52,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "epsilon": 0.05,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.02,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.05104028331119964,
+    "type_ii": 0.4041042180484411,
+    "mean_review_cost": 0.7410358565737053
+  },
+  {
+    "epsilon": 0.05,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "epsilon": 0.05,
+    "method": "tau",
+    "params": {
+      "tau": 0.54
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "epsilon": 0.05,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "epsilon": 0.05,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "epsilon": 0.05,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.1,
+    "method": "conformal",
+    "params": {
+      "q": 0.46,
+      "warmup": 20
+    },
+    "type_i": 0.07846392208942009,
+    "type_ii": 0.3826977803073421,
+    "mean_review_cost": 1.1752988047808766
+  },
+  {
+    "epsilon": 0.1,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.02,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.05104028331119964,
+    "type_ii": 0.4041042180484411,
+    "mean_review_cost": 0.7410358565737053
+  },
+  {
+    "epsilon": 0.1,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "epsilon": 0.1,
+    "method": "tau",
+    "params": {
+      "tau": 0.54
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "epsilon": 0.1,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "epsilon": 0.1,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "epsilon": 0.1,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "params": {
+      "q": 0.38,
+      "warmup": 20
+    },
+    "type_i": 0.14727755644090307,
+    "type_ii": 0.33822593224983666,
+    "mean_review_cost": 2.0796812749003983
+  },
+  {
+    "epsilon": 0.2,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.16,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.18468348826914563,
+    "type_ii": 0.3207830055439617,
+    "mean_review_cost": 2.589641434262948
+  },
+  {
+    "epsilon": 0.2,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "epsilon": 0.2,
+    "method": "tau",
+    "params": {
+      "tau": 0.5
+    },
+    "type_i": 0.1338645418326693,
+    "type_ii": 0.35942157296738975,
+    "mean_review_cost": 1.8831341301460824
+  },
+  {
+    "epsilon": 0.2,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.3,
+    "method": "conformal",
+    "params": {
+      "q": 0.28,
+      "warmup": 20
+    },
+    "type_i": 0.2565073041168659,
+    "type_ii": 0.24259048462235713,
+    "mean_review_cost": 4.0225763612217795
+  },
+  {
+    "epsilon": 0.3,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.24,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.28671978751660027,
+    "type_ii": 0.27615147874112017,
+    "mean_review_cost": 3.8671978751660028
+  },
+  {
+    "epsilon": 0.3,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.28,
+      "dual_step": 0.063
+    },
+    "type_i": 0.2850818946436477,
+    "type_ii": 0.2805829591686165,
+    "mean_review_cost": 3.937583001328021
+  },
+  {
+    "epsilon": 0.3,
+    "method": "tau",
+    "params": {
+      "tau": 0.42
+    },
+    "type_i": 0.24714475431606905,
+    "type_ii": 0.31050559666097516,
+    "mean_review_cost": 3.252324037184595
+  },
+  {
+    "epsilon": 0.3,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 3,
+      "v": 0.3
+    },
+    "type_i": 0.27534307215582116,
+    "type_ii": 0.31132612407512794,
+    "mean_review_cost": 3.0
+  },
+  {
+    "epsilon": 0.3,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 3.0
+    },
+    "type_i": 0.263833554670208,
+    "type_ii": 0.306393473724151,
+    "mean_review_cost": 3.0
+  },
+  {
+    "epsilon": 0.3,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "epsilon": 0.45,
+    "method": "conformal",
+    "params": {
+      "q": 0.14,
+      "warmup": 20
+    },
+    "type_i": 0.3936476316954405,
+    "type_ii": 0.23042591538607474,
+    "mean_review_cost": 5.385126162018591
+  },
+  {
+    "epsilon": 0.45,
+    "method": "edit",
+    "params": {
+      "epsilon": 0.34,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.3510181496237273,
+    "type_ii": 0.25255802188073107,
+    "mean_review_cost": 4.714475431606906
+  },
+  {
+    "epsilon": 0.45,
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.48,
+      "dual_step": 1.0
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "epsilon": 0.45,
+    "method": "tau",
+    "params": {
+      "tau": 0.34
+    },
+    "type_i": 0.3743913235945109,
+    "type_ii": 0.25329950041105426,
+    "mean_review_cost": 4.908366533864542
+  },
+  {
+    "epsilon": 0.45,
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 5,
+      "v": 0.3
+    },
+    "type_i": 0.3845949535192563,
+    "type_ii": 0.2552456839309429,
+    "mean_review_cost": 5.0
+  },
+  {
+    "epsilon": 0.45,
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 5.0
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "epsilon": 0.45,
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "epsilon": 0.2,
+    "method": "gollapudi",
+    "validation_feasible": false,
+    "params": {
+      "epsilon": 0.2,
+      "dual_step": 0.063
+    },
+    "type_i": 0.4000000000000001,
+    "type_ii": 0.4000000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "validation_feasible": true,
+    "params": {
+      "q": 0.4
+    },
+    "type_i": 0.19555555555555557,
+    "type_ii": 0.46915343915343916,
+    "cost": 1.4000000000000001
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "validation_feasible": false,
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.3927777777777777,
+    "type_ii": 0.41650793650793655,
+    "cost": 4.699999999999999
+  },
+  {
+    "epsilon": 0.2,
+    "method": "thompson_score_space",
+    "validation_feasible": false,
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.4000000000000001,
+    "type_ii": 0.4000000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "gollapudi",
+    "validation_feasible": false,
+    "params": {
+      "epsilon": 0.4,
+      "dual_step": 0.063
+    },
+    "type_i": 0.4000000000000001,
+    "type_ii": 0.4000000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "validation_feasible": true,
+    "params": {
+      "q": 0.2
+    },
+    "type_i": 0.3522222222222222,
+    "type_ii": 0.3888888888888889,
+    "cost": 4.7
+  },
+  {
+    "epsilon": 0.4,
+    "method": "zliobaite",
+    "validation_feasible": true,
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.3927777777777777,
+    "type_ii": 0.41650793650793655,
+    "cost": 4.699999999999999
+  },
+  {
+    "epsilon": 0.4,
+    "method": "thompson_score_space",
+    "validation_feasible": false,
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.4000000000000001,
+    "type_ii": 0.4000000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "gollapudi",
+    "validation_feasible": true,
+    "params": {
+      "epsilon": 0.6,
+      "dual_step": 0.063
+    },
+    "type_i": 0.4000000000000001,
+    "type_ii": 0.4000000000000001,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "validation_feasible": true,
+    "params": {
+      "q": 0.2
+    },
+    "type_i": 0.3522222222222222,
+    "type_ii": 0.3888888888888889,
+    "cost": 4.7
+  },
+  {
+    "epsilon": 0.6,
+    "method": "zliobaite",
+    "validation_feasible": true,
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.3927777777777777,
+    "type_ii": 0.41650793650793655,
+    "cost": 4.699999999999999
+  },
+  {
+    "epsilon": 0.6,
+    "method": "thompson_score_space",
+    "validation_feasible": true,
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.4000000000000001,
+    "type_ii": 0.4000000000000001,
+    "cost": 5.0
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "config": "random_or-qwen3-32b_popqa-test_n2500_seed42_norepeat_budget5_seed7",
+  "next_batch": 250,
+  "method_state": {}
+}

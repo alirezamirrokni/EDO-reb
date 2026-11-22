@@ -1,3 +1,5 @@
+import argparse
+
 import matplotlib
 import numpy as np
 import pandas as pd
@@ -6,7 +8,21 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import seaborn as sns  # noqa: E402
 
-from engine import RESULTS, SETTINGS  # noqa: E402
+from engine import SETTINGS, results_dir  # noqa: E402
+
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--model", choices=["llama", "qwen", "mistral", "ragtruth"], default="llama")
+_ap.add_argument("--results-dir", type=str)
+_args = _ap.parse_args()
+MODEL = _args.model
+from pathlib import Path
+RESULTS = Path(_args.results_dir) if _args.results_dir else results_dir(MODEL)
+if MODEL == "ragtruth":
+    import subprocess
+    import sys
+    from pathlib import Path
+    subprocess.run([sys.executable, str(Path(__file__).with_name("ragtruth_large_edit_search.py")), "--plot-only"], check=True)
+    sys.exit(0)
 
 sns.set_theme(context="paper", style="darkgrid")
 plt.rcParams.update({"font.size": 16, "axes.titlesize": 18, "axes.labelsize": 16, "xtick.labelsize": 13, "ytick.labelsize": 13,
@@ -17,7 +33,7 @@ NAMES = {"edit": "EDIT-REP (Ours)", "gollapudi": "Online Conformal Selection", "
 COLOR = {"edit": "#ff7f0e", "gollapudi": "#d62728", "conformal": "#9467bd", "zliobaite": "#8c564b", "thompson": "#17becf",
          "topk": "#1f77b4", "tau": "#2ca02c"}
 STYLE = {"edit": "-", "gollapudi": "-.", "conformal": "--", "zliobaite": ":", "thompson": "--", "topk": "--", "tau": ":"}
-KNOBS = {"edit": ["p_epsilon"], "gollapudi": ["p_epsilon", "p_dual_step"], "conformal": ["p_q"],
+KNOBS = {"edit": ["p_epsilon", "p_alpha_step_size"], "gollapudi": ["p_epsilon", "p_dual_step"], "conformal": ["p_q"],
          "zliobaite": ["p_budget_per_batch", "p_randomized", "p_adj_step"], "thompson": ["p_budget_per_batch", "p_v"],
          "topk": ["p_budget_per_batch"], "tau": ["p_tau"]}
 LEVELS = [0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50]
@@ -47,7 +63,8 @@ for s in SETTINGS:
 pd.DataFrame(levels).to_csv(RESULTS / "baselines_levels.csv", index=False)
 pd.DataFrame(chosen).to_csv(RESULTS / "baselines_selected_hparams.csv", index=False)
 
-fig, axes = plt.subplots(1, 4, figsize=(24, 5.4))
+fig, axes = plt.subplots(1, len(SETTINGS), figsize=(10 if len(SETTINGS) == 1 else 24, 5.4))
+axes = np.atleast_1d(axes)
 for ax, s in zip(axes, SETTINGS):
     for k in list(NAMES)[::-1]:
         d = mean[(mean.setting == s) & (mean.method == k)].sort_values("type_i")
@@ -58,8 +75,8 @@ for ax, s in zip(axes, SETTINGS):
     ax.set_xlim(0, mean[(mean.setting == s) & (mean.method == "edit")].type_i.max() + 0.03)
 axes[0].set_ylabel("Type-II error")
 h, lab = axes[0].get_legend_handles_labels()
-fig.legend(h[::-1], lab[::-1], loc="lower center", ncol=len(h), frameon=False, fontsize=15, bbox_to_anchor=(0.5, -0.07),
+fig.legend(h[::-1], lab[::-1], loc="lower center", ncol=3 if len(SETTINGS) == 1 else len(h), frameon=False, fontsize=15, bbox_to_anchor=(0.5, -0.07),
            handlelength=2.6, columnspacing=1.6)
-fig.tight_layout(rect=(0, 0.05, 1, 1))
+fig.tight_layout(rect=(0, 0.16 if len(SETTINGS) == 1 else 0.05, 1, 1))
 fig.savefig(RESULTS / "baselines_frontier.png", dpi=170, bbox_inches="tight")
 fig.savefig(RESULTS / "baselines_frontier.pdf", bbox_inches="tight")

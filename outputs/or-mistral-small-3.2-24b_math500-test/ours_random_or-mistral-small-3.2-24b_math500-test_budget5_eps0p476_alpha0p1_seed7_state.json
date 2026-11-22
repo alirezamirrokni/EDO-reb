@@ -1,0 +1,7 @@
+{
+  "config": "ours_random_or-mistral-small-3.2-24b_math500-test_budget5_eps0p476_alpha0p1_seed7",
+  "next_batch": 250,
+  "method_state": {
+    "alpha": 0.8733333333333345
+  }
+}

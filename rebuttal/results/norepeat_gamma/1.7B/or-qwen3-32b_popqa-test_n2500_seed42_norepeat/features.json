@@ -1,0 +1,16 @@
+{
+  "fingerprint": "ae02fc4af8d9c73243ad0662abd23cf6a990f0da862aa10bd8448000c9112867",
+  "completed_rows": 2500,
+  "encoder": {
+    "provider": "qwen3",
+    "model_name": "/home/mll/ali/models/Qwen3-1.7B",
+    "max_length": 512,
+    "encode_batch_size": 4,
+    "pooling": "last",
+    "torch_dtype": "auto",
+    "device": "auto",
+    "normalize_features": true,
+    "cache_dir": null,
+    "dataset_name": "popqa"
+  }
+}

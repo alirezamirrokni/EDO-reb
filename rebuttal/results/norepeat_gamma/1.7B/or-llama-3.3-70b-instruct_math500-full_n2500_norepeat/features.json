@@ -1,0 +1,16 @@
+{
+  "fingerprint": "3637ac396f085a73a1bcfb3e52e52395bca099181cc27d730b8d45892693426d",
+  "completed_rows": 2500,
+  "encoder": {
+    "provider": "qwen3",
+    "model_name": "/home/mll/ali/models/Qwen3-1.7B",
+    "max_length": 512,
+    "encode_batch_size": 4,
+    "pooling": "last",
+    "torch_dtype": "auto",
+    "device": "auto",
+    "normalize_features": true,
+    "cache_dir": null,
+    "dataset_name": "math500"
+  }
+}

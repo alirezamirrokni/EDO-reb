@@ -1,0 +1,73 @@
+DONE controller Llama-3.3-70B / MATH minilm
+DONE controller Llama-3.3-70B / PopQA minilm
+DONE controller Qwen3-32B / MATH minilm
+DONE controller Qwen3-32B / PopQA minilm
+DONE controller Llama-3.3-70B / MATH 1.7B
+DONE controller Llama-3.3-70B / PopQA 1.7B
+DONE controller Qwen3-32B / MATH 1.7B
+DONE controller Qwen3-32B / PopQA 1.7B
+DONE controller RAGTruth Qwen4B
+TUNED frontier conformal
+TUNED frontier edit
+TUNED frontier gollapudi
+TUNED frontier tau
+TUNED frontier thompson
+TUNED frontier topk
+TUNED frontier zliobaite
+TESTED frontier conformal 0.0
+TESTED frontier edit 0.0
+TESTED frontier gollapudi 0.0
+TESTED frontier tau 0.0
+TESTED frontier thompson 0.0
+TESTED frontier topk 0.0
+TESTED frontier zliobaite 0.0
+TESTED frontier conformal 0.01
+TESTED frontier edit 0.01
+TESTED frontier gollapudi 0.01
+TESTED frontier tau 0.01
+TESTED frontier thompson 0.01
+TESTED frontier topk 0.01
+TESTED frontier zliobaite 0.01
+TESTED frontier conformal 0.02
+TESTED frontier edit 0.02
+TESTED frontier gollapudi 0.02
+TESTED frontier tau 0.02
+TESTED frontier thompson 0.02
+TESTED frontier topk 0.02
+TESTED frontier zliobaite 0.02
+TESTED frontier conformal 0.05
+TESTED frontier edit 0.05
+TESTED frontier gollapudi 0.05
+TESTED frontier tau 0.05
+TESTED frontier thompson 0.05
+TESTED frontier topk 0.05
+TESTED frontier zliobaite 0.05
+TESTED frontier conformal 0.1
+TESTED frontier edit 0.1
+TESTED frontier gollapudi 0.1
+TESTED frontier tau 0.1
+TESTED frontier thompson 0.1
+TESTED frontier topk 0.1
+TESTED frontier zliobaite 0.1
+TESTED frontier conformal 0.2
+TESTED frontier edit 0.2
+TESTED frontier gollapudi 0.2
+TESTED frontier tau 0.2
+TESTED frontier thompson 0.2
+TESTED frontier topk 0.2
+TESTED frontier zliobaite 0.2
+TESTED frontier conformal 0.3
+TESTED frontier edit 0.3
+TESTED frontier gollapudi 0.3
+TESTED frontier tau 0.3
+TESTED frontier thompson 0.3
+TESTED frontier topk 0.3
+TESTED frontier zliobaite 0.3
+TESTED frontier conformal 0.45
+TESTED frontier edit 0.45
+TESTED frontier gollapudi 0.45
+TESTED frontier tau 0.45
+TESTED frontier thompson 0.45
+TESTED frontier topk 0.45
+TESTED frontier zliobaite 0.45
+ALL CACHED EXPERIMENTS COMPLETE

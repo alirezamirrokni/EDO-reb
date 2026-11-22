@@ -1,0 +1,350 @@
+[
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B",
+    "epsilon": 0.2,
+    "alpha0": 0.48,
+    "gamma": 0.15,
+    "frozen_validation": {
+      "alpha": 0.48,
+      "gamma": 0.0,
+      "type_i": 0.17851851851851852,
+      "type_ii": 0.19967195767195767,
+      "cost": 0.7466666666666667,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.48,
+      "gamma": 0.15,
+      "type_i": 0.19874074074074075,
+      "type_ii": 0.1850141093474427,
+      "cost": 1.031111111111111,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.46,
+      "gamma": 0.0,
+      "type_i": 0.24770370370370368,
+      "type_ii": 0.1841005291005291,
+      "cost": 1.08
+    }
+  },
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B",
+    "epsilon": 0.4,
+    "alpha0": 0.42,
+    "gamma": 1.5,
+    "frozen_validation": {
+      "alpha": 0.42,
+      "gamma": 0.0,
+      "type_i": 0.3968148148148148,
+      "type_ii": 0.16066666666666662,
+      "cost": 1.9244444444444444,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.42,
+      "gamma": 1.5,
+      "type_i": 0.38525925925925925,
+      "type_ii": 0.1298589065255732,
+      "cost": 2.995555555555556,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.38,
+      "gamma": 0.0,
+      "type_i": 0.49733333333333335,
+      "type_ii": 0.13246031746031747,
+      "cost": 2.884444444444444
+    }
+  },
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B",
+    "epsilon": 0.6,
+    "alpha0": 0.16,
+    "gamma": 0.068,
+    "frozen_validation": {
+      "alpha": 0.16,
+      "gamma": 0.0,
+      "type_i": 0.5937777777777778,
+      "type_ii": 0.07834920634920635,
+      "cost": 4.72,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.16,
+      "gamma": 0.068,
+      "type_i": 0.6,
+      "type_ii": 0.07678306878306879,
+      "cost": 4.88,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.14,
+      "gamma": 0.0,
+      "type_i": 0.6017037037037037,
+      "type_ii": 0.07614814814814816,
+      "cost": 4.871111111111111
+    }
+  },
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm",
+    "epsilon": 0.2,
+    "alpha0": 0.54,
+    "gamma": 5.0,
+    "frozen_validation": {
+      "alpha": 0.54,
+      "gamma": 0.0,
+      "type_i": 0.19925925925925925,
+      "type_ii": 0.2270229276895944,
+      "cost": 0.36000000000000004,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.54,
+      "gamma": 5.0,
+      "type_i": 0.19822222222222222,
+      "type_ii": 0.204641975308642,
+      "cost": 1.448888888888889,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.46,
+      "gamma": 0.0,
+      "type_i": 0.42999999999999994,
+      "type_ii": 0.1977583774250441,
+      "cost": 1.3911111111111112
+    }
+  },
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm",
+    "epsilon": 0.4,
+    "alpha0": 0.48,
+    "gamma": 1.5,
+    "frozen_validation": {
+      "alpha": 0.48,
+      "gamma": 0.0,
+      "type_i": 0.3703703703703704,
+      "type_ii": 0.20325925925925925,
+      "cost": 1.08,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.48,
+      "gamma": 1.5,
+      "type_i": 0.39014814814814813,
+      "type_ii": 0.1662469135802469,
+      "cost": 2.6799999999999997,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.36,
+      "gamma": 0.0,
+      "type_i": 0.5424444444444444,
+      "type_ii": 0.15599470899470896,
+      "cost": 2.7511111111111113
+    }
+  },
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm",
+    "epsilon": 0.6,
+    "alpha0": 0.3,
+    "gamma": 0.05,
+    "frozen_validation": {
+      "alpha": 0.3,
+      "gamma": 0.0,
+      "type_i": 0.5718518518518518,
+      "type_ii": 0.1355202821869488,
+      "cost": 3.4755555555555557,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.3,
+      "gamma": 0.05,
+      "type_i": 0.5937037037037037,
+      "type_ii": 0.13032804232804232,
+      "cost": 3.968888888888889,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.26,
+      "gamma": 0.0,
+      "type_i": 0.6010370370370371,
+      "type_ii": 0.1336384479717813,
+      "cost": 3.884444444444444
+    }
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_1.7B",
+    "epsilon": 0.2,
+    "alpha0": 0.52,
+    "gamma": 0.05,
+    "frozen_validation": {
+      "alpha": 0.52,
+      "gamma": 0.0,
+      "type_i": 0.1837037037037037,
+      "type_ii": 0.1914832451499118,
+      "cost": 1.08,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.52,
+      "gamma": 0.05,
+      "type_i": 0.1954074074074074,
+      "type_ii": 0.17727160493827157,
+      "cost": 1.3466666666666667,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.5,
+      "gamma": 0.0,
+      "type_i": 0.20777777777777776,
+      "type_ii": 0.1755784832451499,
+      "cost": 1.36
+    }
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_1.7B",
+    "epsilon": 0.4,
+    "alpha0": 0.42,
+    "gamma": 0.0,
+    "frozen_validation": {
+      "alpha": 0.42,
+      "gamma": 0.0,
+      "type_i": 0.39888888888888885,
+      "type_ii": 0.12661022927689594,
+      "cost": 2.6444444444444444,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.42,
+      "gamma": 0.0,
+      "type_i": 0.39888888888888885,
+      "type_ii": 0.12661022927689594,
+      "cost": 2.6444444444444444,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.42,
+      "gamma": 0.0,
+      "type_i": 0.39888888888888885,
+      "type_ii": 0.12661022927689594,
+      "cost": 2.6444444444444444
+    }
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_1.7B",
+    "epsilon": 0.6,
+    "alpha0": 0.12,
+    "gamma": 0.0,
+    "frozen_validation": {
+      "alpha": 0.12,
+      "gamma": 0.0,
+      "type_i": 0.592,
+      "type_ii": 0.0851851851851852,
+      "cost": 4.937777777777778,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.12,
+      "gamma": 0.0,
+      "type_i": 0.592,
+      "type_ii": 0.0851851851851852,
+      "cost": 4.937777777777778,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.12,
+      "gamma": 0.0,
+      "type_i": 0.592,
+      "type_ii": 0.0851851851851852,
+      "cost": 4.937777777777778
+    }
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_minilm",
+    "epsilon": 0.2,
+    "alpha0": 0.5,
+    "gamma": 0.15,
+    "frozen_validation": {
+      "alpha": 0.5,
+      "gamma": 0.0,
+      "type_i": 0.18185185185185182,
+      "type_ii": 0.18704761904761902,
+      "cost": 1.12,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.5,
+      "gamma": 0.15,
+      "type_i": 0.1977037037037037,
+      "type_ii": 0.18134567901234566,
+      "cost": 1.36,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.48,
+      "gamma": 0.0,
+      "type_i": 0.2228888888888889,
+      "type_ii": 0.1767689594356261,
+      "cost": 1.36
+    }
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_minilm",
+    "epsilon": 0.4,
+    "alpha0": 0.4,
+    "gamma": 0.05,
+    "frozen_validation": {
+      "alpha": 0.4,
+      "gamma": 0.0,
+      "type_i": 0.3854814814814815,
+      "type_ii": 0.1384126984126984,
+      "cost": 2.4000000000000004,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.4,
+      "gamma": 0.05,
+      "type_i": 0.397037037037037,
+      "type_ii": 0.13376190476190475,
+      "cost": 2.6,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.38,
+      "gamma": 0.0,
+      "type_i": 0.4279259259259259,
+      "type_ii": 0.13240564373897706,
+      "cost": 2.6577777777777776
+    }
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_minilm",
+    "epsilon": 0.6,
+    "alpha0": 0.22,
+    "gamma": 0.0,
+    "frozen_validation": {
+      "alpha": 0.22,
+      "gamma": 0.0,
+      "type_i": 0.5943703703703703,
+      "type_ii": 0.09622222222222221,
+      "cost": 4.728888888888888,
+      "validation_feasible": true
+    },
+    "adaptive_validation": {
+      "alpha": 0.22,
+      "gamma": 0.0,
+      "type_i": 0.5943703703703703,
+      "type_ii": 0.09622222222222221,
+      "cost": 4.728888888888888,
+      "validation_feasible": true
+    },
+    "matched_validation": {
+      "alpha": 0.22,
+      "gamma": 0.0,
+      "type_i": 0.5943703703703703,
+      "type_ii": 0.09622222222222221,
+      "cost": 4.728888888888888
+    }
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "config": "ours_random_or-qwen3-32b_popqa-test_n2500_seed42_norepeat_budget5_eps0_alpha0p068_seed7",
+  "next_batch": 250,
+  "method_state": {
+    "alpha": 1.0234
+  }
+}

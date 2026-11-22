@@ -1,0 +1,818 @@
+[ablation] dataset=mmlupro variant=legacy_full_context
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7.csv
+[replay] completed=250/250
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7:   0%|          | 0/250 [00:00<?, ?it/s]llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7: 100%|██████████| 250/250 [00:00<00:00, 2545087.38it/s]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.5336 (1334/2500)
+  selected          : 645
+  unselected        : 1855
+  type-I            : 0.5473
+  type-II           : 0.4712
+  budget used       : 645.00/1250.00 (51.6%)
+[done] wrote outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7.csv
+[ablation] dataset=mmlupro variant=reasoning_allowed
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7.csv
+[replay] completed=0/250
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   0%|          | 0/250 [00:00<?, ?it/s][batch 000] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   0%|          | 1/250 [00:01<05:38,  1.36s/it][batch 001] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   1%|          | 2/250 [00:02<04:25,  1.07s/it][batch 002] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   1%|          | 3/250 [00:02<03:32,  1.16it/s][batch 003] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   2%|▏         | 4/250 [00:03<03:18,  1.24it/s][batch 004] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   2%|▏         | 5/250 [00:04<03:03,  1.34it/s][batch 005] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   2%|▏         | 6/250 [00:04<02:49,  1.44it/s][batch 006] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   3%|▎         | 7/250 [00:05<02:49,  1.43it/s][batch 007] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   3%|▎         | 8/250 [00:06<02:49,  1.43it/s][batch 008] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   4%|▎         | 9/250 [00:07<03:11,  1.26it/s][batch 009] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   4%|▍         | 10/250 [00:07<03:02,  1.32it/s][batch 010] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   4%|▍         | 11/250 [00:08<02:50,  1.40it/s][batch 011] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   5%|▍         | 12/250 [00:09<02:43,  1.45it/s][batch 012] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   5%|▌         | 13/250 [00:09<02:44,  1.44it/s][batch 013] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   6%|▌         | 14/250 [00:10<02:40,  1.47it/s][batch 014] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   6%|▌         | 15/250 [00:11<02:42,  1.44it/s][batch 015] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   6%|▋         | 16/250 [00:12<03:05,  1.26it/s][batch 016] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   7%|▋         | 17/250 [00:13<03:18,  1.17it/s][batch 017] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   7%|▋         | 18/250 [00:14<03:26,  1.12it/s][batch 018] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   8%|▊         | 19/250 [00:15<03:34,  1.08it/s][batch 019] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   8%|▊         | 20/250 [00:15<03:12,  1.19it/s][batch 020] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   8%|▊         | 21/250 [00:17<03:48,  1.00it/s][batch 021] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   9%|▉         | 22/250 [00:18<03:47,  1.00it/s][batch 022] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:   9%|▉         | 23/250 [00:19<03:47,  1.00s/it][batch 023] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  10%|▉         | 24/250 [00:20<03:45,  1.00it/s][batch 024] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  10%|█         | 25/250 [00:20<03:17,  1.14it/s][batch 025] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  10%|█         | 26/250 [00:22<03:52,  1.04s/it][batch 026] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  11%|█         | 27/250 [00:23<03:49,  1.03s/it][batch 027] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  11%|█         | 28/250 [00:24<03:46,  1.02s/it][batch 028] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  12%|█▏        | 29/250 [00:25<03:43,  1.01s/it][batch 029] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  12%|█▏        | 30/250 [00:26<03:42,  1.01s/it][batch 030] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  12%|█▏        | 31/250 [00:28<04:44,  1.30s/it][batch 031] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  13%|█▎        | 32/250 [00:29<04:24,  1.21s/it][batch 032] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  13%|█▎        | 33/250 [00:30<04:10,  1.15s/it][batch 033] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  14%|█▎        | 34/250 [00:32<05:03,  1.41s/it][batch 034] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  14%|█▍        | 35/250 [00:33<04:37,  1.29s/it][batch 035] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  14%|█▍        | 36/250 [00:34<04:15,  1.20s/it][batch 036] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  15%|█▍        | 37/250 [00:35<04:04,  1.15s/it][batch 037] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  15%|█▌        | 38/250 [00:36<03:51,  1.09s/it][batch 038] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  16%|█▌        | 39/250 [00:37<03:54,  1.11s/it][batch 039] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  16%|█▌        | 40/250 [00:38<03:38,  1.04s/it][batch 040] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  16%|█▋        | 41/250 [00:39<03:32,  1.02s/it][batch 041] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  17%|█▋        | 42/250 [00:40<03:30,  1.01s/it][batch 042] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  17%|█▋        | 43/250 [00:41<03:30,  1.02s/it][batch 043] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  18%|█▊        | 44/250 [00:42<03:27,  1.01s/it][batch 044] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  18%|█▊        | 45/250 [00:43<03:26,  1.00s/it][batch 045] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  18%|█▊        | 46/250 [00:44<03:24,  1.00s/it][batch 046] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  19%|█▉        | 47/250 [00:45<03:23,  1.00s/it][batch 047] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  19%|█▉        | 48/250 [00:46<03:22,  1.00s/it][batch 048] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  20%|█▉        | 49/250 [00:47<03:21,  1.00s/it][batch 049] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  20%|██        | 50/250 [00:48<03:20,  1.00s/it][batch 050] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  20%|██        | 51/250 [00:49<03:20,  1.01s/it][batch 051] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  21%|██        | 52/250 [00:50<03:17,  1.00it/s][batch 052] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  21%|██        | 53/250 [00:51<03:18,  1.01s/it][batch 053] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  22%|██▏       | 54/250 [00:52<03:17,  1.01s/it][batch 054] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  22%|██▏       | 55/250 [00:53<03:18,  1.02s/it][batch 055] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  22%|██▏       | 56/250 [00:54<03:12,  1.01it/s][batch 056] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  23%|██▎       | 57/250 [00:55<03:11,  1.01it/s][batch 057] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  23%|██▎       | 58/250 [00:56<03:10,  1.01it/s][batch 058] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  24%|██▎       | 59/250 [00:57<03:11,  1.00s/it][batch 059] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  24%|██▍       | 60/250 [00:59<04:15,  1.34s/it][batch 060] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  24%|██▍       | 61/250 [01:01<04:42,  1.49s/it][batch 061] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  25%|██▍       | 62/250 [01:02<04:13,  1.35s/it][batch 062] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  25%|██▌       | 63/250 [01:03<03:52,  1.24s/it][batch 063] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  26%|██▌       | 64/250 [01:04<03:37,  1.17s/it][batch 064] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  26%|██▌       | 65/250 [01:05<03:27,  1.12s/it][batch 065] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  26%|██▋       | 66/250 [01:06<03:19,  1.08s/it][batch 066] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  27%|██▋       | 67/250 [01:07<03:14,  1.06s/it][batch 067] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  27%|██▋       | 68/250 [01:08<03:09,  1.04s/it][batch 068] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  28%|██▊       | 69/250 [01:09<03:06,  1.03s/it][batch 069] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  28%|██▊       | 70/250 [01:10<03:02,  1.01s/it][batch 070] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  28%|██▊       | 71/250 [01:11<03:01,  1.02s/it][batch 071] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  29%|██▉       | 72/250 [01:12<03:00,  1.01s/it][batch 072] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  29%|██▉       | 73/250 [01:13<02:57,  1.00s/it][batch 073] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  30%|██▉       | 74/250 [01:14<02:56,  1.00s/it][batch 074] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  30%|███       | 75/250 [01:15<02:56,  1.01s/it][batch 075] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  30%|███       | 76/250 [01:16<02:54,  1.00s/it][batch 076] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  31%|███       | 77/250 [01:17<02:54,  1.01s/it][batch 077] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  31%|███       | 78/250 [01:18<02:51,  1.00it/s][batch 078] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  32%|███▏      | 79/250 [01:19<02:51,  1.00s/it][batch 079] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  32%|███▏      | 80/250 [01:20<02:48,  1.01it/s][batch 080] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  32%|███▏      | 81/250 [01:21<02:49,  1.00s/it][batch 081] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  33%|███▎      | 82/250 [01:22<02:46,  1.01it/s][batch 082] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  33%|███▎      | 83/250 [01:23<02:48,  1.01s/it][batch 083] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  34%|███▎      | 84/250 [01:24<02:45,  1.00it/s][batch 084] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  34%|███▍      | 85/250 [01:25<02:44,  1.00it/s][batch 085] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  34%|███▍      | 86/250 [01:26<02:44,  1.00s/it][batch 086] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  35%|███▍      | 87/250 [01:27<02:51,  1.05s/it][batch 087] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  35%|███▌      | 88/250 [01:29<03:27,  1.28s/it][batch 088] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  36%|███▌      | 89/250 [01:30<03:14,  1.21s/it][batch 089] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  36%|███▌      | 90/250 [01:31<03:03,  1.15s/it][batch 090] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  36%|███▋      | 91/250 [01:32<02:54,  1.10s/it][batch 091] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  37%|███▋      | 92/250 [01:33<02:50,  1.08s/it][batch 092] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  37%|███▋      | 93/250 [01:34<02:43,  1.04s/it][batch 093] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  38%|███▊      | 94/250 [01:35<02:41,  1.04s/it][batch 094] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  38%|███▊      | 95/250 [01:36<02:39,  1.03s/it][batch 095] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  38%|███▊      | 96/250 [01:37<02:44,  1.07s/it][batch 096] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  39%|███▉      | 97/250 [01:39<03:18,  1.29s/it][batch 097] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  39%|███▉      | 98/250 [01:40<03:02,  1.20s/it][batch 098] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  40%|███▉      | 99/250 [01:41<02:54,  1.16s/it][batch 099] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  40%|████      | 100/250 [01:42<02:43,  1.09s/it][batch 100] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  40%|████      | 101/250 [01:43<02:39,  1.07s/it][batch 101] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  41%|████      | 102/250 [01:44<02:34,  1.05s/it][batch 102] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  41%|████      | 103/250 [01:45<02:32,  1.04s/it][batch 103] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  42%|████▏     | 104/250 [01:46<02:29,  1.03s/it][batch 104] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  42%|████▏     | 105/250 [01:47<02:27,  1.02s/it][batch 105] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  42%|████▏     | 106/250 [01:48<02:25,  1.01s/it][batch 106] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  43%|████▎     | 107/250 [01:49<02:23,  1.01s/it][batch 107] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  43%|████▎     | 108/250 [01:50<02:21,  1.00it/s][batch 108] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  44%|████▎     | 109/250 [01:51<02:23,  1.01s/it][batch 109] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  44%|████▍     | 110/250 [01:52<02:19,  1.00it/s][batch 110] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  44%|████▍     | 111/250 [01:53<02:20,  1.01s/it][batch 111] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  45%|████▍     | 112/250 [01:54<02:17,  1.00it/s][batch 112] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  45%|████▌     | 113/250 [01:55<02:16,  1.00it/s][batch 113] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  46%|████▌     | 114/250 [01:56<02:15,  1.00it/s][batch 114] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  46%|████▌     | 115/250 [01:57<02:15,  1.00s/it][batch 115] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  46%|████▋     | 116/250 [01:58<02:14,  1.01s/it][batch 116] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  47%|████▋     | 117/250 [01:59<02:13,  1.00s/it][batch 117] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  47%|████▋     | 118/250 [02:00<02:11,  1.00it/s][batch 118] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  48%|████▊     | 119/250 [02:00<01:54,  1.14it/s][batch 119] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  48%|████▊     | 120/250 [02:02<02:13,  1.03s/it][batch 120] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  48%|████▊     | 121/250 [02:03<02:12,  1.03s/it][batch 121] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  49%|████▉     | 122/250 [02:04<02:10,  1.02s/it][batch 122] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  49%|████▉     | 123/250 [02:04<01:53,  1.12it/s][batch 123] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  50%|████▉     | 124/250 [02:05<01:44,  1.21it/s][batch 124] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  50%|█████     | 125/250 [02:06<01:34,  1.33it/s][batch 125] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  50%|█████     | 126/250 [02:07<01:47,  1.15it/s][batch 126] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  51%|█████     | 127/250 [02:08<01:51,  1.11it/s][batch 127] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  51%|█████     | 128/250 [02:09<01:54,  1.07it/s][batch 128] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  52%|█████▏    | 129/250 [02:10<01:57,  1.03it/s][batch 129] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  52%|█████▏    | 130/250 [02:13<03:09,  1.58s/it][batch 130] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  52%|█████▏    | 131/250 [02:15<03:21,  1.69s/it][batch 131] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  53%|█████▎    | 132/250 [02:16<02:55,  1.49s/it][batch 132] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  53%|█████▎    | 133/250 [02:17<02:36,  1.34s/it][batch 133] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  54%|█████▎    | 134/250 [02:18<02:23,  1.24s/it][batch 134] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  54%|█████▍    | 135/250 [02:19<02:14,  1.17s/it][batch 135] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  54%|█████▍    | 136/250 [02:20<02:06,  1.11s/it][batch 136] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  55%|█████▍    | 137/250 [02:21<02:02,  1.08s/it][batch 137] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  55%|█████▌    | 138/250 [02:22<01:58,  1.06s/it][batch 138] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  56%|█████▌    | 139/250 [02:23<01:55,  1.04s/it][batch 139] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  56%|█████▌    | 140/250 [02:24<01:52,  1.03s/it][batch 140] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  56%|█████▋    | 141/250 [02:25<01:50,  1.02s/it][batch 141] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  57%|█████▋    | 142/250 [02:26<01:49,  1.02s/it][batch 142] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  57%|█████▋    | 143/250 [02:27<01:50,  1.03s/it][batch 143] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  58%|█████▊    | 144/250 [02:28<01:45,  1.01it/s][batch 144] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  58%|█████▊    | 145/250 [02:29<01:44,  1.00it/s][batch 145] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  58%|█████▊    | 146/250 [02:30<01:43,  1.00it/s][batch 146] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  59%|█████▉    | 147/250 [02:31<01:44,  1.02s/it][batch 147] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  59%|█████▉    | 148/250 [02:33<02:12,  1.30s/it][batch 148] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  60%|█████▉    | 149/250 [02:34<02:01,  1.21s/it][batch 149] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  60%|██████    | 150/250 [02:35<01:55,  1.15s/it][batch 150] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  60%|██████    | 151/250 [02:36<01:49,  1.11s/it][batch 151] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  61%|██████    | 152/250 [02:37<01:48,  1.10s/it][batch 152] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  61%|██████    | 153/250 [02:38<01:53,  1.17s/it][batch 153] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  62%|██████▏   | 154/250 [02:40<02:03,  1.28s/it][batch 154] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  62%|██████▏   | 155/250 [02:41<01:54,  1.21s/it][batch 155] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  62%|██████▏   | 156/250 [02:42<01:47,  1.14s/it][batch 156] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  63%|██████▎   | 157/250 [02:43<01:44,  1.12s/it][batch 157] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  63%|██████▎   | 158/250 [02:44<01:38,  1.07s/it][batch 158] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  64%|██████▎   | 159/250 [02:45<01:34,  1.04s/it][batch 159] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  64%|██████▍   | 160/250 [02:46<01:32,  1.03s/it][batch 160] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  64%|██████▍   | 161/250 [02:47<01:31,  1.02s/it][batch 161] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  65%|██████▍   | 162/250 [02:48<01:29,  1.02s/it][batch 162] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  65%|██████▌   | 163/250 [02:49<01:27,  1.01s/it][batch 163] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  66%|██████▌   | 164/250 [02:50<01:26,  1.01s/it][batch 164] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  66%|██████▌   | 165/250 [02:51<01:25,  1.01s/it][batch 165] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  66%|██████▋   | 166/250 [02:52<01:30,  1.07s/it][batch 166] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  67%|██████▋   | 167/250 [02:54<01:46,  1.28s/it][batch 167] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  67%|██████▋   | 168/250 [02:55<01:38,  1.20s/it][batch 168] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  68%|██████▊   | 169/250 [02:56<01:32,  1.14s/it][batch 169] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  68%|██████▊   | 170/250 [02:57<01:32,  1.15s/it][batch 170] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  68%|██████▊   | 171/250 [02:59<01:47,  1.36s/it][batch 171] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  69%|██████▉   | 172/250 [03:00<01:37,  1.25s/it][batch 172] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  69%|██████▉   | 173/250 [03:01<01:32,  1.20s/it][batch 173] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  70%|██████▉   | 174/250 [03:03<01:47,  1.42s/it][batch 174] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  70%|███████   | 175/250 [03:04<01:37,  1.31s/it][batch 175] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  70%|███████   | 176/250 [03:05<01:28,  1.20s/it][batch 176] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  71%|███████   | 177/250 [03:06<01:26,  1.18s/it][batch 177] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  71%|███████   | 178/250 [03:08<01:39,  1.38s/it][batch 178] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  72%|███████▏  | 179/250 [03:09<01:29,  1.26s/it][batch 179] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  72%|███████▏  | 180/250 [03:10<01:23,  1.19s/it][batch 180] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  72%|███████▏  | 181/250 [03:11<01:18,  1.14s/it][batch 181] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  73%|███████▎  | 182/250 [03:12<01:13,  1.09s/it][batch 182] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  73%|███████▎  | 183/250 [03:13<01:10,  1.06s/it][batch 183] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  74%|███████▎  | 184/250 [03:14<01:09,  1.05s/it][batch 184] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  74%|███████▍  | 185/250 [03:15<01:07,  1.04s/it][batch 185] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  74%|███████▍  | 186/250 [03:16<01:05,  1.02s/it][batch 186] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  75%|███████▍  | 187/250 [03:17<01:07,  1.07s/it][batch 187] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  75%|███████▌  | 188/250 [03:19<01:20,  1.29s/it][batch 188] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  76%|███████▌  | 189/250 [03:20<01:13,  1.20s/it][batch 189] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  76%|███████▌  | 190/250 [03:21<01:08,  1.15s/it][batch 190] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  76%|███████▋  | 191/250 [03:22<01:05,  1.10s/it][batch 191] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  77%|███████▋  | 192/250 [03:23<01:02,  1.07s/it][batch 192] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  77%|███████▋  | 193/250 [03:24<00:59,  1.04s/it][batch 193] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  78%|███████▊  | 194/250 [03:26<01:15,  1.35s/it][batch 194] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  78%|███████▊  | 195/250 [03:28<01:26,  1.57s/it][batch 195] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  78%|███████▊  | 196/250 [03:30<01:29,  1.66s/it][batch 196] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  79%|███████▉  | 197/250 [03:31<01:18,  1.48s/it][batch 197] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  79%|███████▉  | 198/250 [03:32<01:09,  1.33s/it][batch 198] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  80%|███████▉  | 199/250 [03:33<01:01,  1.22s/it][batch 199] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  80%|████████  | 200/250 [03:34<00:57,  1.15s/it][batch 200] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  80%|████████  | 201/250 [03:35<00:54,  1.11s/it][batch 201] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  81%|████████  | 202/250 [03:36<00:51,  1.08s/it][batch 202] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  81%|████████  | 203/250 [03:37<00:50,  1.06s/it][batch 203] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  82%|████████▏ | 204/250 [03:39<01:01,  1.33s/it][batch 204] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  82%|████████▏ | 205/250 [03:40<00:55,  1.23s/it][batch 205] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  82%|████████▏ | 206/250 [03:41<00:51,  1.16s/it][batch 206] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  83%|████████▎ | 207/250 [03:42<00:47,  1.11s/it][batch 207] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  83%|████████▎ | 208/250 [03:43<00:45,  1.09s/it][batch 208] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  84%|████████▎ | 209/250 [03:43<00:39,  1.04it/s][batch 209] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  84%|████████▍ | 210/250 [03:44<00:34,  1.14it/s][batch 210] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  84%|████████▍ | 211/250 [03:45<00:36,  1.08it/s][batch 211] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  85%|████████▍ | 212/250 [03:46<00:32,  1.16it/s][batch 212] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  85%|████████▌ | 213/250 [03:48<00:43,  1.16s/it][batch 213] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  86%|████████▌ | 214/250 [03:49<00:40,  1.13s/it][batch 214] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  86%|████████▌ | 215/250 [03:50<00:37,  1.07s/it][batch 215] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  86%|████████▋ | 216/250 [03:51<00:36,  1.06s/it][batch 216] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  87%|████████▋ | 217/250 [03:52<00:34,  1.04s/it][batch 217] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  87%|████████▋ | 218/250 [03:53<00:32,  1.03s/it][batch 218] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  88%|████████▊ | 219/250 [03:53<00:28,  1.10it/s][batch 219] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  88%|████████▊ | 220/250 [03:54<00:26,  1.12it/s][batch 220] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  88%|████████▊ | 221/250 [03:55<00:24,  1.20it/s][batch 221] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  89%|████████▉ | 222/250 [03:56<00:23,  1.21it/s][batch 222] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  89%|████████▉ | 223/250 [03:57<00:23,  1.14it/s][batch 223] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  90%|████████▉ | 224/250 [03:58<00:23,  1.10it/s][batch 224] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  90%|█████████ | 225/250 [03:58<00:20,  1.20it/s][batch 225] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  90%|█████████ | 226/250 [03:59<00:19,  1.21it/s][batch 226] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  91%|█████████ | 227/250 [04:00<00:20,  1.13it/s][batch 227] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  91%|█████████ | 228/250 [04:02<00:23,  1.08s/it][batch 228] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  92%|█████████▏| 229/250 [04:03<00:20,  1.03it/s][batch 229] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  92%|█████████▏| 230/250 [04:03<00:18,  1.07it/s][batch 230] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  92%|█████████▏| 231/250 [04:04<00:16,  1.17it/s][batch 231] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  93%|█████████▎| 232/250 [04:05<00:15,  1.17it/s][batch 232] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  93%|█████████▎| 233/250 [04:06<00:14,  1.18it/s][batch 233] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  94%|█████████▎| 234/250 [04:07<00:14,  1.10it/s][batch 234] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  94%|█████████▍| 235/250 [04:08<00:14,  1.06it/s][batch 235] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  94%|█████████▍| 236/250 [04:09<00:13,  1.04it/s][batch 236] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  95%|█████████▍| 237/250 [04:10<00:12,  1.04it/s][batch 237] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  95%|█████████▌| 238/250 [04:11<00:11,  1.02it/s][batch 238] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  96%|█████████▌| 239/250 [04:12<00:10,  1.01it/s][batch 239] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  96%|█████████▌| 240/250 [04:13<00:09,  1.01it/s][batch 240] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  96%|█████████▋| 241/250 [04:14<00:08,  1.01it/s][batch 241] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  97%|█████████▋| 242/250 [04:15<00:07,  1.01it/s][batch 242] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  97%|█████████▋| 243/250 [04:16<00:06,  1.01it/s][batch 243] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  98%|█████████▊| 244/250 [04:17<00:05,  1.00it/s][batch 244] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  98%|█████████▊| 245/250 [04:18<00:05,  1.00s/it][batch 245] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  98%|█████████▊| 246/250 [04:19<00:04,  1.00s/it][batch 246] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  99%|█████████▉| 247/250 [04:20<00:03,  1.00s/it][batch 247] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7:  99%|█████████▉| 248/250 [04:21<00:02,  1.01s/it][batch 248] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7: 100%|█████████▉| 249/250 [04:22<00:00,  1.00it/s][batch 249] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7: 100%|██████████| 250/250 [04:23<00:00,  1.01it/s]llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7: 100%|██████████| 250/250 [04:23<00:00,  1.05s/it]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.5336 (1334/2500)
+  selected          : 665
+  unselected        : 1835
+  type-I            : 0.5308
+  type-II           : 0.4654
+  budget used       : 665.00/1250.00 (53.2%)
+[done] wrote outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptreasoning_allowed_seed7.csv
+[ablation] dataset=mmlupro variant=independent_verify
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7.csv
+[replay] completed=0/250
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   0%|          | 0/250 [00:00<?, ?it/s][batch 000] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   0%|          | 1/250 [00:01<07:07,  1.72s/it][batch 001] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   1%|          | 2/250 [00:02<05:22,  1.30s/it][batch 002] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   1%|          | 3/250 [00:03<04:45,  1.16s/it][batch 003] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   2%|▏         | 4/250 [00:04<04:29,  1.09s/it][batch 004] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   2%|▏         | 5/250 [00:05<04:19,  1.06s/it][batch 005] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   2%|▏         | 6/250 [00:06<04:17,  1.06s/it][batch 006] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   3%|▎         | 7/250 [00:07<04:08,  1.02s/it][batch 007] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   3%|▎         | 8/250 [00:08<04:06,  1.02s/it][batch 008] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   4%|▎         | 9/250 [00:09<04:03,  1.01s/it][batch 009] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   4%|▍         | 10/250 [00:10<04:02,  1.01s/it][batch 010] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   4%|▍         | 11/250 [00:11<04:01,  1.01s/it][batch 011] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   5%|▍         | 12/250 [00:12<04:14,  1.07s/it][batch 012] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   5%|▌         | 13/250 [00:14<05:04,  1.29s/it][batch 013] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   6%|▌         | 14/250 [00:15<04:43,  1.20s/it][batch 014] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   6%|▌         | 15/250 [00:16<04:29,  1.15s/it][batch 015] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   6%|▋         | 16/250 [00:17<04:15,  1.09s/it][batch 016] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   7%|▋         | 17/250 [00:18<04:09,  1.07s/it][batch 017] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   7%|▋         | 18/250 [00:19<04:02,  1.04s/it][batch 018] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   8%|▊         | 19/250 [00:20<03:59,  1.04s/it][batch 019] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   8%|▊         | 20/250 [00:21<03:55,  1.02s/it][batch 020] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   8%|▊         | 21/250 [00:22<03:52,  1.01s/it][batch 021] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   9%|▉         | 22/250 [00:23<03:50,  1.01s/it][batch 022] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:   9%|▉         | 23/250 [00:24<03:48,  1.01s/it][batch 023] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  10%|▉         | 24/250 [00:25<03:46,  1.00s/it][batch 024] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  10%|█         | 25/250 [00:26<03:49,  1.02s/it][batch 025] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  10%|█         | 26/250 [00:27<03:43,  1.00it/s][batch 026] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  11%|█         | 27/250 [00:28<03:42,  1.00it/s][batch 027] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  11%|█         | 28/250 [00:29<03:41,  1.00it/s][batch 028] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  12%|█▏        | 29/250 [00:30<03:41,  1.00s/it][batch 029] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  12%|█▏        | 30/250 [00:31<03:39,  1.00it/s][batch 030] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  12%|█▏        | 31/250 [00:32<03:39,  1.00s/it][batch 031] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  13%|█▎        | 32/250 [00:33<03:49,  1.05s/it][batch 032] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  13%|█▎        | 33/250 [00:35<04:40,  1.29s/it][batch 033] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  14%|█▎        | 34/250 [00:36<04:18,  1.20s/it][batch 034] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  14%|█▍        | 35/250 [00:37<04:03,  1.13s/it][batch 035] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  14%|█▍        | 36/250 [00:38<03:54,  1.10s/it][batch 036] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  15%|█▍        | 37/250 [00:39<03:36,  1.02s/it][batch 037] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  15%|█▌        | 38/250 [00:40<03:11,  1.11it/s][batch 038] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  16%|█▌        | 39/250 [00:41<03:12,  1.10it/s][batch 039] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  16%|█▌        | 40/250 [00:41<02:55,  1.20it/s][batch 040] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  16%|█▋        | 41/250 [00:42<03:10,  1.10it/s][batch 041] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  17%|█▋        | 42/250 [00:43<03:06,  1.12it/s][batch 042] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  17%|█▋        | 43/250 [00:44<03:10,  1.08it/s][batch 043] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  18%|█▊        | 44/250 [00:45<03:15,  1.06it/s][batch 044] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  18%|█▊        | 45/250 [00:46<03:19,  1.03it/s][batch 045] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  18%|█▊        | 46/250 [00:47<03:18,  1.03it/s][batch 046] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  19%|█▉        | 47/250 [00:48<03:19,  1.02it/s][batch 047] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  19%|█▉        | 48/250 [00:49<03:19,  1.01it/s][batch 048] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  20%|█▉        | 49/250 [00:50<03:19,  1.01it/s][batch 049] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  20%|██        | 50/250 [00:51<03:19,  1.00it/s][batch 050] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  20%|██        | 51/250 [00:52<03:18,  1.00it/s][batch 051] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  21%|██        | 52/250 [00:53<03:19,  1.01s/it][batch 052] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  21%|██        | 53/250 [00:54<03:15,  1.01it/s][batch 053] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  22%|██▏       | 54/250 [00:55<03:15,  1.00it/s][batch 054] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  22%|██▏       | 55/250 [00:56<03:16,  1.01s/it][batch 055] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  22%|██▏       | 56/250 [00:57<03:12,  1.01it/s][batch 056] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  23%|██▎       | 57/250 [00:58<03:13,  1.00s/it][batch 057] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  23%|██▎       | 58/250 [00:59<03:11,  1.00it/s][batch 058] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  24%|██▎       | 59/250 [01:00<03:10,  1.00it/s][batch 059] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  24%|██▍       | 60/250 [01:01<03:09,  1.00it/s][batch 060] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  24%|██▍       | 61/250 [01:02<03:10,  1.01s/it][batch 061] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  25%|██▍       | 62/250 [01:03<03:10,  1.01s/it][batch 062] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  25%|██▌       | 63/250 [01:04<03:05,  1.01it/s][batch 063] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  26%|██▌       | 64/250 [01:05<02:45,  1.12it/s][batch 064] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  26%|██▌       | 65/250 [01:06<02:37,  1.17it/s][batch 065] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  26%|██▋       | 66/250 [01:07<02:47,  1.10it/s][batch 066] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  27%|██▋       | 67/250 [01:08<03:21,  1.10s/it][batch 067] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  27%|██▋       | 68/250 [01:09<02:58,  1.02it/s][batch 068] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  28%|██▊       | 69/250 [01:10<03:14,  1.07s/it][batch 069] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  28%|██▊       | 70/250 [01:12<04:03,  1.35s/it][batch 070] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  28%|██▊       | 71/250 [01:13<03:43,  1.25s/it][batch 071] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  29%|██▉       | 72/250 [01:14<03:32,  1.19s/it][batch 072] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  29%|██▉       | 73/250 [01:15<03:21,  1.14s/it][batch 073] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  30%|██▉       | 74/250 [01:16<03:17,  1.12s/it][batch 074] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  30%|███       | 75/250 [01:18<03:54,  1.34s/it][batch 075] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  30%|███       | 76/250 [01:19<03:35,  1.24s/it][batch 076] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  31%|███       | 77/250 [01:20<03:21,  1.16s/it][batch 077] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  31%|███       | 78/250 [01:21<03:11,  1.11s/it][batch 078] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  32%|███▏      | 79/250 [01:22<03:05,  1.08s/it][batch 079] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  32%|███▏      | 80/250 [01:23<03:00,  1.06s/it][batch 080] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  32%|███▏      | 81/250 [01:24<02:55,  1.04s/it][batch 081] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  33%|███▎      | 82/250 [01:25<02:51,  1.02s/it][batch 082] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  33%|███▎      | 83/250 [01:26<02:50,  1.02s/it][batch 083] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  34%|███▎      | 84/250 [01:27<02:48,  1.01s/it][batch 084] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  34%|███▍      | 85/250 [01:28<02:46,  1.01s/it][batch 085] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  34%|███▍      | 86/250 [01:29<02:44,  1.00s/it][batch 086] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  35%|███▍      | 87/250 [01:30<02:43,  1.00s/it][batch 087] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  35%|███▌      | 88/250 [01:31<02:46,  1.03s/it][batch 088] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  36%|███▌      | 89/250 [01:32<02:48,  1.04s/it][batch 089] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  36%|███▌      | 90/250 [01:34<03:02,  1.14s/it][batch 090] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  36%|███▋      | 91/250 [01:34<02:41,  1.02s/it][batch 091] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  37%|███▋      | 92/250 [01:35<02:21,  1.11it/s][batch 092] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  37%|███▋      | 93/250 [01:36<02:32,  1.03it/s][batch 093] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  38%|███▊      | 94/250 [01:37<02:36,  1.00s/it][batch 094] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  38%|███▊      | 95/250 [01:39<03:19,  1.29s/it][batch 095] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  38%|███▊      | 96/250 [01:40<03:03,  1.19s/it][batch 096] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  39%|███▉      | 97/250 [01:41<02:54,  1.14s/it][batch 097] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  39%|███▉      | 98/250 [01:42<02:47,  1.10s/it][batch 098] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  40%|███▉      | 99/250 [01:43<02:45,  1.10s/it][batch 099] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  40%|████      | 100/250 [01:44<02:36,  1.04s/it][batch 100] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  40%|████      | 101/250 [01:45<02:33,  1.03s/it][batch 101] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  41%|████      | 102/250 [01:46<02:30,  1.02s/it][batch 102] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  41%|████      | 103/250 [01:47<02:29,  1.02s/it][batch 103] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  42%|████▏     | 104/250 [01:48<02:27,  1.01s/it][batch 104] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  42%|████▏     | 105/250 [01:49<02:26,  1.01s/it][batch 105] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  42%|████▏     | 106/250 [01:50<02:24,  1.00s/it][batch 106] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  43%|████▎     | 107/250 [01:51<02:25,  1.02s/it][batch 107] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  43%|████▎     | 108/250 [01:52<02:28,  1.05s/it][batch 108] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  44%|████▎     | 109/250 [01:54<03:00,  1.28s/it][batch 109] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  44%|████▍     | 110/250 [01:55<02:47,  1.19s/it][batch 110] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  44%|████▍     | 111/250 [01:56<02:38,  1.14s/it][batch 111] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  45%|████▍     | 112/250 [01:57<02:34,  1.12s/it][batch 112] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  45%|████▌     | 113/250 [01:58<02:27,  1.07s/it][batch 113] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  46%|████▌     | 114/250 [01:59<02:21,  1.04s/it][batch 114] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  46%|████▌     | 115/250 [02:00<02:18,  1.02s/it][batch 115] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  46%|████▋     | 116/250 [02:01<02:16,  1.02s/it][batch 116] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  47%|████▋     | 117/250 [02:02<02:23,  1.08s/it][batch 117] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  47%|████▋     | 118/250 [02:04<02:50,  1.29s/it][batch 118] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  48%|████▊     | 119/250 [02:05<02:36,  1.20s/it][batch 119] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  48%|████▊     | 120/250 [02:06<02:27,  1.14s/it][batch 120] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  48%|████▊     | 121/250 [02:07<02:22,  1.10s/it][batch 121] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  49%|████▉     | 122/250 [02:08<02:16,  1.07s/it][batch 122] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  49%|████▉     | 123/250 [02:09<02:12,  1.05s/it][batch 123] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  50%|████▉     | 124/250 [02:10<02:11,  1.04s/it][batch 124] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  50%|█████     | 125/250 [02:11<02:09,  1.03s/it][batch 125] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  50%|█████     | 126/250 [02:13<02:14,  1.08s/it][batch 126] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  51%|█████     | 127/250 [02:14<02:38,  1.29s/it][batch 127] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  51%|█████     | 128/250 [02:15<02:26,  1.20s/it][batch 128] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  52%|█████▏    | 129/250 [02:16<02:19,  1.15s/it][batch 129] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  52%|█████▏    | 130/250 [02:17<02:11,  1.10s/it][batch 130] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  52%|█████▏    | 131/250 [02:18<02:07,  1.07s/it][batch 131] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  53%|█████▎    | 132/250 [02:19<02:02,  1.04s/it][batch 132] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  53%|█████▎    | 133/250 [02:20<02:00,  1.03s/it][batch 133] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  54%|█████▎    | 134/250 [02:21<01:59,  1.03s/it][batch 134] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  54%|█████▍    | 135/250 [02:22<01:57,  1.02s/it][batch 135] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  54%|█████▍    | 136/250 [02:23<01:55,  1.01s/it][batch 136] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  55%|█████▍    | 137/250 [02:24<01:54,  1.01s/it][batch 137] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  55%|█████▌    | 138/250 [02:25<01:52,  1.00s/it][batch 138] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  56%|█████▌    | 139/250 [02:26<01:51,  1.00s/it][batch 139] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  56%|█████▌    | 140/250 [02:27<01:49,  1.00it/s][batch 140] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  56%|█████▋    | 141/250 [02:28<01:49,  1.00s/it][batch 141] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  57%|█████▋    | 142/250 [02:29<01:47,  1.00it/s][batch 142] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  57%|█████▋    | 143/250 [02:30<01:47,  1.00s/it][batch 143] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  58%|█████▊    | 144/250 [02:31<01:46,  1.00s/it][batch 144] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  58%|█████▊    | 145/250 [02:32<01:45,  1.00s/it][batch 145] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  58%|█████▊    | 146/250 [02:33<01:44,  1.00s/it][batch 146] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  59%|█████▉    | 147/250 [02:34<01:42,  1.00it/s][batch 147] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  59%|█████▉    | 148/250 [02:35<01:41,  1.01it/s][batch 148] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  60%|█████▉    | 149/250 [02:36<01:41,  1.01s/it][batch 149] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  60%|██████    | 150/250 [02:37<01:39,  1.00it/s][batch 150] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  60%|██████    | 151/250 [02:38<01:39,  1.00s/it][batch 151] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  61%|██████    | 152/250 [02:39<01:38,  1.01s/it][batch 152] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  61%|██████    | 153/250 [02:42<02:35,  1.60s/it][batch 153] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  62%|██████▏   | 154/250 [02:43<02:18,  1.44s/it][batch 154] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  62%|██████▏   | 155/250 [02:44<02:01,  1.28s/it][batch 155] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  62%|██████▏   | 156/250 [02:45<01:52,  1.19s/it][batch 156] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  63%|██████▎   | 157/250 [02:46<01:46,  1.14s/it][batch 157] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  63%|██████▎   | 158/250 [02:47<01:42,  1.11s/it][batch 158] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  64%|██████▎   | 159/250 [02:48<01:38,  1.08s/it][batch 159] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  64%|██████▍   | 160/250 [02:49<01:33,  1.04s/it][batch 160] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  64%|██████▍   | 161/250 [02:50<01:31,  1.03s/it][batch 161] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  65%|██████▍   | 162/250 [02:51<01:30,  1.03s/it][batch 162] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  65%|██████▌   | 163/250 [02:52<01:31,  1.05s/it][batch 163] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  66%|██████▌   | 164/250 [02:54<01:36,  1.12s/it][batch 164] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  66%|██████▌   | 165/250 [02:55<01:32,  1.09s/it][batch 165] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  66%|██████▋   | 166/250 [02:56<01:30,  1.08s/it][batch 166] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  67%|██████▋   | 167/250 [02:57<01:40,  1.21s/it][batch 167] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  67%|██████▋   | 168/250 [02:58<01:33,  1.14s/it][batch 168] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  68%|██████▊   | 169/250 [02:59<01:29,  1.10s/it][batch 169] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  68%|██████▊   | 170/250 [03:00<01:25,  1.07s/it][batch 170] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  68%|██████▊   | 171/250 [03:01<01:22,  1.05s/it][batch 171] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  69%|██████▉   | 172/250 [03:02<01:21,  1.04s/it][batch 172] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  69%|██████▉   | 173/250 [03:03<01:18,  1.02s/it][batch 173] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  70%|██████▉   | 174/250 [03:04<01:17,  1.02s/it][batch 174] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  70%|███████   | 175/250 [03:05<01:15,  1.01s/it][batch 175] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  70%|███████   | 176/250 [03:06<01:14,  1.01s/it][batch 176] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  71%|███████   | 177/250 [03:07<01:14,  1.02s/it][batch 177] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  71%|███████   | 178/250 [03:08<01:12,  1.00s/it][batch 178] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  72%|███████▏  | 179/250 [03:09<01:10,  1.00it/s][batch 179] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  72%|███████▏  | 180/250 [03:10<01:09,  1.00it/s][batch 180] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  72%|███████▏  | 181/250 [03:11<01:09,  1.01s/it][batch 181] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  73%|███████▎  | 182/250 [03:12<01:07,  1.00it/s][batch 182] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  73%|███████▎  | 183/250 [03:13<01:08,  1.02s/it][batch 183] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  74%|███████▎  | 184/250 [03:14<01:05,  1.01it/s][batch 184] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  74%|███████▍  | 185/250 [03:15<01:04,  1.01it/s][batch 185] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  74%|███████▍  | 186/250 [03:16<01:04,  1.01s/it][batch 186] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  75%|███████▍  | 187/250 [03:17<01:02,  1.01it/s][batch 187] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  75%|███████▌  | 188/250 [03:18<01:05,  1.06s/it][batch 188] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  76%|███████▌  | 189/250 [03:19<00:59,  1.02it/s][batch 189] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  76%|███████▌  | 190/250 [03:20<00:58,  1.02it/s][batch 190] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  76%|███████▋  | 191/250 [03:21<00:59,  1.00s/it][batch 191] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  77%|███████▋  | 192/250 [03:22<00:58,  1.02s/it][batch 192] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  77%|███████▋  | 193/250 [03:23<00:56,  1.01it/s][batch 193] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  78%|███████▊  | 194/250 [03:24<00:55,  1.01it/s][batch 194] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  78%|███████▊  | 195/250 [03:25<00:54,  1.01it/s][batch 195] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  78%|███████▊  | 196/250 [03:26<00:53,  1.00it/s][batch 196] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  79%|███████▉  | 197/250 [03:27<00:52,  1.01it/s][batch 197] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  79%|███████▉  | 198/250 [03:28<00:52,  1.00s/it][batch 198] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  80%|███████▉  | 199/250 [03:29<00:51,  1.00s/it][batch 199] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  80%|████████  | 200/250 [03:30<00:51,  1.03s/it][batch 200] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  80%|████████  | 201/250 [03:31<00:48,  1.01it/s][batch 201] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  81%|████████  | 202/250 [03:32<00:47,  1.00it/s][batch 202] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  81%|████████  | 203/250 [03:33<00:46,  1.01it/s][batch 203] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  82%|████████▏ | 204/250 [03:34<00:45,  1.00it/s][batch 204] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  82%|████████▏ | 205/250 [03:35<00:46,  1.03s/it][batch 205] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  82%|████████▏ | 206/250 [03:37<00:49,  1.13s/it][batch 206] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  83%|████████▎ | 207/250 [03:38<00:53,  1.25s/it][batch 207] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  83%|████████▎ | 208/250 [03:39<00:49,  1.17s/it][batch 208] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  84%|████████▎ | 209/250 [03:40<00:45,  1.12s/it][batch 209] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  84%|████████▍ | 210/250 [03:41<00:39,  1.00it/s][batch 210] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  84%|████████▍ | 211/250 [03:42<00:42,  1.09s/it][batch 211] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  85%|████████▍ | 212/250 [03:43<00:40,  1.06s/it][batch 212] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  85%|████████▌ | 213/250 [03:44<00:38,  1.04s/it][batch 213] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  86%|████████▌ | 214/250 [03:45<00:36,  1.03s/it][batch 214] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  86%|████████▌ | 215/250 [03:46<00:35,  1.02s/it][batch 215] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  86%|████████▋ | 216/250 [03:47<00:34,  1.01s/it][batch 216] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  87%|████████▋ | 217/250 [03:48<00:33,  1.01s/it][batch 217] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  87%|████████▋ | 218/250 [03:49<00:32,  1.01s/it][batch 218] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  88%|████████▊ | 219/250 [03:50<00:27,  1.12it/s][batch 219] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  88%|████████▊ | 220/250 [03:51<00:31,  1.04s/it][batch 220] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  88%|████████▊ | 221/250 [03:52<00:30,  1.06s/it][batch 221] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  89%|████████▉ | 222/250 [03:54<00:36,  1.32s/it][batch 222] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  89%|████████▉ | 223/250 [03:55<00:32,  1.21s/it][batch 223] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  90%|████████▉ | 224/250 [03:56<00:30,  1.19s/it][batch 224] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  90%|█████████ | 225/250 [03:57<00:27,  1.10s/it][batch 225] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  90%|█████████ | 226/250 [03:58<00:25,  1.07s/it][batch 226] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  91%|█████████ | 227/250 [03:59<00:23,  1.04s/it][batch 227] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  91%|█████████ | 228/250 [04:00<00:22,  1.03s/it][batch 228] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  92%|█████████▏| 229/250 [04:01<00:21,  1.02s/it][batch 229] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  92%|█████████▏| 230/250 [04:02<00:20,  1.02s/it][batch 230] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  92%|█████████▏| 231/250 [04:03<00:19,  1.00s/it][batch 231] selected=4
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  93%|█████████▎| 232/250 [04:04<00:16,  1.09it/s][batch 232] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  93%|█████████▎| 233/250 [04:05<00:14,  1.16it/s][batch 233] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  94%|█████████▎| 234/250 [04:05<00:12,  1.23it/s][batch 234] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  94%|█████████▍| 235/250 [04:06<00:11,  1.29it/s][batch 235] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  94%|█████████▍| 236/250 [04:07<00:10,  1.34it/s][batch 236] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  95%|█████████▍| 237/250 [04:07<00:09,  1.39it/s][batch 237] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  95%|█████████▌| 238/250 [04:08<00:08,  1.41it/s][batch 238] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  96%|█████████▌| 239/250 [04:09<00:07,  1.44it/s][batch 239] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  96%|█████████▌| 240/250 [04:10<00:07,  1.42it/s][batch 240] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  96%|█████████▋| 241/250 [04:10<00:06,  1.42it/s][batch 241] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  97%|█████████▋| 242/250 [04:11<00:05,  1.43it/s][batch 242] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  97%|█████████▋| 243/250 [04:12<00:06,  1.11it/s][batch 243] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  98%|█████████▊| 244/250 [04:13<00:04,  1.21it/s][batch 244] selected=1
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  98%|█████████▊| 245/250 [04:14<00:03,  1.31it/s][batch 245] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  98%|█████████▊| 246/250 [04:14<00:02,  1.34it/s][batch 246] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  99%|█████████▉| 247/250 [04:15<00:02,  1.33it/s][batch 247] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7:  99%|█████████▉| 248/250 [04:16<00:01,  1.36it/s][batch 248] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7: 100%|█████████▉| 249/250 [04:16<00:00,  1.42it/s][batch 249] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7: 100%|██████████| 250/250 [04:17<00:00,  1.29it/s]llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7: 100%|██████████| 250/250 [04:17<00:00,  1.03s/it]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.5336 (1334/2500)
+  selected          : 652
+  unselected        : 1848
+  type-I            : 0.5138
+  type-II           : 0.4594
+  budget used       : 652.00/1250.00 (52.2%)
+[done] wrote outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptindependent_verify_seed7.csv
+[ablation] dataset=mmlupro variant=risk_rank_full_budget
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512
+[replay] source=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_llama-3.3-70b-versatile_seed7.csv
+[replay] target=outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7.csv
+[replay] completed=0/250
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   0%|          | 0/250 [00:00<?, ?it/s][batch 000] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   0%|          | 1/250 [00:01<05:31,  1.33s/it][batch 001] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   1%|          | 2/250 [00:02<03:57,  1.05it/s][batch 002] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   1%|          | 3/250 [00:02<03:41,  1.12it/s][batch 003] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   2%|▏         | 4/250 [00:03<03:45,  1.09it/s][batch 004] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   2%|▏         | 5/250 [00:04<03:54,  1.04it/s][batch 005] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   2%|▏         | 6/250 [00:05<03:54,  1.04it/s][batch 006] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   3%|▎         | 7/250 [00:06<03:33,  1.14it/s][batch 007] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   3%|▎         | 8/250 [00:07<03:17,  1.22it/s][batch 008] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   4%|▎         | 9/250 [00:07<03:07,  1.29it/s][batch 009] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   4%|▍         | 10/250 [00:08<02:59,  1.34it/s][batch 010] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   4%|▍         | 11/250 [00:09<02:52,  1.38it/s][batch 011] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   5%|▍         | 12/250 [00:09<02:48,  1.42it/s][batch 012] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   5%|▌         | 13/250 [00:10<02:44,  1.44it/s][batch 013] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   6%|▌         | 14/250 [00:11<02:45,  1.43it/s][batch 014] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   6%|▌         | 15/250 [00:11<02:44,  1.43it/s][batch 015] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   6%|▋         | 16/250 [00:14<05:15,  1.35s/it][batch 016] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   7%|▋         | 17/250 [00:15<04:47,  1.23s/it][batch 017] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   7%|▋         | 18/250 [00:16<04:16,  1.10s/it][batch 018] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   8%|▊         | 19/250 [00:17<03:59,  1.04s/it][batch 019] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   8%|▊         | 20/250 [00:18<03:42,  1.04it/s][batch 020] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   8%|▊         | 21/250 [00:19<03:25,  1.12it/s][batch 021] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   9%|▉         | 22/250 [00:19<03:08,  1.21it/s][batch 022] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:   9%|▉         | 23/250 [00:20<02:59,  1.26it/s][batch 023] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  10%|▉         | 24/250 [00:21<02:51,  1.32it/s][batch 024] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  10%|█         | 25/250 [00:21<02:47,  1.35it/s][batch 025] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  10%|█         | 26/250 [00:22<02:53,  1.29it/s][batch 026] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  11%|█         | 27/250 [00:23<03:19,  1.12it/s][batch 027] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  11%|█         | 28/250 [00:24<03:10,  1.16it/s][batch 028] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  12%|█▏        | 29/250 [00:25<02:58,  1.24it/s][batch 029] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  12%|█▏        | 30/250 [00:25<02:48,  1.31it/s][batch 030] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  12%|█▏        | 31/250 [00:26<02:41,  1.36it/s][batch 031] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  13%|█▎        | 32/250 [00:27<02:50,  1.28it/s][batch 032] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  13%|█▎        | 33/250 [00:28<02:42,  1.33it/s][batch 033] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  14%|█▎        | 34/250 [00:28<02:38,  1.36it/s][batch 034] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  14%|█▍        | 35/250 [00:29<02:34,  1.39it/s][batch 035] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  14%|█▍        | 36/250 [00:30<02:33,  1.40it/s][batch 036] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  15%|█▍        | 37/250 [00:30<02:30,  1.41it/s][batch 037] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  15%|█▌        | 38/250 [00:31<02:28,  1.43it/s][batch 038] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  16%|█▌        | 39/250 [00:32<02:27,  1.43it/s][batch 039] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  16%|█▌        | 40/250 [00:33<03:19,  1.05it/s][batch 040] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  16%|█▋        | 41/250 [00:34<03:08,  1.11it/s][batch 041] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  17%|█▋        | 42/250 [00:35<03:23,  1.02it/s][batch 042] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  17%|█▋        | 43/250 [00:36<03:08,  1.10it/s][batch 043] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  18%|█▊        | 44/250 [00:37<03:08,  1.09it/s][batch 044] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  18%|█▊        | 45/250 [00:38<03:31,  1.03s/it][batch 045] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  18%|█▊        | 46/250 [00:39<03:29,  1.03s/it][batch 046] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  19%|█▉        | 47/250 [00:40<03:08,  1.08it/s][batch 047] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  19%|█▉        | 48/250 [00:41<03:30,  1.04s/it][batch 048] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  20%|█▉        | 49/250 [00:42<03:25,  1.02s/it][batch 049] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  20%|██        | 50/250 [00:43<03:23,  1.02s/it][batch 050] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  20%|██        | 51/250 [00:44<03:21,  1.01s/it][batch 051] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  21%|██        | 52/250 [00:45<03:20,  1.01s/it][batch 052] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  21%|██        | 53/250 [00:46<03:00,  1.09it/s][batch 053] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  22%|██▏       | 54/250 [00:47<02:48,  1.16it/s][batch 054] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  22%|██▏       | 55/250 [00:48<02:45,  1.18it/s][batch 055] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  22%|██▏       | 56/250 [00:48<02:39,  1.22it/s][batch 056] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  23%|██▎       | 57/250 [00:49<02:33,  1.26it/s][batch 057] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  23%|██▎       | 58/250 [00:50<02:25,  1.32it/s][batch 058] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  24%|██▎       | 59/250 [00:50<02:21,  1.35it/s][batch 059] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  24%|██▍       | 60/250 [00:51<02:19,  1.36it/s][batch 060] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  24%|██▍       | 61/250 [00:52<02:16,  1.39it/s][batch 061] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  25%|██▍       | 62/250 [00:52<02:11,  1.43it/s][batch 062] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  25%|██▌       | 63/250 [00:53<02:18,  1.35it/s][batch 063] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  26%|██▌       | 64/250 [00:54<02:16,  1.36it/s][batch 064] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  26%|██▌       | 65/250 [00:55<02:15,  1.37it/s][batch 065] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  26%|██▋       | 66/250 [00:55<02:11,  1.40it/s][batch 066] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  27%|██▋       | 67/250 [00:56<02:10,  1.41it/s][batch 067] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  27%|██▋       | 68/250 [00:57<02:04,  1.46it/s][batch 068] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  28%|██▊       | 69/250 [00:57<02:02,  1.48it/s][batch 069] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  28%|██▊       | 70/250 [00:58<02:21,  1.27it/s][batch 070] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  28%|██▊       | 71/250 [00:59<02:24,  1.24it/s][batch 071] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  29%|██▉       | 72/250 [01:00<02:19,  1.28it/s][batch 072] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  29%|██▉       | 73/250 [01:01<02:13,  1.32it/s][batch 073] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  30%|██▉       | 74/250 [01:02<02:14,  1.31it/s][batch 074] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  30%|███       | 75/250 [01:02<02:15,  1.29it/s][batch 075] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  30%|███       | 76/250 [01:03<02:26,  1.19it/s][batch 076] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  31%|███       | 77/250 [01:04<02:33,  1.13it/s][batch 077] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  31%|███       | 78/250 [01:05<02:27,  1.17it/s][batch 078] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  32%|███▏      | 79/250 [01:06<02:22,  1.20it/s][batch 079] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  32%|███▏      | 80/250 [01:07<02:13,  1.27it/s][batch 080] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  32%|███▏      | 81/250 [01:07<02:19,  1.21it/s][batch 081] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  33%|███▎      | 82/250 [01:08<02:20,  1.20it/s][batch 082] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  33%|███▎      | 83/250 [01:09<02:28,  1.12it/s][batch 083] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  34%|███▎      | 84/250 [01:10<02:31,  1.09it/s][batch 084] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  34%|███▍      | 85/250 [01:11<02:21,  1.17it/s][batch 085] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  34%|███▍      | 86/250 [01:12<02:10,  1.26it/s][batch 086] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  35%|███▍      | 87/250 [01:13<02:11,  1.24it/s][batch 087] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  35%|███▌      | 88/250 [01:14<02:58,  1.10s/it][batch 088] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  36%|███▌      | 89/250 [01:15<02:52,  1.07s/it][batch 089] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  36%|███▌      | 90/250 [01:16<02:48,  1.05s/it][batch 090] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  36%|███▋      | 91/250 [01:17<02:33,  1.04it/s][batch 091] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  37%|███▋      | 92/250 [01:21<04:30,  1.71s/it][batch 092] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  37%|███▋      | 93/250 [01:22<04:32,  1.73s/it][batch 093] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  38%|███▊      | 94/250 [01:23<03:56,  1.52s/it][batch 094] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  38%|███▊      | 95/250 [01:24<03:31,  1.36s/it][batch 095] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  38%|███▊      | 96/250 [01:25<03:13,  1.25s/it][batch 096] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  39%|███▉      | 97/250 [01:26<02:58,  1.17s/it][batch 097] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  39%|███▉      | 98/250 [01:27<02:37,  1.03s/it][batch 098] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  40%|███▉      | 99/250 [01:28<02:49,  1.12s/it][batch 099] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  40%|████      | 100/250 [01:29<02:28,  1.01it/s][batch 100] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  40%|████      | 101/250 [01:30<02:19,  1.07it/s][batch 101] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  41%|████      | 102/250 [01:31<02:22,  1.04it/s][batch 102] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  41%|████      | 103/250 [01:32<02:22,  1.03it/s][batch 103] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  42%|████▏     | 104/250 [01:33<02:47,  1.14s/it][batch 104] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  42%|████▏     | 105/250 [01:35<02:55,  1.21s/it][batch 105] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  42%|████▏     | 106/250 [01:36<02:37,  1.09s/it][batch 106] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  43%|████▎     | 107/250 [01:37<02:44,  1.15s/it][batch 107] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  43%|████▎     | 108/250 [01:38<02:25,  1.02s/it][batch 108] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  44%|████▎     | 109/250 [01:38<02:13,  1.06it/s][batch 109] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  44%|████▍     | 110/250 [01:39<02:00,  1.16it/s][batch 110] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  44%|████▍     | 111/250 [01:40<01:53,  1.22it/s][batch 111] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  45%|████▍     | 112/250 [01:40<01:47,  1.29it/s][batch 112] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  45%|████▌     | 113/250 [01:41<01:51,  1.22it/s][batch 113] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  46%|████▌     | 114/250 [01:42<01:59,  1.13it/s][batch 114] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  46%|████▌     | 115/250 [01:43<02:04,  1.09it/s][batch 115] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  46%|████▋     | 116/250 [01:45<02:45,  1.24s/it][batch 116] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  47%|████▋     | 117/250 [01:46<02:34,  1.16s/it][batch 117] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  47%|████▋     | 118/250 [01:47<02:29,  1.14s/it][batch 118] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  48%|████▊     | 119/250 [01:49<03:01,  1.39s/it][batch 119] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  48%|████▊     | 120/250 [01:50<02:45,  1.27s/it][batch 120] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  48%|████▊     | 121/250 [01:51<02:32,  1.18s/it][batch 121] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  49%|████▉     | 122/250 [01:52<02:23,  1.12s/it][batch 122] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  49%|████▉     | 123/250 [01:53<02:18,  1.09s/it][batch 123] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  50%|████▉     | 124/250 [01:54<02:13,  1.06s/it][batch 124] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  50%|█████     | 125/250 [01:55<02:02,  1.02it/s][batch 125] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  50%|█████     | 126/250 [01:56<01:53,  1.09it/s][batch 126] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  51%|█████     | 127/250 [01:57<01:46,  1.16it/s][batch 127] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  51%|█████     | 128/250 [01:57<01:44,  1.16it/s][batch 128] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  52%|█████▏    | 129/250 [01:58<01:43,  1.17it/s][batch 129] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  52%|█████▏    | 130/250 [01:59<01:49,  1.09it/s][batch 130] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  52%|█████▏    | 131/250 [02:00<01:50,  1.08it/s][batch 131] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  53%|█████▎    | 132/250 [02:01<01:52,  1.05it/s][batch 132] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  53%|█████▎    | 133/250 [02:04<03:02,  1.56s/it][batch 133] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  54%|█████▎    | 134/250 [02:05<02:41,  1.39s/it][batch 134] selected=3
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  54%|█████▍    | 135/250 [02:06<02:27,  1.28s/it][batch 135] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  54%|█████▍    | 136/250 [02:07<02:06,  1.11s/it][batch 136] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  55%|█████▍    | 137/250 [02:08<01:58,  1.04s/it][batch 137] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  55%|█████▌    | 138/250 [02:09<01:53,  1.01s/it][batch 138] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  56%|█████▌    | 139/250 [02:10<01:45,  1.05it/s][batch 139] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  56%|█████▌    | 140/250 [02:10<01:34,  1.16it/s][batch 140] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  56%|█████▋    | 141/250 [02:11<01:37,  1.12it/s][batch 141] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  57%|█████▋    | 142/250 [02:12<01:41,  1.07it/s][batch 142] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  57%|█████▋    | 143/250 [02:13<01:42,  1.05it/s][batch 143] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  58%|█████▊    | 144/250 [02:14<01:42,  1.03it/s][batch 144] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  58%|█████▊    | 145/250 [02:15<01:42,  1.02it/s][batch 145] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  58%|█████▊    | 146/250 [02:16<01:42,  1.01it/s][batch 146] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  59%|█████▉    | 147/250 [02:17<01:43,  1.01s/it][batch 147] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  59%|█████▉    | 148/250 [02:18<01:40,  1.02it/s][batch 148] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  60%|█████▉    | 149/250 [02:19<01:39,  1.01it/s][batch 149] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  60%|██████    | 150/250 [02:20<01:41,  1.02s/it][batch 150] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  60%|██████    | 151/250 [02:21<01:40,  1.01s/it][batch 151] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  61%|██████    | 152/250 [02:22<01:36,  1.01it/s][batch 152] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  61%|██████    | 153/250 [02:24<01:43,  1.07s/it][batch 153] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  62%|██████▏   | 154/250 [02:25<01:49,  1.14s/it][batch 154] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  62%|██████▏   | 155/250 [02:26<01:37,  1.02s/it][batch 155] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  62%|██████▏   | 156/250 [02:26<01:27,  1.07it/s][batch 156] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  63%|██████▎   | 157/250 [02:27<01:28,  1.05it/s][batch 157] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  63%|██████▎   | 158/250 [02:28<01:28,  1.04it/s][batch 158] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  64%|██████▎   | 159/250 [02:29<01:30,  1.00it/s][batch 159] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  64%|██████▍   | 160/250 [02:30<01:26,  1.04it/s][batch 160] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  64%|██████▍   | 161/250 [02:31<01:24,  1.06it/s][batch 161] selected=2
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  65%|██████▍   | 162/250 [02:32<01:14,  1.18it/s][batch 162] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  65%|██████▌   | 163/250 [02:33<01:10,  1.23it/s][batch 163] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  66%|██████▌   | 164/250 [02:34<01:26,  1.00s/it][batch 164] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  66%|██████▌   | 165/250 [02:35<01:24,  1.00it/s][batch 165] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  66%|██████▋   | 166/250 [02:36<01:16,  1.10it/s][batch 166] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  67%|██████▋   | 167/250 [02:36<01:11,  1.17it/s][batch 167] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  67%|██████▋   | 168/250 [02:37<01:07,  1.22it/s][batch 168] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  68%|██████▊   | 169/250 [02:38<01:04,  1.25it/s][batch 169] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  68%|██████▊   | 170/250 [02:39<01:03,  1.25it/s][batch 170] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  68%|██████▊   | 171/250 [02:40<01:02,  1.26it/s][batch 171] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  69%|██████▉   | 172/250 [02:40<01:03,  1.22it/s][batch 172] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  69%|██████▉   | 173/250 [02:41<01:02,  1.24it/s][batch 173] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  70%|██████▉   | 174/250 [02:42<01:00,  1.25it/s][batch 174] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  70%|███████   | 175/250 [02:43<01:13,  1.02it/s][batch 175] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  70%|███████   | 176/250 [02:44<01:06,  1.11it/s][batch 176] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  71%|███████   | 177/250 [02:45<01:04,  1.14it/s][batch 177] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  71%|███████   | 178/250 [02:46<01:05,  1.10it/s][batch 178] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  72%|███████▏  | 179/250 [02:47<01:01,  1.16it/s][batch 179] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  72%|███████▏  | 180/250 [02:47<00:58,  1.21it/s][batch 180] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  72%|███████▏  | 181/250 [02:48<00:59,  1.15it/s][batch 181] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  73%|███████▎  | 182/250 [02:49<00:56,  1.20it/s][batch 182] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  73%|███████▎  | 183/250 [02:50<01:04,  1.04it/s][batch 183] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  74%|███████▎  | 184/250 [02:51<00:57,  1.14it/s][batch 184] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  74%|███████▍  | 185/250 [02:52<00:58,  1.11it/s][batch 185] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  74%|███████▍  | 186/250 [02:53<01:07,  1.05s/it][batch 186] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  75%|███████▍  | 187/250 [02:54<01:04,  1.02s/it][batch 187] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  75%|███████▌  | 188/250 [02:55<00:59,  1.04it/s][batch 188] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  76%|███████▌  | 189/250 [02:56<00:54,  1.12it/s][batch 189] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  76%|███████▌  | 190/250 [02:57<00:51,  1.17it/s][batch 190] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  76%|███████▋  | 191/250 [02:57<00:47,  1.24it/s][batch 191] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  77%|███████▋  | 192/250 [02:58<00:48,  1.21it/s][batch 192] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  77%|███████▋  | 193/250 [02:59<00:47,  1.21it/s][batch 193] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  78%|███████▊  | 194/250 [03:00<00:46,  1.20it/s][batch 194] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  78%|███████▊  | 195/250 [03:01<00:45,  1.22it/s][batch 195] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  78%|███████▊  | 196/250 [03:02<00:45,  1.18it/s][batch 196] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  79%|███████▉  | 197/250 [03:02<00:44,  1.20it/s][batch 197] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  79%|███████▉  | 198/250 [03:04<00:54,  1.04s/it][batch 198] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  80%|███████▉  | 199/250 [03:05<00:58,  1.15s/it][batch 199] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  80%|████████  | 200/250 [03:06<00:55,  1.10s/it][batch 200] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  80%|████████  | 201/250 [03:07<00:52,  1.08s/it][batch 201] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  81%|████████  | 202/250 [03:08<00:50,  1.05s/it][batch 202] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  81%|████████  | 203/250 [03:09<00:49,  1.05s/it][batch 203] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  82%|████████▏ | 204/250 [03:10<00:46,  1.02s/it][batch 204] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  82%|████████▏ | 205/250 [03:11<00:46,  1.03s/it][batch 205] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  82%|████████▏ | 206/250 [03:12<00:44,  1.01s/it][batch 206] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  83%|████████▎ | 207/250 [03:13<00:43,  1.01s/it][batch 207] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  83%|████████▎ | 208/250 [03:15<00:54,  1.31s/it][batch 208] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  84%|████████▎ | 209/250 [03:16<00:49,  1.21s/it][batch 209] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  84%|████████▍ | 210/250 [03:17<00:45,  1.14s/it][batch 210] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  84%|████████▍ | 211/250 [03:18<00:42,  1.10s/it][batch 211] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  85%|████████▍ | 212/250 [03:19<00:40,  1.07s/it][batch 212] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  85%|████████▌ | 213/250 [03:20<00:39,  1.06s/it][batch 213] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  86%|████████▌ | 214/250 [03:21<00:37,  1.03s/it][batch 214] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  86%|████████▌ | 215/250 [03:22<00:35,  1.03s/it][batch 215] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  86%|████████▋ | 216/250 [03:23<00:35,  1.03s/it][batch 216] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  87%|████████▋ | 217/250 [03:24<00:34,  1.04s/it][batch 217] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  87%|████████▋ | 218/250 [03:25<00:31,  1.01it/s][batch 218] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  88%|████████▊ | 219/250 [03:26<00:30,  1.01it/s][batch 219] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  88%|████████▊ | 220/250 [03:27<00:30,  1.00s/it][batch 220] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  88%|████████▊ | 221/250 [03:28<00:29,  1.00s/it][batch 221] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  89%|████████▉ | 222/250 [03:29<00:28,  1.00s/it][batch 222] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  89%|████████▉ | 223/250 [03:30<00:27,  1.00s/it][batch 223] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  90%|████████▉ | 224/250 [03:31<00:26,  1.00s/it][batch 224] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  90%|█████████ | 225/250 [03:32<00:25,  1.01s/it][batch 225] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  90%|█████████ | 226/250 [03:34<00:31,  1.30s/it][batch 226] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  91%|█████████ | 227/250 [03:35<00:27,  1.20s/it][batch 227] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  91%|█████████ | 228/250 [03:36<00:25,  1.15s/it][batch 228] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  92%|█████████▏| 229/250 [03:37<00:23,  1.10s/it][batch 229] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  92%|█████████▏| 230/250 [03:38<00:21,  1.07s/it][batch 230] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  92%|█████████▏| 231/250 [03:39<00:19,  1.05s/it][batch 231] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  93%|█████████▎| 232/250 [03:40<00:18,  1.04s/it][batch 232] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  93%|█████████▎| 233/250 [03:41<00:17,  1.02s/it][batch 233] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  94%|█████████▎| 234/250 [03:42<00:16,  1.02s/it][batch 234] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  94%|█████████▍| 235/250 [03:43<00:15,  1.02s/it][batch 235] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  94%|█████████▍| 236/250 [03:44<00:14,  1.01s/it][batch 236] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  95%|█████████▍| 237/250 [03:45<00:13,  1.01s/it][batch 237] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  95%|█████████▌| 238/250 [03:46<00:12,  1.00s/it][batch 238] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  96%|█████████▌| 239/250 [03:47<00:11,  1.01s/it][batch 239] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  96%|█████████▌| 240/250 [03:48<00:09,  1.00it/s][batch 240] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  96%|█████████▋| 241/250 [03:49<00:08,  1.01it/s][batch 241] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  97%|█████████▋| 242/250 [03:51<00:08,  1.05s/it][batch 242] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  97%|█████████▋| 243/250 [03:51<00:06,  1.04it/s][batch 243] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  98%|█████████▊| 244/250 [03:52<00:05,  1.09it/s][batch 244] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  98%|█████████▊| 245/250 [03:53<00:05,  1.02s/it][batch 245] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  98%|█████████▊| 246/250 [03:54<00:03,  1.07it/s][batch 246] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  99%|█████████▉| 247/250 [03:55<00:02,  1.12it/s][batch 247] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7:  99%|█████████▉| 248/250 [03:56<00:02,  1.07s/it][batch 248] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7: 100%|█████████▉| 249/250 [03:57<00:01,  1.01s/it][batch 249] selected=5
+llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7: 100%|██████████| 250/250 [03:58<00:00,  1.07it/s]llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7: 100%|██████████| 250/250 [03:58<00:00,  1.05it/s]
+
+[summary]
+  rows              : 2500
+  unique examples   : 494
+  model accuracy    : 0.5336 (1334/2500)
+  selected          : 1234
+  unselected        : 1266
+  type-I            : 0.5340
+  type-II           : 0.4668
+  budget used       : 1234.00/1250.00 (98.7%)
+[done] wrote outputs/llama-3.3-70b-versatile_mmlupro-test_n500_seed42/llm_select_llama-3.3-70b-versatile_mmlupro-test_n500_seed42_budget5_or-llama-3.3-70b-instruct_promptrisk_rank_full_budget_seed7.csv

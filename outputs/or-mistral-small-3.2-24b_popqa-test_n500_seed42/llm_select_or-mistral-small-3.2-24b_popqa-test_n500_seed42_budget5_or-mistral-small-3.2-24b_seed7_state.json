@@ -1,0 +1,5 @@
+{
+  "config": "llm_select_or-mistral-small-3.2-24b_popqa-test_n500_seed42_budget5_or-mistral-small-3.2-24b_seed7",
+  "next_batch": 250,
+  "method_state": {}
+}

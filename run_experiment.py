@@ -213,7 +213,14 @@ def sample_batches(records: List[Dict[str, Any]], cfg: Dict[str, Any]) -> List[L
 
     seed = int(data_cfg.get("sample_seed", cfg.get("seed", 0)))
     rng = np.random.default_rng(seed)
-    indices = rng.choice(len(records), size=(num_batches, batch_size), replace=True)
+    if str(data_cfg.get("sampling", "with_replacement")) == "without_replacement":
+        if num_batches * batch_size > len(records):
+            raise ValueError(
+                f"sampling=without_replacement needs {num_batches * batch_size} records, but the pool has {len(records)}."
+            )
+        indices = rng.permutation(len(records))[: num_batches * batch_size].reshape(num_batches, batch_size)
+    else:
+        indices = rng.choice(len(records), size=(num_batches, batch_size), replace=True)
     return [[records[int(i)] for i in row] for row in indices]
 
 
@@ -395,9 +402,49 @@ def make_batch_rows(
     return pd.DataFrame(rows, columns=RUN_COLUMNS)
 
 
-def run(cfg_path: str, reset: bool = False, reset_generations: bool = False, no_generate: bool = False) -> None:
+def run(
+    cfg_path: str,
+    reset: bool = False,
+    reset_generations: bool = False,
+    no_generate: bool = False,
+    prompt_variant: str | None = None,
+    max_prompt_chars: int | None = None,
+    selector_provider: str | None = None,
+    selector_model: str | None = None,
+    selector_display_name: str | None = None,
+    selector_provider_only: str | None = None,
+    selector_min_seconds_between_calls: float | None = None,
+    selector_retry_attempts: int | None = None,
+    num_batches_override: int | None = None,
+    fail_on_selector_error: bool = False,
+) -> None:
     load_dotenv()
     cfg = load_yaml(cfg_path)
+    if prompt_variant is not None:
+        cfg.setdefault("policy", {})["prompt_variant"] = prompt_variant
+    if max_prompt_chars is not None:
+        cfg.setdefault("policy", {})["max_prompt_chars"] = int(max_prompt_chars)
+    if selector_provider is not None:
+        cfg.setdefault("selector_llm", {})["provider"] = selector_provider
+    if selector_model is not None:
+        cfg.setdefault("selector_llm", {})["model_name"] = selector_model
+    if selector_display_name is not None:
+        cfg.setdefault("selector_llm", {})["display_name"] = selector_display_name
+    if selector_provider_only is not None:
+        cfg.setdefault("selector_llm", {})["provider_routing"] = {
+            "only": [selector_provider_only],
+            "allow_fallbacks": False,
+        }
+    if selector_min_seconds_between_calls is not None:
+        cfg.setdefault("selector_llm", {})["min_seconds_between_calls"] = float(
+            selector_min_seconds_between_calls
+        )
+    if selector_retry_attempts is not None:
+        cfg.setdefault("selector_llm", {})["retry_attempts"] = int(selector_retry_attempts)
+    if num_batches_override is not None:
+        cfg.setdefault("data", {})["num_batches"] = int(num_batches_override)
+    if fail_on_selector_error:
+        cfg.setdefault("policy", {})["fail_on_selector_error"] = True
     paths = project_paths(cfg)
     cfg["run_name"] = paths["run_name"]
 
@@ -504,8 +551,57 @@ def main():
         action="store_true",
         help="Never call the main LLM. Require all requested examples to already exist in the generation cache.",
     )
+    parser.add_argument("--selector_retry_attempts", type=int, default=None)
+    parser.add_argument(
+        "--num_batches_override",
+        type=int,
+        default=None,
+        help="Run/resume only the first N batches; output naming is unchanged.",
+    )
+    parser.add_argument(
+        "--prompt_variant",
+        choices=["legacy", "legacy_full_context", "reasoning_allowed", "independent_verify", "risk_rank_full_budget"],
+        default=None,
+        help="Override the LLM-Select prompt variant while preserving a variant-specific output name.",
+    )
+    parser.add_argument(
+        "--max_prompt_chars",
+        type=int,
+        default=None,
+        help="Override the selector prompt character cap (the ablation uses 24000 for full batches).",
+    )
+    parser.add_argument("--selector_provider", default=None, help="Override selector_llm.provider.")
+    parser.add_argument("--selector_model", default=None, help="Override selector_llm.model_name.")
+    parser.add_argument("--selector_display_name", default=None, help="Override selector name used in output filenames.")
+    parser.add_argument("--selector_provider_only", default=None, help="Force one OpenRouter backend provider.")
+    parser.add_argument(
+        "--selector_min_seconds_between_calls",
+        type=float,
+        default=None,
+        help="Override selector request throttling.",
+    )
+    parser.add_argument(
+        "--fail_on_selector_error",
+        action="store_true",
+        help="Abort instead of recording an all-zero batch if the selector request fails.",
+    )
     args = parser.parse_args()
-    run(args.config, reset=args.reset, reset_generations=args.reset_generations, no_generate=args.no_generate)
+    run(
+        args.config,
+        reset=args.reset,
+        reset_generations=args.reset_generations,
+        no_generate=args.no_generate,
+        prompt_variant=args.prompt_variant,
+        max_prompt_chars=args.max_prompt_chars,
+        selector_provider=args.selector_provider,
+        selector_model=args.selector_model,
+        selector_display_name=args.selector_display_name,
+        selector_provider_only=args.selector_provider_only,
+        selector_min_seconds_between_calls=args.selector_min_seconds_between_calls,
+        selector_retry_attempts=args.selector_retry_attempts,
+        num_batches_override=args.num_batches_override,
+        fail_on_selector_error=args.fail_on_selector_error,
+    )
 
 
 if __name__ == "__main__":

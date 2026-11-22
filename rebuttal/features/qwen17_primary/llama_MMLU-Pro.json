@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "input_sha256": "ac443c61ede0c9849e748d7cb397653fc6758b20136bea537dbe23747ef4d365",
+  "completed_rows": 500,
+  "total_rows": 500,
+  "pooling": "last",
+  "append_eos": true,
+  "normalize": true,
+  "max_length": 512,
+  "prompt": "Multiple-choice question:\n\n{question}\n\nModel answer:\n\n{model_answer}"
+}

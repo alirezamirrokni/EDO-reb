@@ -1,0 +1,1353 @@
+[
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.02,
+      "warmup": 20
+    },
+    "type_i": 0.3952191235059761,
+    "type_ii": 0.23081009296148738,
+    "mean_review_cost": 5.398406374501992
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.04,
+      "warmup": 20
+    },
+    "type_i": 0.3952191235059761,
+    "type_ii": 0.23081009296148738,
+    "mean_review_cost": 5.398406374501992
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.08,
+      "warmup": 20
+    },
+    "type_i": 0.39508632138114214,
+    "type_ii": 0.2307658255865427,
+    "mean_review_cost": 5.397078353253652
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.12,
+      "warmup": 20
+    },
+    "type_i": 0.39475431606905714,
+    "type_ii": 0.23067729083665336,
+    "mean_review_cost": 5.394422310756973
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.14,
+      "warmup": 20
+    },
+    "type_i": 0.3936476316954405,
+    "type_ii": 0.23042591538607474,
+    "mean_review_cost": 5.385126162018591
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.18,
+      "warmup": 20
+    },
+    "type_i": 0.3884462151394423,
+    "type_ii": 0.23089124981555262,
+    "mean_review_cost": 5.3134130146082335
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.22,
+      "warmup": 20
+    },
+    "type_i": 0.3579459938025675,
+    "type_ii": 0.23176974641118067,
+    "mean_review_cost": 4.99601593625498
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.24,
+      "warmup": 20
+    },
+    "type_i": 0.3176626826029217,
+    "type_ii": 0.23268249752313497,
+    "mean_review_cost": 4.669322709163347
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.28,
+      "warmup": 20
+    },
+    "type_i": 0.2565073041168659,
+    "type_ii": 0.24259048462235713,
+    "mean_review_cost": 4.0225763612217795
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.32,
+      "warmup": 20
+    },
+    "type_i": 0.21874723328906598,
+    "type_ii": 0.26712515019287925,
+    "mean_review_cost": 3.409030544488712
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.34,
+      "warmup": 20
+    },
+    "type_i": 0.20473660911907923,
+    "type_ii": 0.28883987858091437,
+    "mean_review_cost": 2.9907038512616198
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.38,
+      "warmup": 20
+    },
+    "type_i": 0.14727755644090307,
+    "type_ii": 0.33822593224983666,
+    "mean_review_cost": 2.0796812749003983
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.42,
+      "warmup": 20
+    },
+    "type_i": 0.1259849490925188,
+    "type_ii": 0.3566970214380573,
+    "mean_review_cost": 1.7357237715803453
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.46,
+      "warmup": 20
+    },
+    "type_i": 0.07846392208942009,
+    "type_ii": 0.3826977803073421,
+    "mean_review_cost": 1.1752988047808766
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.48,
+      "warmup": 20
+    },
+    "type_i": 0.07846392208942009,
+    "type_ii": 0.3875519087670482,
+    "mean_review_cost": 1.099601593625498
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.52,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.56,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.58,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.62,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.66,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.68,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.72,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.76,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "conformal",
+    "params": {
+      "q": 0.8,
+      "warmup": 20
+    },
+    "type_i": 0.04462151394422311,
+    "type_ii": 0.400265604249668,
+    "mean_review_cost": 0.7968127490039839
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.0,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.12423638778220451,
+    "type_ii": 0.3788496806425093,
+    "mean_review_cost": 1.5391766268260294
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.02,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.05104028331119964,
+    "type_ii": 0.4041042180484411,
+    "mean_review_cost": 0.7410358565737053
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.06,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.11704293935369632,
+    "type_ii": 0.3784981766057463,
+    "mean_review_cost": 1.48738379814077
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.1,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.23831341301460826,
+    "type_ii": 0.2994313750289846,
+    "mean_review_cost": 3.266932270916335
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.14,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.26989818503762725,
+    "type_ii": 0.2817892451358586,
+    "mean_review_cost": 3.6666666666666665
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.16,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.18468348826914563,
+    "type_ii": 0.3207830055439617,
+    "mean_review_cost": 2.589641434262948
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.2,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.24752102700309872,
+    "type_ii": 0.28843778325850034,
+    "mean_review_cost": 3.4329349269588314
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.24,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.28671978751660027,
+    "type_ii": 0.27615147874112017,
+    "mean_review_cost": 3.8671978751660028
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.28,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.364962372731297,
+    "type_ii": 0.2535419169881321,
+    "mean_review_cost": 4.826029216467464
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.3,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.31750774679061533,
+    "type_ii": 0.2612491831615337,
+    "mean_review_cost": 4.297476759628154
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.34,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.3510181496237273,
+    "type_ii": 0.25255802188073107,
+    "mean_review_cost": 4.714475431606906
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.38,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.3828021248339974,
+    "type_ii": 0.25378486055776894,
+    "mean_review_cost": 4.997343957503321
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.42,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.44,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.48,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.52,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.56,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.6,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.62,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.66,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.7,
+      "alpha_step_size": 0.05
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.74,
+      "alpha_step_size": 0.02
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.76,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "edit",
+    "params": {
+      "epsilon": 0.8,
+      "alpha_step_size": 0.1
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.0,
+      "dual_step": 0.063
+    },
+    "type_i": 0.26671093404161134,
+    "type_ii": 0.2963463605893885,
+    "mean_review_cost": 3.5617529880478087
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.02,
+      "dual_step": 1.0
+    },
+    "type_i": 0.21958831341301463,
+    "type_ii": 0.3207967073504922,
+    "mean_review_cost": 2.9508632138114215
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.06,
+      "dual_step": 0.25
+    },
+    "type_i": 0.24557326250553344,
+    "type_ii": 0.3061963785071355,
+    "mean_review_cost": 3.2881806108897744
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.1,
+      "dual_step": 0.063
+    },
+    "type_i": 0.27102700309871625,
+    "type_ii": 0.29097946836990657,
+    "mean_review_cost": 3.7065073041168657
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.14,
+      "dual_step": 0.063
+    },
+    "type_i": 0.2718680832226649,
+    "type_ii": 0.29024905668331963,
+    "mean_review_cost": 3.699867197875166
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.16,
+      "dual_step": 1.0
+    },
+    "type_i": 0.23200531208499334,
+    "type_ii": 0.309885326419191,
+    "mean_review_cost": 3.1593625498007967
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.2,
+      "dual_step": 0.25
+    },
+    "type_i": 0.2642319610447101,
+    "type_ii": 0.29730601403908175,
+    "mean_review_cost": 3.5365205843293492
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.24,
+      "dual_step": 0.25
+    },
+    "type_i": 0.27343957503320054,
+    "type_ii": 0.292688505238306,
+    "mean_review_cost": 3.667994687915007
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.28,
+      "dual_step": 0.063
+    },
+    "type_i": 0.2850818946436477,
+    "type_ii": 0.2805829591686165,
+    "mean_review_cost": 3.937583001328021
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.3,
+      "dual_step": 1.0
+    },
+    "type_i": 0.29637007525453735,
+    "type_ii": 0.28108939901768587,
+    "mean_review_cost": 3.9867197875166003
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.34,
+      "dual_step": 1.0
+    },
+    "type_i": 0.3296370075254538,
+    "type_ii": 0.2705221442273235,
+    "mean_review_cost": 4.365205843293492
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.38,
+      "dual_step": 0.25
+    },
+    "type_i": 0.35694997786631255,
+    "type_ii": 0.26322171630936575,
+    "mean_review_cost": 4.6892430278884465
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.42,
+      "dual_step": 0.063
+    },
+    "type_i": 0.3681274900398406,
+    "type_ii": 0.2567950420540062,
+    "mean_review_cost": 4.847277556440903
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.44,
+      "dual_step": 1.0
+    },
+    "type_i": 0.36945551128818055,
+    "type_ii": 0.25692784417884024,
+    "mean_review_cost": 4.853917662682604
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.48,
+      "dual_step": 1.0
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.52,
+      "dual_step": 0.25
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.56,
+      "dual_step": 0.063
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.6,
+      "dual_step": 0.063
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.62,
+      "dual_step": 1.0
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.66,
+      "dual_step": 0.25
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.7,
+      "dual_step": 0.25
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.74,
+      "dual_step": 0.063
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.76,
+      "dual_step": 1.0
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "gollapudi",
+    "params": {
+      "epsilon": 0.8,
+      "dual_step": 1.0
+    },
+    "type_i": 0.3702523240371846,
+    "type_ii": 0.25573262505533423,
+    "mean_review_cost": 4.873837981407703
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.0
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.04
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.08
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.12
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.16
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.2
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.24
+    },
+    "type_i": 0.3828021248339974,
+    "type_ii": 0.25360779105799025,
+    "mean_review_cost": 4.99867197875166
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.28
+    },
+    "type_i": 0.3808322266489597,
+    "type_ii": 0.25346234111174354,
+    "mean_review_cost": 4.976095617529881
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.34
+    },
+    "type_i": 0.3743913235945109,
+    "type_ii": 0.25329950041105426,
+    "mean_review_cost": 4.908366533864542
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.38
+    },
+    "type_i": 0.3584108012394865,
+    "type_ii": 0.2589256729694977,
+    "mean_review_cost": 4.701195219123506
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.42
+    },
+    "type_i": 0.24714475431606905,
+    "type_ii": 0.31050559666097516,
+    "mean_review_cost": 3.252324037184595
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.46
+    },
+    "type_i": 0.12653829127932714,
+    "type_ii": 0.374722801914037,
+    "mean_review_cost": 1.6122177954847274
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.5
+    },
+    "type_i": 0.1338645418326693,
+    "type_ii": 0.35942157296738975,
+    "mean_review_cost": 1.8831341301460824
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.54
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.58
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.62
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.68
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.72
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.76
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.8
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.84
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.88
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.92
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "tau",
+    "params": {
+      "tau": 0.98
+    },
+    "type_i": 0.0,
+    "type_ii": 0.4353253652058433,
+    "mean_review_cost": 0.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 0.3
+    },
+    "type_i": 0.21381142098273573,
+    "type_ii": 0.39634056367124093,
+    "mean_review_cost": 1.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 1.0
+    },
+    "type_i": 0.26693227091633465,
+    "type_ii": 0.40224288033052974,
+    "mean_review_cost": 1.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 1,
+      "v": 3.0
+    },
+    "type_i": 0.34528552456839307,
+    "type_ii": 0.4109487974029806,
+    "mean_review_cost": 1.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 2,
+      "v": 0.3
+    },
+    "type_i": 0.23837981407702524,
+    "type_ii": 0.35375166002656044,
+    "mean_review_cost": 2.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 2,
+      "v": 1.0
+    },
+    "type_i": 0.27224435590969454,
+    "type_ii": 0.3622177954847278,
+    "mean_review_cost": 2.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 2,
+      "v": 3.0
+    },
+    "type_i": 0.34661354581673304,
+    "type_ii": 0.38081009296148743,
+    "mean_review_cost": 2.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 3,
+      "v": 0.3
+    },
+    "type_i": 0.27534307215582116,
+    "type_ii": 0.31132612407512794,
+    "mean_review_cost": 3.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 3,
+      "v": 1.0
+    },
+    "type_i": 0.2979194333776007,
+    "type_ii": 0.3210017074558907,
+    "mean_review_cost": 3.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 3,
+      "v": 3.0
+    },
+    "type_i": 0.35413899955732625,
+    "type_ii": 0.3450958072472016,
+    "mean_review_cost": 3.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 4,
+      "v": 0.3
+    },
+    "type_i": 0.3300132802124834,
+    "type_ii": 0.2788844621513944,
+    "mean_review_cost": 4.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 4,
+      "v": 1.0
+    },
+    "type_i": 0.34130146082337315,
+    "type_ii": 0.28640991589198755,
+    "mean_review_cost": 4.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 4,
+      "v": 3.0
+    },
+    "type_i": 0.3814741035856574,
+    "type_ii": 0.3131916777335104,
+    "mean_review_cost": 4.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 5,
+      "v": 0.3
+    },
+    "type_i": 0.3845949535192563,
+    "type_ii": 0.2552456839309429,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 5,
+      "v": 1.0
+    },
+    "type_i": 0.39043824701195223,
+    "type_ii": 0.2610889774236388,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "thompson",
+    "params": {
+      "budget_per_batch": 5,
+      "v": 3.0
+    },
+    "type_i": 0.4239043824701196,
+    "type_ii": 0.29455511288180614,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 1.0
+    },
+    "type_i": 0.24701195219123506,
+    "type_ii": 0.4000295115832964,
+    "mean_review_cost": 1.0
+  },
+  {
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 2.0
+    },
+    "type_i": 0.2264276228419655,
+    "type_ii": 0.3507636122177955,
+    "mean_review_cost": 2.0
+  },
+  {
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 3.0
+    },
+    "type_i": 0.263833554670208,
+    "type_ii": 0.306393473724151,
+    "mean_review_cost": 3.0
+  },
+  {
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 4.0
+    },
+    "type_i": 0.32669322709163345,
+    "type_ii": 0.27667109340416113,
+    "mean_review_cost": 4.0
+  },
+  {
+    "method": "topk",
+    "params": {
+      "budget_per_batch": 5.0
+    },
+    "type_i": 0.38300132802124837,
+    "type_ii": 0.2536520584329349,
+    "mean_review_cost": 5.0
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 1,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5285524568393094,
+    "type_ii": 0.43166592887708427,
+    "mean_review_cost": 0.9933598937583001
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 1,
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5378486055776892,
+    "type_ii": 0.4323446952929024,
+    "mean_review_cost": 1.0
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 1,
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5617529880478087,
+    "type_ii": 0.43500073778958237,
+    "mean_review_cost": 1.0
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 1,
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5630810092961487,
+    "type_ii": 0.43523683045595396,
+    "mean_review_cost": 0.99867197875166
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 2,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5212483399734396,
+    "type_ii": 0.4246716836358271,
+    "mean_review_cost": 1.9920318725099602
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 2,
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5325365205843293,
+    "type_ii": 0.42729083665338646,
+    "mean_review_cost": 2.0
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 2,
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5604249667994687,
+    "type_ii": 0.4339309428950863,
+    "mean_review_cost": 1.9920318725099602
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 2,
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5624169986719788,
+    "type_ii": 0.43470562195661794,
+    "mean_review_cost": 1.9867197875166003
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 3,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.4185295853622546,
+    "mean_review_cost": 2.9229747675962816
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 3,
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5261177512173528,
+    "type_ii": 0.41835831278062346,
+    "mean_review_cost": 2.9933598937583006
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 3,
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5588756086764054,
+    "type_ii": 0.43308406585299014,
+    "mean_review_cost": 2.9229747675962816
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 3,
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5610889774236387,
+    "type_ii": 0.4342392335420224,
+    "mean_review_cost": 2.937583001328021
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.518149623727313,
+    "type_ii": 0.41373974999473,
+    "mean_review_cost": 3.760956175298805
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5241257193448428,
+    "type_ii": 0.4097024600012648,
+    "mean_review_cost": 3.9150066401062418
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.555776892430279,
+    "type_ii": 0.4318482683024516,
+    "mean_review_cost": 3.755644090305445
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 4,
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5589862771137671,
+    "type_ii": 0.43359630262020704,
+    "mean_review_cost": 3.758300132802125
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 5,
+      "randomized": 0,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5181938911022576,
+    "type_ii": 0.41273688315520984,
+    "mean_review_cost": 4.3598937583001325
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 5,
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5248118636564851,
+    "type_ii": 0.3997512595122157,
+    "mean_review_cost": 4.556440903054448
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 5,
+      "randomized": 1,
+      "adj_step": 0.01
+    },
+    "type_i": 0.5549800796812749,
+    "type_ii": 0.4309060056072009,
+    "mean_review_cost": 4.391766268260292
+  },
+  {
+    "method": "zliobaite",
+    "params": {
+      "budget_per_batch": 5,
+      "randomized": 1,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5602921646746347,
+    "type_ii": 0.4353538228040221,
+    "mean_review_cost": 4.341301460823373
+  }
+]

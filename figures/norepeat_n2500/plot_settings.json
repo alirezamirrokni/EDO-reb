@@ -1,0 +1,5 @@
+{
+  "edit_rep": "best shared-gamma MiniLM sweep candidate",
+  "gamma": 10.0,
+  "exploratory_tuning": true
+}

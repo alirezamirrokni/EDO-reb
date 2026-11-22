@@ -1,0 +1,5 @@
+{
+  "config": "random_or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_budget5_seed7",
+  "next_batch": 250,
+  "method_state": {}
+}

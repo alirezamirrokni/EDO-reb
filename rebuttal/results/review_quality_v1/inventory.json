@@ -1,0 +1,722 @@
+[
+  {
+    "setting": "llama_MATH-500_MiniLM",
+    "records": 500,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 2,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      }
+    ],
+    "feature_hash": "b419053ec91cf8fb4aa74489be2dc7ce809253acff52e28025d2531f3e28410c"
+  },
+  {
+    "setting": "llama_MMLU-Pro_MiniLM",
+    "records": 500,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 2,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      }
+    ],
+    "feature_hash": "11130709ff2f4d782ec678cc99c4a1c3455c8c4efaf6f4b3f245fa4fccd7bada"
+  },
+  {
+    "setting": "llama_PopQA_MiniLM",
+    "records": 500,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 199,
+        "calibration": 101,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 199,
+        "calibration": 100,
+        "validation": 100,
+        "test": 101
+      },
+      {
+        "fold": 2,
+        "fit": 201,
+        "calibration": 100,
+        "validation": 99,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 201,
+        "calibration": 99,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 101,
+        "test": 99
+      }
+    ],
+    "feature_hash": "3370197080d3ea4fb7aa2ee988187a64a7c52fd16523786518e2c8e90b37d024"
+  },
+  {
+    "setting": "llama_GPQA_MiniLM",
+    "records": 448,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 178,
+        "calibration": 90,
+        "validation": 90,
+        "test": 90
+      },
+      {
+        "fold": 1,
+        "fit": 179,
+        "calibration": 90,
+        "validation": 89,
+        "test": 90
+      },
+      {
+        "fold": 2,
+        "fit": 180,
+        "calibration": 89,
+        "validation": 89,
+        "test": 90
+      },
+      {
+        "fold": 3,
+        "fit": 180,
+        "calibration": 89,
+        "validation": 90,
+        "test": 89
+      },
+      {
+        "fold": 4,
+        "fit": 179,
+        "calibration": 90,
+        "validation": 90,
+        "test": 89
+      }
+    ],
+    "feature_hash": "9fb9ad4f2b0fa01ded4f35ea4c633287d4f525fa33d947e2da003593c775579f"
+  },
+  {
+    "setting": "qwen_MATH-500_MiniLM",
+    "records": 500,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 2,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      }
+    ],
+    "feature_hash": "49ec0732a3dea8d01c7f36f7ff76c2277afcc540043741eec9b239b40f891741"
+  },
+  {
+    "setting": "qwen_MMLU-Pro_MiniLM",
+    "records": 500,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 2,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      }
+    ],
+    "feature_hash": "0be659267f52d15ae70d74e8428f3f084720891865acf9505680d13ab93523c2"
+  },
+  {
+    "setting": "qwen_PopQA_MiniLM",
+    "records": 500,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 199,
+        "calibration": 101,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 199,
+        "calibration": 100,
+        "validation": 100,
+        "test": 101
+      },
+      {
+        "fold": 2,
+        "fit": 201,
+        "calibration": 100,
+        "validation": 99,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 201,
+        "calibration": 99,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 101,
+        "test": 99
+      }
+    ],
+    "feature_hash": "636d99dc8089616abb2fc39cf33612893e816b943b259a49dde8675a536c75c3"
+  },
+  {
+    "setting": "qwen_GPQA_MiniLM",
+    "records": 448,
+    "encoder": "MiniLM",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 178,
+        "calibration": 90,
+        "validation": 90,
+        "test": 90
+      },
+      {
+        "fold": 1,
+        "fit": 179,
+        "calibration": 90,
+        "validation": 89,
+        "test": 90
+      },
+      {
+        "fold": 2,
+        "fit": 180,
+        "calibration": 89,
+        "validation": 89,
+        "test": 90
+      },
+      {
+        "fold": 3,
+        "fit": 180,
+        "calibration": 89,
+        "validation": 90,
+        "test": 89
+      },
+      {
+        "fold": 4,
+        "fit": 179,
+        "calibration": 90,
+        "validation": 90,
+        "test": 89
+      }
+    ],
+    "feature_hash": "534724a7fe62ccff91f068ed1492147155463e159ff27761f17de123e1bcecac"
+  },
+  {
+    "setting": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B",
+    "records": 2500,
+    "encoder": "1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 1,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 2,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 3,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 4,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      }
+    ],
+    "feature_hash": "34e8f95096bb0c55de223eace7f2b706f133d84a9ed65fec46b1db5c283591c0"
+  },
+  {
+    "setting": "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat_1.7B",
+    "records": 2500,
+    "encoder": "1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1001,
+        "calibration": 497,
+        "validation": 505,
+        "test": 497
+      },
+      {
+        "fold": 1,
+        "fit": 999,
+        "calibration": 505,
+        "validation": 499,
+        "test": 497
+      },
+      {
+        "fold": 2,
+        "fit": 994,
+        "calibration": 499,
+        "validation": 502,
+        "test": 505
+      },
+      {
+        "fold": 3,
+        "fit": 1002,
+        "calibration": 502,
+        "validation": 497,
+        "test": 499
+      },
+      {
+        "fold": 4,
+        "fit": 1004,
+        "calibration": 497,
+        "validation": 497,
+        "test": 502
+      }
+    ],
+    "feature_hash": "7333455c0a7802b88fe5e1783c6fc9682c3721948f65d97384b95b596c76b8b5"
+  },
+  {
+    "setting": "or-qwen3-32b_math500-full_n2500_norepeat_1.7B",
+    "records": 2500,
+    "encoder": "1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 1,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 2,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 3,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 4,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      }
+    ],
+    "feature_hash": "302353ea33b28e20b7a38ae6076c37a7cf0c6114cb456673841ed2d9aa4352f3"
+  },
+  {
+    "setting": "or-qwen3-32b_popqa-test_n2500_seed42_norepeat_1.7B",
+    "records": 2500,
+    "encoder": "1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1001,
+        "calibration": 497,
+        "validation": 505,
+        "test": 497
+      },
+      {
+        "fold": 1,
+        "fit": 999,
+        "calibration": 505,
+        "validation": 499,
+        "test": 497
+      },
+      {
+        "fold": 2,
+        "fit": 994,
+        "calibration": 499,
+        "validation": 502,
+        "test": 505
+      },
+      {
+        "fold": 3,
+        "fit": 1002,
+        "calibration": 502,
+        "validation": 497,
+        "test": 499
+      },
+      {
+        "fold": 4,
+        "fit": 1004,
+        "calibration": 497,
+        "validation": 497,
+        "test": 502
+      }
+    ],
+    "feature_hash": "6282c69b936687cb04c910404d0288df6990eb00bb5cff5b0eb226dfa3ea10fb"
+  },
+  {
+    "setting": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm",
+    "records": 2500,
+    "encoder": "minilm",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 1,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 2,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 3,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 4,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      }
+    ],
+    "feature_hash": "ccb0265cf0d479c3177a2d62dcc751c43cfdf03858cdda40dc19f9fbc1546579"
+  },
+  {
+    "setting": "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat_minilm",
+    "records": 2500,
+    "encoder": "minilm",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1001,
+        "calibration": 497,
+        "validation": 505,
+        "test": 497
+      },
+      {
+        "fold": 1,
+        "fit": 999,
+        "calibration": 505,
+        "validation": 499,
+        "test": 497
+      },
+      {
+        "fold": 2,
+        "fit": 994,
+        "calibration": 499,
+        "validation": 502,
+        "test": 505
+      },
+      {
+        "fold": 3,
+        "fit": 1002,
+        "calibration": 502,
+        "validation": 497,
+        "test": 499
+      },
+      {
+        "fold": 4,
+        "fit": 1004,
+        "calibration": 497,
+        "validation": 497,
+        "test": 502
+      }
+    ],
+    "feature_hash": "76763f3ba5b6381d4d2c2942bd764817157abbb971e448817da7d8c85ecac346"
+  },
+  {
+    "setting": "or-qwen3-32b_math500-full_n2500_norepeat_minilm",
+    "records": 2500,
+    "encoder": "minilm",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 1,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 2,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 3,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      },
+      {
+        "fold": 4,
+        "fit": 1000,
+        "calibration": 500,
+        "validation": 500,
+        "test": 500
+      }
+    ],
+    "feature_hash": "13d01ada188bd03f2a0e4e5c20ceca08e90363d3fbb83183bc0cca358c940fa2"
+  },
+  {
+    "setting": "or-qwen3-32b_popqa-test_n2500_seed42_norepeat_minilm",
+    "records": 2500,
+    "encoder": "minilm",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1001,
+        "calibration": 497,
+        "validation": 505,
+        "test": 497
+      },
+      {
+        "fold": 1,
+        "fit": 999,
+        "calibration": 505,
+        "validation": 499,
+        "test": 497
+      },
+      {
+        "fold": 2,
+        "fit": 994,
+        "calibration": 499,
+        "validation": 502,
+        "test": 505
+      },
+      {
+        "fold": 3,
+        "fit": 1002,
+        "calibration": 502,
+        "validation": 497,
+        "test": 499
+      },
+      {
+        "fold": 4,
+        "fit": 1004,
+        "calibration": 497,
+        "validation": 497,
+        "test": 502
+      }
+    ],
+    "feature_hash": "d5656416d9a819471b22b740ae9666ff47bd23b2906737e90cfe0f621b2c1157"
+  },
+  {
+    "setting": "RAGTruth_Qwen4B",
+    "records": 2965,
+    "encoder": "Qwen4B",
+    "split": "official RAGTruth",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1503,
+        "calibration": 517,
+        "validation": 495,
+        "test": 450
+      }
+    ],
+    "feature_hash": "2a62f0b4cbeac2e39becaeb721a578699c1881edae19f1c605232885815f772a"
+  }
+]

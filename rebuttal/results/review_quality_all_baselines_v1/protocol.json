@@ -1,0 +1,23 @@
+{
+  "source": "/home/mll/alireza/EDO-reb/rebuttal/results/review_quality_llama_qwen17_v1",
+  "methods": [
+    "gollapudi",
+    "conformal",
+    "zliobaite",
+    "thompson_score_space"
+  ],
+  "epsilons": [
+    0.2,
+    0.4,
+    0.6
+  ],
+  "budget": 5,
+  "all_rounds": true,
+  "all_records": true,
+  "frozen_calibrated_scores": true,
+  "conformal": "existing code; offline common calibration; warmup=0; no new test-label calibration",
+  "thompson": "explicit 1D posterior exploration on logit of common calibrated score; frozen mean; selected-feedback covariance updates",
+  "limitation": "score-space adaptations, not exact reproductions of original full-feature baselines; LLM-Select not included",
+  "historical_data": true,
+  "grids": "existing published grids restricted to identical budget 5"
+}

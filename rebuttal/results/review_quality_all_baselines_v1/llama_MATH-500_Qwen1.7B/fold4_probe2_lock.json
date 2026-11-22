@@ -1,0 +1,140 @@
+[
+  {
+    "epsilon": 0.2,
+    "method": "gollapudi",
+    "validation_feasible": false,
+    "params": {
+      "epsilon": 0.2,
+      "dual_step": 0.063
+    },
+    "type_i": 0.5155555555555555,
+    "type_ii": 0.19154761904761905,
+    "cost": 3.366666666666667
+  },
+  {
+    "epsilon": 0.2,
+    "method": "conformal",
+    "validation_feasible": true,
+    "params": {
+      "q": 0.22
+    },
+    "type_i": 0.18333333333333335,
+    "type_ii": 0.2764814814814815,
+    "cost": 0.5333333333333333
+  },
+  {
+    "epsilon": 0.2,
+    "method": "zliobaite",
+    "validation_feasible": false,
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5427777777777778,
+    "type_ii": 0.1465079365079365,
+    "cost": 4.566666666666666
+  },
+  {
+    "epsilon": 0.2,
+    "method": "thompson_score_space",
+    "validation_feasible": false,
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.5533333333333333,
+    "type_ii": 0.13333333333333333,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.4,
+    "method": "gollapudi",
+    "validation_feasible": false,
+    "params": {
+      "epsilon": 0.4,
+      "dual_step": 0.063
+    },
+    "type_i": 0.5155555555555555,
+    "type_ii": 0.19154761904761905,
+    "cost": 3.366666666666667
+  },
+  {
+    "epsilon": 0.4,
+    "method": "conformal",
+    "validation_feasible": true,
+    "params": {
+      "q": 0.1
+    },
+    "type_i": 0.35666666666666663,
+    "type_ii": 0.1965740740740741,
+    "cost": 2.6
+  },
+  {
+    "epsilon": 0.4,
+    "method": "zliobaite",
+    "validation_feasible": false,
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5427777777777778,
+    "type_ii": 0.1465079365079365,
+    "cost": 4.566666666666666
+  },
+  {
+    "epsilon": 0.4,
+    "method": "thompson_score_space",
+    "validation_feasible": false,
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.5533333333333333,
+    "type_ii": 0.13333333333333333,
+    "cost": 5.0
+  },
+  {
+    "epsilon": 0.6,
+    "method": "gollapudi",
+    "validation_feasible": true,
+    "params": {
+      "epsilon": 0.6,
+      "dual_step": 0.063
+    },
+    "type_i": 0.5155555555555555,
+    "type_ii": 0.19154761904761905,
+    "cost": 3.366666666666667
+  },
+  {
+    "epsilon": 0.6,
+    "method": "conformal",
+    "validation_feasible": true,
+    "params": {
+      "q": 0.08
+    },
+    "type_i": 0.42944444444444446,
+    "type_ii": 0.12031746031746032,
+    "cost": 4.2
+  },
+  {
+    "epsilon": 0.6,
+    "method": "zliobaite",
+    "validation_feasible": true,
+    "params": {
+      "randomized": 0,
+      "adj_step": 0.05
+    },
+    "type_i": 0.5427777777777778,
+    "type_ii": 0.1465079365079365,
+    "cost": 4.566666666666666
+  },
+  {
+    "epsilon": 0.6,
+    "method": "thompson_score_space",
+    "validation_feasible": true,
+    "params": {
+      "v": 0.3
+    },
+    "type_i": 0.5533333333333333,
+    "type_ii": 0.13333333333333333,
+    "cost": 5.0
+  }
+]

@@ -1,4 +1,5 @@
 from .groq import GroqLLM
+from .openrouter import OpenRouterLLM
 from .minilm import MiniLMScoreModel
 from .qwen3_embedding import Qwen3ScoreModel
 
@@ -7,6 +8,8 @@ def build_main_llm(cfg):
     provider = cfg.get("provider")
     if provider == "groq":
         return GroqLLM(cfg)
+    if provider == "openrouter":
+        return OpenRouterLLM(cfg)
     raise ValueError(f"Unknown main_llm.provider: {provider}")
 
 

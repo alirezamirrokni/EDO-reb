@@ -1,0 +1,5 @@
+lr,warm,setting,stage,method,gamma,epsilon,cap,feasible,type_i,type_ii,cost,max_cost
+8.0,5,or-llama-3.3-70b-instruct_math500-full_n2500_norepeat,0.6B,ours,0.005,0.625,0.6773333333333332,True,0.6104,0.09288888888888888,4.984,5.0
+8.0,5,or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat,0.6B,ours,1.0,0.20593333333333333,0.20593333333333333,True,0.20320000000000002,0.5197777777777778,2.904,5.0
+8.0,5,or-qwen3-32b_math500-full_n2500_norepeat,0.6B,ours,0.0,0.575,0.635,True,0.568,0.11120000000000001,5.0,5.0
+8.0,5,or-qwen3-32b_popqa-test_n2500_seed42_norepeat,0.6B,ours,0.2,0.12019999999999999,0.12019999999999999,True,0.11680000000000001,0.6798666666666666,4.264,5.0

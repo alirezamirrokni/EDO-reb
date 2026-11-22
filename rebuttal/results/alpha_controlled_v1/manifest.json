@@ -1,0 +1,46 @@
+[
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B",
+    "name": "Llama-3.3-70B / MATH",
+    "encoder": "1.7B",
+    "n_fit": 755,
+    "n_validation": 750,
+    "n_test": 980,
+    "features_sha256": "80a83fbd13a0aa4fe7657072787c55042155ea0ef8c6979b1abd0a6826544aff",
+    "split_sha256": "3ab2f8fc75f6de4a911619240cf3231810f02ea779cced400a49426455b42d67",
+    "score_sha256": "df39798f968b659a7945a3712234f7e52f05ad93db0ebce0cc6909988c5c3fec"
+  },
+  {
+    "key": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm",
+    "name": "Llama-3.3-70B / MATH",
+    "encoder": "minilm",
+    "n_fit": 755,
+    "n_validation": 750,
+    "n_test": 980,
+    "features_sha256": "59860dac253475ba154175ce0af6133b62f969971dbc42c321e69e19ade83fbc",
+    "split_sha256": "3ab2f8fc75f6de4a911619240cf3231810f02ea779cced400a49426455b42d67",
+    "score_sha256": "e7a39fad556ee791132d1e854c0e0667860dd4ba340902b64983a034d067887c"
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_1.7B",
+    "name": "Qwen3-32B / MATH",
+    "encoder": "1.7B",
+    "n_fit": 755,
+    "n_validation": 750,
+    "n_test": 980,
+    "features_sha256": "025d662cc22d588ca88de0a0d505bd942766f31718b103325fd287117e3c7b06",
+    "split_sha256": "4af0d5bee48d37b6b2f5e5ad382dd08094300fe96b3c99753a52bfd34643e35e",
+    "score_sha256": "af43882d21b0a9ead99ee7e007d33f47dbf025b10e6178d55e57aa0d891a1ce8"
+  },
+  {
+    "key": "or-qwen3-32b_math500-full_n2500_norepeat_minilm",
+    "name": "Qwen3-32B / MATH",
+    "encoder": "minilm",
+    "n_fit": 755,
+    "n_validation": 750,
+    "n_test": 980,
+    "features_sha256": "1ea07668d4432572a3d1a99c6c6730e96f8b522b3d12bf87a48c3cb29c8fab88",
+    "split_sha256": "4af0d5bee48d37b6b2f5e5ad382dd08094300fe96b3c99753a52bfd34643e35e",
+    "score_sha256": "0bdb92fab3bcf12aea992651fa78d55a430a9eea696530ffe34ad89b6fa709c8"
+  }
+]

@@ -1,0 +1,309 @@
+{
+  "removed": [
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search",
+      "bytes": 15426342
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search_highlr",
+      "bytes": 5323387
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_raw.partial.csv",
+      "bytes": 119203
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_edit_expanded.csv",
+      "bytes": 208232
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_tuning_qwen4b_2048.csv",
+      "bytes": 481728
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_summary_qwen4b_4096.csv",
+      "bytes": 473
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_selected_hparams.csv",
+      "bytes": 699
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/status.json",
+      "bytes": 152
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_test_by_seed_qwen4b_2048_warm.csv",
+      "bytes": 401
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_test_by_seed_qwen4b_4096_cold.csv",
+      "bytes": 350
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_summary_qwen17.csv",
+      "bytes": 459
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_tuning_on_test.csv",
+      "bytes": 1134164
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_frontier.png",
+      "bytes": 107875
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/embed.log",
+      "bytes": 102703
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_edit_expanded.partial.csv",
+      "bytes": 208232
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/running_metrics_best.csv",
+      "bytes": 41892
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baseline_lr_audit.log",
+      "bytes": 376
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_test_by_seed_qwen17_warm.csv",
+      "bytes": 396
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_test_by_seed_qwen17_cold.csv",
+      "bytes": 321
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_levels.csv",
+      "bytes": 1027
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/features_qwen4b_4096.json",
+      "bytes": 127
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_tuning_qwen17.csv",
+      "bytes": 476170
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_frontier.pdf",
+      "bytes": 15572
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_mean.csv",
+      "bytes": 100779
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_test_by_seed_qwen4b_4096_warm.csv",
+      "bytes": 403
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_tuning_qwen4b_4096.csv",
+      "bytes": 477995
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/qwen17_features.npy",
+      "bytes": 24289408
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/features_qwen4b_4096.npy",
+      "bytes": 30361728
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/tune_rep.log",
+      "bytes": 2389
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_test_by_seed_qwen4b_2048_cold.csv",
+      "bytes": 345
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search_highlr.log",
+      "bytes": 1985
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baseline_lr_audit.csv",
+      "bytes": 159702
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/rep_summary_qwen4b_2048.csv",
+      "bytes": 466
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baseline_lr_audit_mean.csv",
+      "bytes": 29551
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search.log",
+      "bytes": 2917
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/frontier.log",
+      "bytes": 1647
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_frontier.log",
+      "bytes": 1751
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_raw.csv",
+      "bytes": 316617
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/baselines_raw_initial.csv",
+      "bytes": 119203
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/test_summary_best.csv",
+      "bytes": 368
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/run.log",
+      "bytes": 103633
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/qwen17_features.json",
+      "bytes": 125
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search_large/manifest.jsonl",
+      "bytes": 16380875
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search_large/mean.csv",
+      "bytes": 11001163
+    },
+    {
+      "path": "EDO-reb/rebuttal/results/ragtruth/edit_search_large/comparison.partial.csv",
+      "bytes": 3076
+    },
+    {
+      "path": "EDO-reb/rebuttal/ragtruth_search_edit.py",
+      "bytes": 4735
+    },
+    {
+      "path": "EDO-reb/rebuttal/ragtruth_report_edit_search.py",
+      "bytes": 5233
+    },
+    {
+      "path": "EDO-reb/rebuttal/run_ragtruth_edit_frontier.py",
+      "bytes": 2055
+    },
+    {
+      "path": "EDO-reb/rebuttal/run_ragtruth_edit_frontier_tmux.sh",
+      "bytes": 442
+    },
+    {
+      "path": "EDO-reb/rebuttal/run_ragtruth_frontier_tmux.sh",
+      "bytes": 418
+    },
+    {
+      "path": "EDO-reb/rebuttal/ragtruth_plot_best.py",
+      "bytes": 4044
+    },
+    {
+      "path": "EDO-reb/rebuttal/ragtruth_tune_on_test.py",
+      "bytes": 2353
+    },
+    {
+      "path": "EDO-reb/rebuttal/ragtruth_tune_rep.py",
+      "bytes": 6605
+    },
+    {
+      "path": "EDO-reb/rebuttal/run_ragtruth_tmux.sh",
+      "bytes": 1418
+    },
+    {
+      "path": "EDO-reb/rebuttal/run_ragtruth_embed_tmux.sh",
+      "bytes": 439
+    },
+    {
+      "path": "TextLens-MIA/src/__pycache__",
+      "bytes": 52236
+    },
+    {
+      "path": "TextLens-MIA/src/methods/__pycache__",
+      "bytes": 52709
+    },
+    {
+      "path": "TextLens-MIA/src/stages/__pycache__",
+      "bytes": 21705
+    },
+    {
+      "path": "TextLens-MIA/src/report/__pycache__",
+      "bytes": 60458
+    },
+    {
+      "path": "Hydra-complete/.pytest_cache",
+      "bytes": 11052
+    },
+    {
+      "path": "Hydra-complete/tests/__pycache__",
+      "bytes": 171325
+    },
+    {
+      "path": "Hydra-complete/hydra_ts/__pycache__",
+      "bytes": 162370
+    },
+    {
+      "path": "Hydra-complete/scripts/__pycache__",
+      "bytes": 19854
+    },
+    {
+      "path": "EDO-reb/__pycache__",
+      "bytes": 44888
+    },
+    {
+      "path": "EDO-reb/rebuttal/__pycache__",
+      "bytes": 231478
+    },
+    {
+      "path": "EDO-reb/data_wrappers/__pycache__",
+      "bytes": 61581
+    },
+    {
+      "path": "EDO-reb/paper_analysis/__pycache__",
+      "bytes": 21904
+    },
+    {
+      "path": "EDO-reb/methods/__pycache__",
+      "bytes": 60071
+    },
+    {
+      "path": "sparse-hadamard-experiments/__pycache__",
+      "bytes": 39561
+    },
+    {
+      "path": "sparse-hadamard-experiments/src/__pycache__",
+      "bytes": 1418449
+    },
+    {
+      "path": "sparse-hadamard-experiments/src/methods/__pycache__",
+      "bytes": 68159
+    },
+    {
+      "path": "PISO/src/__pycache__",
+      "bytes": 7157
+    },
+    {
+      "path": "PISO/src/pricing/__pycache__",
+      "bytes": 32456
+    },
+    {
+      "path": "PISO/src/bilevel/__pycache__",
+      "bytes": 53216
+    },
+    {
+      "path": "PISO/src/classification/__pycache__",
+      "bytes": 33641
+    }
+  ],
+  "removed_bytes": 109658419,
+  "ragtruth_original_bytes_approx": 210197836,
+  "ragtruth_retained_bytes": 109533099,
+  "ragtruth_net_reclaimed_bytes_approx": 100664737,
+  "disposable_project_cache_bytes": 2624270
+}

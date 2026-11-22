@@ -1,0 +1,17 @@
+type_i,type_ii,cost,max_cost,setting,method,epsilon,feasible
+0.537,0.2364698412698413,1.588,5.0,or-llama-3.3-70b-instruct_math500-full_n2500_norepeat,ours_random,0.505,False
+0.5179333333333332,0.1750031746031746,2.996,5.0,or-llama-3.3-70b-instruct_math500-full_n2500_norepeat,ours,0.505,False
+0.6473333333333332,0.1891253968253968,3.104,5.0,or-llama-3.3-70b-instruct_math500-full_n2500_norepeat,llm_select,0.505,False
+0.49533333333333335,0.1480857142857143,3.428,5.0,or-llama-3.3-70b-instruct_math500-full_n2500_norepeat,ours_llm,0.505,True
+0.21280000000000002,0.562531746031746,1.112,5.0,or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat,ours_random,0.175,False
+0.17593333333333333,0.5345619047619048,1.4,5.0,or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat,llm_select,0.175,False
+0.1835333333333333,0.48536666666666667,2.644,5.0,or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat,ours_llm,0.175,False
+0.2026,0.5311126984126984,2.084,5.0,or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat,ours,0.175,False
+0.6442666666666667,0.2784238095238095,2.356,5.0,or-qwen3-32b_math500-full_n2500_norepeat,ours_random,0.615,False
+0.605,0.18565238095238096,4.068,5.0,or-qwen3-32b_math500-full_n2500_norepeat,llm_select,0.615,True
+0.5449333333333334,0.10661428571428573,4.78,5.0,or-qwen3-32b_math500-full_n2500_norepeat,ours_llm,0.615,True
+0.5888,0.132,5.0,5.0,or-qwen3-32b_math500-full_n2500_norepeat,ours,0.615,True
+0.0556,0.730052380952381,1.816,5.0,or-qwen3-32b_popqa-test_n2500_seed42_norepeat,ours,0.0,False
+0.058399999999999994,0.7167349206349206,2.128,5.0,or-qwen3-32b_popqa-test_n2500_seed42_norepeat,ours_llm,0.0,False
+0.09019999999999999,0.7198920634920635,2.484,5.0,or-qwen3-32b_popqa-test_n2500_seed42_norepeat,llm_select,0.0,False
+0.060200000000000004,0.7679428571428571,0.896,5.0,or-qwen3-32b_popqa-test_n2500_seed42_norepeat,ours_random,0.0,False

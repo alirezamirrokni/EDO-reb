@@ -1,0 +1,178 @@
+{
+  "job": [
+    "llama_MMLU-Pro_MiniLM",
+    0,
+    0
+  ],
+  "configs": [
+    {
+      "epsilon": 0.2,
+      "policies": {
+        "adaptive": {
+          "alpha": 0.78,
+          "gamma": 1.5,
+          "budget": 5,
+          "type_i": 0.19499999999999998,
+          "type_ii": 0.39305555555555555,
+          "cost": 2.1666666666666665,
+          "coverage": 0.21666666666666667,
+          "validation_feasible": true
+        },
+        "frozen": {
+          "alpha": 0.78,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.10000000000000002,
+          "type_ii": 0.4397222222222223,
+          "cost": 0.5,
+          "coverage": 0.05000000000000001,
+          "validation_feasible": true
+        },
+        "fixed": {
+          "alpha": 0.78,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.10000000000000002,
+          "type_ii": 0.4397222222222223,
+          "cost": 0.5,
+          "coverage": 0.05000000000000001,
+          "validation_feasible": true
+        },
+        "topk": {
+          "alpha": 0.0,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.37333333333333335,
+          "type_ii": 0.2933333333333334,
+          "cost": 5.0,
+          "coverage": 0.5,
+          "validation_feasible": false
+        },
+        "dev_cost_matched": {
+          "alpha": 0.72,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.361111111111111,
+          "type_ii": 0.3825,
+          "cost": 2.2,
+          "coverage": 0.22,
+          "validation_feasible": false
+        }
+      }
+    },
+    {
+      "epsilon": 0.4,
+      "policies": {
+        "adaptive": {
+          "alpha": 0.54,
+          "gamma": 0.05,
+          "budget": 5,
+          "type_i": 0.34500000000000003,
+          "type_ii": 0.28111111111111114,
+          "cost": 4.800000000000001,
+          "coverage": 0.48,
+          "validation_feasible": true
+        },
+        "frozen": {
+          "alpha": 0.54,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.34111111111111114,
+          "type_ii": 0.2817460317460318,
+          "cost": 4.7,
+          "coverage": 0.47,
+          "validation_feasible": true
+        },
+        "fixed": {
+          "alpha": 0.54,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.34111111111111114,
+          "type_ii": 0.2817460317460318,
+          "cost": 4.7,
+          "coverage": 0.47,
+          "validation_feasible": true
+        },
+        "topk": {
+          "alpha": 0.0,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.37333333333333335,
+          "type_ii": 0.2933333333333334,
+          "cost": 5.0,
+          "coverage": 0.5,
+          "validation_feasible": true
+        },
+        "dev_cost_matched": {
+          "alpha": 0.52,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.36166666666666664,
+          "type_ii": 0.2888888888888889,
+          "cost": 4.833333333333333,
+          "coverage": 0.48333333333333334,
+          "validation_feasible": true
+        }
+      }
+    },
+    {
+      "epsilon": 0.6,
+      "policies": {
+        "adaptive": {
+          "alpha": 0.54,
+          "gamma": 0.02,
+          "budget": 5,
+          "type_i": 0.34500000000000003,
+          "type_ii": 0.28111111111111114,
+          "cost": 4.800000000000001,
+          "coverage": 0.48,
+          "validation_feasible": true
+        },
+        "frozen": {
+          "alpha": 0.54,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.34111111111111114,
+          "type_ii": 0.2817460317460318,
+          "cost": 4.7,
+          "coverage": 0.47,
+          "validation_feasible": true
+        },
+        "fixed": {
+          "alpha": 0.54,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.34111111111111114,
+          "type_ii": 0.2817460317460318,
+          "cost": 4.7,
+          "coverage": 0.47,
+          "validation_feasible": true
+        },
+        "topk": {
+          "alpha": 0.0,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.37333333333333335,
+          "type_ii": 0.2933333333333334,
+          "cost": 5.0,
+          "coverage": 0.5,
+          "validation_feasible": true
+        },
+        "dev_cost_matched": {
+          "alpha": 0.52,
+          "gamma": 0.0,
+          "budget": 5,
+          "type_i": 0.36166666666666664,
+          "type_ii": 0.2888888888888889,
+          "cost": 4.833333333333333,
+          "coverage": 0.48333333333333334,
+          "validation_feasible": true
+        }
+      }
+    }
+  ],
+  "feedback_labels_fit": 200,
+  "feedback_labels_calibration": 100,
+  "feedback_labels_validation": 100,
+  "scores_hash": "cdf8c284422a6748b1ab37221d7b8e36b7517d14fcaf7bce1fbd8cf70c6226a8"
+}

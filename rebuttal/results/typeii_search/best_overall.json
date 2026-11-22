@@ -1,0 +1,78 @@
+{
+  "lr": 4.0,
+  "warm": 0.0,
+  "combinations": 4.0,
+  "type_ii": 0.34419087301587303,
+  "cost": 4.313,
+  "mean_epsilon": 0.40755,
+  "stage": "1.7B",
+  "gamma_by_setting": {
+    "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.1,
+    "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 2.0,
+    "or-qwen3-32b_math500-full_n2500_norepeat": 0.2,
+    "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.4
+  },
+  "parameters": [
+    {
+      "lr": 4.0,
+      "warm": 0,
+      "setting": "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat",
+      "stage": "1.7B",
+      "method": "ours",
+      "gamma": 0.1,
+      "epsilon": 0.675,
+      "cap": 0.6773333333333332,
+      "feasible": true,
+      "type_i": 0.6046666666666668,
+      "type_ii": 0.08660952380952382,
+      "cost": 4.98,
+      "max_cost": 5.0
+    },
+    {
+      "lr": 4.0,
+      "warm": 0,
+      "setting": "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat",
+      "stage": "1.7B",
+      "method": "ours",
+      "gamma": 2.0,
+      "epsilon": 0.2,
+      "cap": 0.20593333333333333,
+      "feasible": true,
+      "type_i": 0.196,
+      "type_ii": 0.5150333333333333,
+      "cost": 2.872,
+      "max_cost": 5.0
+    },
+    {
+      "lr": 4.0,
+      "warm": 0,
+      "setting": "or-qwen3-32b_math500-full_n2500_norepeat",
+      "stage": "1.7B",
+      "method": "ours",
+      "gamma": 0.2,
+      "epsilon": 0.635,
+      "cap": 0.635,
+      "feasible": true,
+      "type_i": 0.5465333333333333,
+      "type_ii": 0.10498730158730159,
+      "cost": 4.832,
+      "max_cost": 5.0
+    },
+    {
+      "lr": 4.0,
+      "warm": 0,
+      "setting": "or-qwen3-32b_popqa-test_n2500_seed42_norepeat",
+      "stage": "1.7B",
+      "method": "ours",
+      "gamma": 0.4,
+      "epsilon": 0.12019999999999999,
+      "cap": 0.12019999999999999,
+      "feasible": true,
+      "type_i": 0.116,
+      "type_ii": 0.6701333333333334,
+      "cost": 4.568,
+      "max_cost": 5.0
+    }
+  ],
+  "selection_reason": "User selected 1.7B: leads on three combinations, including near tie on Qwen\u2013MATH."
+}

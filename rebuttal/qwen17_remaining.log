@@ -1,0 +1,31 @@
+DOWNLOAD pinned official Qwen3-1.7B 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  20%|██        | 2/10 [00:01<00:05,  1.48it/s]Fetching 10 files:  40%|████      | 4/10 [00:02<00:03,  1.57it/s]Fetching 10 files:  40%|████      | 4/10 [00:20<00:30,  5.10s/it]Cancellation requested; stopping current tasks.
+Fetching 10 files:  50%|█████     | 5/10 [05:57<05:57, 71.49s/it]Fetching 10 files:  60%|██████    | 6/10 [05:57<03:58, 59.57s/it]Fetching 10 files:  80%|████████  | 8/10 [05:57<01:29, 44.68s/it]
+Traceback (most recent call last):
+  File "/home/mll/alireza/EDO-reb/rebuttal/embed_qwen17_remaining.py", line 51, in <module>
+    assert np.isfinite(x[start:end]).all()
+            ^^^^^^
+  File "/home/mll/alireza/EDO-reb/rebuttal/embed_qwen17_remaining.py", line 21, in main
+    ap.add_argument('--llama-primary',action='store_true')
+  File "/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/site-packages/tqdm/contrib/concurrent.py", line 191, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/site-packages/tqdm/contrib/concurrent.py", line 163, in _executor_map
+    return list(ex.map(
+           ^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/home/mll/miniforge3/envs/textlens/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt

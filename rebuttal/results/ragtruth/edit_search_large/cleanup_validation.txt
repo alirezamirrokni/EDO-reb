@@ -1,0 +1,5 @@
+PASS: replot after deletion reproduces all comparison values within 1e-12.
+PASS: 100000 new configurations retained; SQLite quick_check ok.
+PASS: 128535 earlier seed runs retained compressed.
+PASS: decompressed manifest hash matches original protocol.
+PASS: 20 exact production-policy replay checks.

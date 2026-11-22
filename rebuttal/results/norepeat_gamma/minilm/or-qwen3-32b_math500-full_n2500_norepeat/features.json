@@ -1,0 +1,16 @@
+{
+  "fingerprint": "367c0a03e880fefba99dd6a551c1dec6be8bdec7a73cdcd2cf5f7602e6d3dfb8",
+  "completed_rows": 2500,
+  "encoder": {
+    "provider": "minilm",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "max_length": 512,
+    "encode_batch_size": 64,
+    "pooling": "mean",
+    "torch_dtype": "auto",
+    "device": "auto",
+    "normalize_features": true,
+    "cache_dir": null,
+    "dataset_name": "math500"
+  }
+}

@@ -1,0 +1,315 @@
+setting,method,kw,type_i,type_ii
+MMLU-Pro shift,conformal,"{'q': 0.02, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.04, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.06, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.08, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.1, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.12, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.14, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.16, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.18, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.2, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.22, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.24, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.26, 'warmup': 20}",0.26000000000000006,0.5799999999999998
+MMLU-Pro shift,conformal,"{'q': 0.28, 'warmup': 20}",0.26000000000000006,0.5833333333333333
+MMLU-Pro shift,conformal,"{'q': 0.3, 'warmup': 20}",0.26000000000000006,0.5857142857142856
+MMLU-Pro shift,conformal,"{'q': 0.32, 'warmup': 20}",0.2533333333333334,0.5846031746031745
+MMLU-Pro shift,conformal,"{'q': 0.34, 'warmup': 20}",0.2516666666666667,0.5834920634920634
+MMLU-Pro shift,conformal,"{'q': 0.36, 'warmup': 20}",0.24111111111111114,0.5765079365079365
+MMLU-Pro shift,conformal,"{'q': 0.38, 'warmup': 20}",0.24055555555555558,0.5830555555555555
+MMLU-Pro shift,conformal,"{'q': 0.4, 'warmup': 20}",0.23388888888888892,0.5801984126984128
+MMLU-Pro shift,conformal,"{'q': 0.42, 'warmup': 20}",0.23555555555555557,0.5824206349206349
+MMLU-Pro shift,conformal,"{'q': 0.44, 'warmup': 20}",0.22055555555555556,0.5829365079365079
+MMLU-Pro shift,conformal,"{'q': 0.46, 'warmup': 20}",0.22333333333333333,0.5853174603174603
+MMLU-Pro shift,conformal,"{'q': 0.48, 'warmup': 20}",0.21611111111111111,0.5832539682539684
+MMLU-Pro shift,conformal,"{'q': 0.5, 'warmup': 20}",0.18833333333333335,0.5867989417989418
+MMLU-Pro shift,conformal,"{'q': 0.52, 'warmup': 20}",0.21,0.5992063492063493
+MMLU-Pro shift,conformal,"{'q': 0.54, 'warmup': 20}",0.19666666666666666,0.6032804232804234
+MMLU-Pro shift,conformal,"{'q': 0.56, 'warmup': 20}",0.18444444444444444,0.6102910052910053
+MMLU-Pro shift,conformal,"{'q': 0.58, 'warmup': 20}",0.1811111111111111,0.6203174603174604
+MMLU-Pro shift,conformal,"{'q': 0.6, 'warmup': 20}",0.03111111111111111,0.6237037037037039
+MMLU-Pro shift,conformal,"{'q': 0.62, 'warmup': 20}",0.024444444444444446,0.6237037037037039
+MMLU-Pro shift,conformal,"{'q': 0.64, 'warmup': 20}",0.024444444444444446,0.6383597883597886
+MMLU-Pro shift,conformal,"{'q': 0.66, 'warmup': 20}",0.01111111111111111,0.6463624338624341
+MMLU-Pro shift,conformal,"{'q': 0.68, 'warmup': 20}",0.0,0.6483333333333335
+MMLU-Pro shift,conformal,"{'q': 0.7, 'warmup': 20}",0.0,0.6600000000000001
+MMLU-Pro shift,conformal,"{'q': 0.72, 'warmup': 20}",0.0,0.6600000000000001
+MMLU-Pro shift,conformal,"{'q': 0.74, 'warmup': 20}",0.0,0.6600000000000001
+MMLU-Pro shift,conformal,"{'q': 0.76, 'warmup': 20}",0.0,0.6600000000000001
+MMLU-Pro shift,conformal,"{'q': 0.78, 'warmup': 20}",0.0,0.6600000000000001
+MMLU-Pro shift,conformal,"{'q': 0.8, 'warmup': 20}",0.0,0.6600000000000001
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 0, 'adj_step': 0.01}",0.3333333333333333,0.6592592592592594
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 0, 'adj_step': 0.05}",0.4666666666666667,0.6740740740740744
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 1, 'adj_step': 0.01}",0.4,0.6666666666666667
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 1, 'adj_step': 0.05}",0.4,0.6666666666666667
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 0, 'adj_step': 0.01}",0.5,0.7
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 0, 'adj_step': 0.05}",0.4666666666666667,0.6916666666666667
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 1, 'adj_step': 0.01}",0.4,0.675
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 1, 'adj_step': 0.05}",0.38333333333333336,0.6708333333333333
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 0, 'adj_step': 0.01}",0.4666666666666667,0.7160714285714287
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 0, 'adj_step': 0.05}",0.45555555555555555,0.7095238095238098
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 1, 'adj_step': 0.01}",0.36666666666666664,0.6714285714285715
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 1, 'adj_step': 0.05}",0.3777777777777778,0.6761904761904762
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 0, 'adj_step': 0.01}",0.46944444444444444,0.746825396825397
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 0, 'adj_step': 0.05}",0.4305555555555555,0.7198412698412697
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 1, 'adj_step': 0.01}",0.3722222222222222,0.6809523809523809
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 1, 'adj_step': 0.05}",0.3888888888888889,0.6898809523809525
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 0, 'adj_step': 0.01}",0.45777777777777773,0.7584126984126985
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 0, 'adj_step': 0.05}",0.45444444444444443,0.7482539682539685
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 1, 'adj_step': 0.01}",0.36722222222222217,0.6787301587301589
+MMLU-Pro shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 1, 'adj_step': 0.05}",0.37,0.6777777777777778
+MMLU-Pro shift,thompson,"{'budget_per_batch': 1, 'v': 0.3}",0.13333333333333333,0.6370370370370372
+MMLU-Pro shift,thompson,"{'budget_per_batch': 1, 'v': 1.0}",0.3,0.6555555555555558
+MMLU-Pro shift,thompson,"{'budget_per_batch': 1, 'v': 3.0}",0.3333333333333333,0.6592592592592595
+MMLU-Pro shift,thompson,"{'budget_per_batch': 2, 'v': 0.3}",0.21666666666666667,0.6291666666666667
+MMLU-Pro shift,thompson,"{'budget_per_batch': 2, 'v': 1.0}",0.3,0.65
+MMLU-Pro shift,thompson,"{'budget_per_batch': 2, 'v': 3.0}",0.31666666666666665,0.6541666666666667
+MMLU-Pro shift,thompson,"{'budget_per_batch': 3, 'v': 0.3}",0.2777777777777778,0.6333333333333334
+MMLU-Pro shift,thompson,"{'budget_per_batch': 3, 'v': 1.0}",0.35555555555555546,0.6666666666666667
+MMLU-Pro shift,thompson,"{'budget_per_batch': 3, 'v': 3.0}",0.36666666666666664,0.6714285714285716
+MMLU-Pro shift,thompson,"{'budget_per_batch': 4, 'v': 0.3}",0.3,0.6333333333333333
+MMLU-Pro shift,thompson,"{'budget_per_batch': 4, 'v': 1.0}",0.36666666666666664,0.6777777777777777
+MMLU-Pro shift,thompson,"{'budget_per_batch': 4, 'v': 3.0}",0.36666666666666664,0.6777777777777778
+MMLU-Pro shift,thompson,"{'budget_per_batch': 5, 'v': 0.3}",0.3133333333333333,0.6333333333333333
+MMLU-Pro shift,thompson,"{'budget_per_batch': 5, 'v': 1.0}",0.3733333333333333,0.6933333333333334
+MMLU-Pro shift,thompson,"{'budget_per_batch': 5, 'v': 3.0}",0.4,0.7200000000000002
+MMLU-Pro shift,topk,{'budget_per_batch': 1.0},0.1,0.6333333333333334
+MMLU-Pro shift,topk,{'budget_per_batch': 2.0},0.15,0.6125
+MMLU-Pro shift,topk,{'budget_per_batch': 3.0},0.17777777777777773,0.5904761904761905
+MMLU-Pro shift,topk,{'budget_per_batch': 4.0},0.2,0.5666666666666667
+MMLU-Pro shift,topk,{'budget_per_batch': 5.0},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.0},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.02},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.04},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.06},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.08},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.1},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.12},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.14},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.16},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.18},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.2},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.22},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.24},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.26},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.28},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.3},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.32},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.34},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.36},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.38},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.4},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.42},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.44},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.46},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.48},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.5},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.52},0.2333333333333334,0.5533333333333332
+MMLU-Pro shift,tau,{'tau': 0.54},0.22666666666666668,0.5466666666666666
+MMLU-Pro shift,tau,{'tau': 0.56},0.25333333333333335,0.5733333333333334
+MMLU-Pro shift,tau,{'tau': 0.58},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.6},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.62},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.64},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.66},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.68},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.7},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.72},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.74},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.76},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.78},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.8},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.82},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.84},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.86},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.88},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.9},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.92},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.94},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.96},0.0,0.6600000000000001
+MMLU-Pro shift,tau,{'tau': 0.98},0.0,0.6600000000000001
+PopQA shift,conformal,"{'q': 0.02, 'warmup': 20}",0.41500000000000004,0.345
+PopQA shift,conformal,"{'q': 0.04, 'warmup': 20}",0.41500000000000004,0.345
+PopQA shift,conformal,"{'q': 0.06, 'warmup': 20}",0.41375,0.3441666666666666
+PopQA shift,conformal,"{'q': 0.08, 'warmup': 20}",0.41375,0.3441666666666666
+PopQA shift,conformal,"{'q': 0.1, 'warmup': 20}",0.4033333333333333,0.35738095238095235
+PopQA shift,conformal,"{'q': 0.12, 'warmup': 20}",0.4033333333333333,0.35738095238095235
+PopQA shift,conformal,"{'q': 0.14, 'warmup': 20}",0.37875000000000003,0.34869047619047616
+PopQA shift,conformal,"{'q': 0.16, 'warmup': 20}",0.36875,0.35583333333333333
+PopQA shift,conformal,"{'q': 0.18, 'warmup': 20}",0.36416666666666664,0.357281746031746
+PopQA shift,conformal,"{'q': 0.2, 'warmup': 20}",0.35333333333333333,0.35874007936507935
+PopQA shift,conformal,"{'q': 0.22, 'warmup': 20}",0.30333333333333334,0.36346230158730153
+PopQA shift,conformal,"{'q': 0.24, 'warmup': 20}",0.30208333333333337,0.374890873015873
+PopQA shift,conformal,"{'q': 0.26, 'warmup': 20}",0.30500000000000005,0.3987797619047619
+PopQA shift,conformal,"{'q': 0.28, 'warmup': 20}",0.28125,0.4053472222222222
+PopQA shift,conformal,"{'q': 0.3, 'warmup': 20}",0.15291666666666665,0.4161309523809524
+PopQA shift,conformal,"{'q': 0.32, 'warmup': 20}",0.0,0.45916666666666667
+PopQA shift,conformal,"{'q': 0.34, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.36, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.38, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.4, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.42, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.44, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.46, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.48, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.5, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.52, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.54, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.56, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.58, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.6, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.62, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.64, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.66, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.68, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.7, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.72, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.74, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.76, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.78, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,conformal,"{'q': 0.8, 'warmup': 20}",0.0,0.46499999999999997
+PopQA shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 0, 'adj_step': 0.01}",0.475,0.4583333333333333
+PopQA shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 0, 'adj_step': 0.05}",0.475,0.4583333333333333
+PopQA shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 1, 'adj_step': 0.01}",0.575,0.46944444444444444
+PopQA shift,zliobaite,"{'budget_per_batch': 1, 'randomized': 1, 'adj_step': 0.05}",0.6,0.47222222222222215
+PopQA shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 0, 'adj_step': 0.01}",0.4875,0.453125
+PopQA shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 0, 'adj_step': 0.05}",0.45,0.44375
+PopQA shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 1, 'adj_step': 0.01}",0.6,0.48125
+PopQA shift,zliobaite,"{'budget_per_batch': 2, 'randomized': 1, 'adj_step': 0.05}",0.6125,0.484375
+PopQA shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 0, 'adj_step': 0.01}",0.4875,0.4459821428571429
+PopQA shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 0, 'adj_step': 0.05}",0.475,0.4392857142857142
+PopQA shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 1, 'adj_step': 0.01}",0.6041666666666666,0.4946428571428571
+PopQA shift,zliobaite,"{'budget_per_batch': 3, 'randomized': 1, 'adj_step': 0.05}",0.6,0.49330357142857134
+PopQA shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 0, 'adj_step': 0.01}",0.4916666666666666,0.44528769841269844
+PopQA shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 0, 'adj_step': 0.05}",0.5020833333333333,0.43809523809523815
+PopQA shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 1, 'adj_step': 0.01}",0.5895833333333333,0.5017857142857143
+PopQA shift,zliobaite,"{'budget_per_batch': 4, 'randomized': 1, 'adj_step': 0.05}",0.5958333333333333,0.5052083333333333
+PopQA shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 0, 'adj_step': 0.01}",0.49083333333333334,0.4088988095238095
+PopQA shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 0, 'adj_step': 0.05}",0.5183333333333333,0.4385714285714285
+PopQA shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 1, 'adj_step': 0.01}",0.58375,0.5069047619047619
+PopQA shift,zliobaite,"{'budget_per_batch': 5, 'randomized': 1, 'adj_step': 0.05}",0.5833333333333334,0.5031845238095238
+PopQA shift,thompson,"{'budget_per_batch': 1, 'v': 0.3}",0.275,0.43611111111111106
+PopQA shift,thompson,"{'budget_per_batch': 1, 'v': 1.0}",0.325,0.4416666666666666
+PopQA shift,thompson,"{'budget_per_batch': 1, 'v': 3.0}",0.35,0.4444444444444445
+PopQA shift,thompson,"{'budget_per_batch': 2, 'v': 0.3}",0.3,0.40625
+PopQA shift,thompson,"{'budget_per_batch': 2, 'v': 1.0}",0.3625,0.421875
+PopQA shift,thompson,"{'budget_per_batch': 2, 'v': 3.0}",0.4875,0.453125
+PopQA shift,thompson,"{'budget_per_batch': 3, 'v': 0.3}",0.3166666666666666,0.37142857142857144
+PopQA shift,thompson,"{'budget_per_batch': 3, 'v': 1.0}",0.4083333333333333,0.4107142857142857
+PopQA shift,thompson,"{'budget_per_batch': 3, 'v': 3.0}",0.4833333333333333,0.4428571428571429
+PopQA shift,thompson,"{'budget_per_batch': 4, 'v': 0.3}",0.3625,0.35
+PopQA shift,thompson,"{'budget_per_batch': 4, 'v': 1.0}",0.4375,0.39999999999999997
+PopQA shift,thompson,"{'budget_per_batch': 4, 'v': 3.0}",0.475,0.425
+PopQA shift,thompson,"{'budget_per_batch': 5, 'v': 0.3}",0.4,0.33
+PopQA shift,thompson,"{'budget_per_batch': 5, 'v': 1.0}",0.43499999999999994,0.365
+PopQA shift,thompson,"{'budget_per_batch': 5, 'v': 3.0}",0.5,0.43
+PopQA shift,topk,{'budget_per_batch': 1.0},0.35,0.4444444444444445
+PopQA shift,topk,{'budget_per_batch': 2.0},0.2625,0.396875
+PopQA shift,topk,{'budget_per_batch': 3.0},0.325,0.375
+PopQA shift,topk,{'budget_per_batch': 4.0},0.35625,0.3458333333333333
+PopQA shift,topk,{'budget_per_batch': 5.0},0.375,0.305
+PopQA shift,tau,{'tau': 0.0},0.375,0.305
+PopQA shift,tau,{'tau': 0.02},0.375,0.305
+PopQA shift,tau,{'tau': 0.04},0.375,0.305
+PopQA shift,tau,{'tau': 0.06},0.375,0.305
+PopQA shift,tau,{'tau': 0.08},0.375,0.305
+PopQA shift,tau,{'tau': 0.1},0.375,0.305
+PopQA shift,tau,{'tau': 0.12},0.375,0.305
+PopQA shift,tau,{'tau': 0.14},0.375,0.305
+PopQA shift,tau,{'tau': 0.16},0.375,0.305
+PopQA shift,tau,{'tau': 0.18},0.375,0.305
+PopQA shift,tau,{'tau': 0.2},0.375,0.305
+PopQA shift,tau,{'tau': 0.22},0.375,0.305
+PopQA shift,tau,{'tau': 0.24},0.375,0.305
+PopQA shift,tau,{'tau': 0.26},0.375,0.305
+PopQA shift,tau,{'tau': 0.28},0.375,0.305
+PopQA shift,tau,{'tau': 0.3},0.375,0.305
+PopQA shift,tau,{'tau': 0.32},0.37,0.3
+PopQA shift,tau,{'tau': 0.34},0.38,0.31
+PopQA shift,tau,{'tau': 0.36},0.38,0.31
+PopQA shift,tau,{'tau': 0.38},0.395,0.325
+PopQA shift,tau,{'tau': 0.4},0.4025,0.33333333333333337
+PopQA shift,tau,{'tau': 0.42},0.40750000000000003,0.3425
+PopQA shift,tau,{'tau': 0.44},0.075,0.4622916666666666
+PopQA shift,tau,{'tau': 0.46},0.36625,0.35393849206349204
+PopQA shift,tau,{'tau': 0.48},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.5},0.3383333333333333,0.35780753968253964
+PopQA shift,tau,{'tau': 0.52},0.35375,0.38027777777777777
+PopQA shift,tau,{'tau': 0.54},0.2945833333333333,0.3716269841269841
+PopQA shift,tau,{'tau': 0.56},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.58},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.6},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.62},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.64},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.66},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.68},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.7},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.72},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.74},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.76},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.78},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.8},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.82},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.84},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.86},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.88},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.9},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.92},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.94},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.96},0.0,0.46499999999999997
+PopQA shift,tau,{'tau': 0.98},0.0,0.46499999999999997
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.1), 'dual_step': 0.063, 'horizon': 200}",0.20000000000000007,0.5779365079365079
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.1), 'dual_step': 0.25, 'horizon': 200}",0.20000000000000007,0.5779365079365079
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.1), 'dual_step': 1.0, 'horizon': 200}",0.20000000000000007,0.5779365079365079
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.15), 'dual_step': 0.063, 'horizon': 200}",0.20000000000000007,0.5779365079365079
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.15), 'dual_step': 0.25, 'horizon': 200}",0.20000000000000007,0.5779365079365079
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.15), 'dual_step': 1.0, 'horizon': 200}",0.20000000000000007,0.5779365079365079
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.2), 'dual_step': 0.063, 'horizon': 200}",0.19333333333333336,0.5781481481481481
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.2), 'dual_step': 0.25, 'horizon': 200}",0.19333333333333336,0.5781481481481481
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.2), 'dual_step': 1.0, 'horizon': 200}",0.19333333333333336,0.5781481481481481
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.25), 'dual_step': 0.063, 'horizon': 200}",0.23333333333333336,0.5592592592592592
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.25), 'dual_step': 0.25, 'horizon': 200}",0.24444444444444446,0.5707936507936507
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.25), 'dual_step': 1.0, 'horizon': 200}",0.24444444444444446,0.5707936507936507
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.3), 'dual_step': 0.063, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.3), 'dual_step': 0.25, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.3), 'dual_step': 1.0, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.35), 'dual_step': 0.063, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.35), 'dual_step': 0.25, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.35), 'dual_step': 1.0, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.4), 'dual_step': 0.063, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.4), 'dual_step': 0.25, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.4), 'dual_step': 1.0, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.45), 'dual_step': 0.063, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.45), 'dual_step': 0.25, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.45), 'dual_step': 1.0, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.5), 'dual_step': 0.063, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.5), 'dual_step': 0.25, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+MMLU-Pro shift,gollapudi,"{'epsilon': np.float64(0.5), 'dual_step': 1.0, 'horizon': 200}",0.24000000000000005,0.5599999999999999
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.1), 'dual_step': 0.063, 'horizon': 180}",0.30541666666666667,0.39276785714285717
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.1), 'dual_step': 0.25, 'horizon': 180}",0.26166666666666666,0.404156746031746
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.1), 'dual_step': 1.0, 'horizon': 180}",0.26625000000000004,0.39479166666666665
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.15), 'dual_step': 0.063, 'horizon': 180}",0.30541666666666667,0.39276785714285717
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.15), 'dual_step': 0.25, 'horizon': 180}",0.2854166666666667,0.41387896825396825
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.15), 'dual_step': 1.0, 'horizon': 180}",0.26250000000000007,0.3936111111111111
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.2), 'dual_step': 0.063, 'horizon': 180}",0.32541666666666663,0.38228174603174603
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.2), 'dual_step': 0.25, 'horizon': 180}",0.28041666666666665,0.40776785714285707
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.2), 'dual_step': 1.0, 'horizon': 180}",0.24500000000000002,0.3901190476190476
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.25), 'dual_step': 0.063, 'horizon': 180}",0.34541666666666665,0.39276785714285717
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.25), 'dual_step': 0.25, 'horizon': 180}",0.30041666666666667,0.4027678571428571
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.25), 'dual_step': 1.0, 'horizon': 180}",0.2675,0.3908333333333333
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.3), 'dual_step': 0.063, 'horizon': 180}",0.32999999999999996,0.38646825396825396
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.3), 'dual_step': 0.25, 'horizon': 180}",0.32999999999999996,0.38646825396825396
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.3), 'dual_step': 1.0, 'horizon': 180}",0.335,0.3783333333333333
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.35), 'dual_step': 0.063, 'horizon': 180}",0.3383333333333334,0.38392857142857145
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.35), 'dual_step': 0.25, 'horizon': 180}",0.3383333333333334,0.38392857142857145
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.35), 'dual_step': 1.0, 'horizon': 180}",0.3516666666666667,0.3848015873015873
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.4), 'dual_step': 0.063, 'horizon': 180}",0.38125,0.3730555555555556
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.4), 'dual_step': 0.25, 'horizon': 180}",0.38125,0.3730555555555556
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.4), 'dual_step': 1.0, 'horizon': 180}",0.38125,0.3730555555555556
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.45), 'dual_step': 0.063, 'horizon': 180}",0.40125,0.35444444444444445
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.45), 'dual_step': 0.25, 'horizon': 180}",0.40125,0.35444444444444445
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.45), 'dual_step': 1.0, 'horizon': 180}",0.40125,0.35444444444444445
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.5), 'dual_step': 0.063, 'horizon': 180}",0.43166666666666664,0.3681746031746032
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.5), 'dual_step': 0.25, 'horizon': 180}",0.43166666666666664,0.3681746031746032
+PopQA shift,gollapudi,"{'epsilon': np.float64(0.5), 'dual_step': 1.0, 'horizon': 180}",0.43166666666666664,0.3681746031746032

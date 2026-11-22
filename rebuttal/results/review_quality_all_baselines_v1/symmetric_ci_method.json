@@ -1,0 +1,10 @@
+{
+  "resamples": 20000,
+  "seed": 20261116,
+  "n_orders": 30,
+  "epsilon": 0.4,
+  "probe": 0,
+  "method": "percentile bootstrap of means and paired differences",
+  "differences": "baseline minus EDIT",
+  "existing_intervals_verified": true
+}

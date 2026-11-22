@@ -1,0 +1,14 @@
+{
+  "time_utc": "2026-11-09T10:36:10Z",
+  "phase": "complete",
+  "encoder": "4B",
+  "gamma_by_setting": {
+    "or-llama-3.3-70b-instruct_math500-full_n2500_norepeat": 0.02,
+    "or-llama-3.3-70b-instruct_popqa-test_n2500_seed42_norepeat": 2.0,
+    "or-qwen3-32b_math500-full_n2500_norepeat": 0.0,
+    "or-qwen3-32b_popqa-test_n2500_seed42_norepeat": 0.0
+  },
+  "lr": 8.0,
+  "warm": 0.0,
+  "mean_type_ii": 0.3353936507936508
+}

@@ -1,0 +1,38 @@
+[2026-11-11T00:41:14Z] frontier start
+[score_model:minilm] loading encoder: sentence-transformers/all-MiniLM-L6-v2
+[score_model:minilm] loaded model=sentence-transformers/all-MiniLM-L6-v2 pooling=mean max_length=512 batch_size=64 device=cuda:0 normalize=True
+[score_model:minilm] loading encoder: sentence-transformers/all-MiniLM-L6-v2
+[score_model:minilm] loaded model=sentence-transformers/all-MiniLM-L6-v2 pooling=mean max_length=512 batch_size=64 device=cuda:0 normalize=True
+7520 runs
+250/7520  elapsed 1.2 min  eta 34.1 min
+500/7520  elapsed 2.0 min  eta 27.9 min
+750/7520  elapsed 2.8 min  eta 25.4 min
+1000/7520  elapsed 3.6 min  eta 23.7 min
+1250/7520  elapsed 4.9 min  eta 24.3 min
+1500/7520  elapsed 6.6 min  eta 26.5 min
+1750/7520  elapsed 7.8 min  eta 25.6 min
+2000/7520  elapsed 8.5 min  eta 23.4 min
+2250/7520  elapsed 9.3 min  eta 21.8 min
+2500/7520  elapsed 10.1 min  eta 20.3 min
+2750/7520  elapsed 10.9 min  eta 19.0 min
+3000/7520  elapsed 11.8 min  eta 17.8 min
+3250/7520  elapsed 12.6 min  eta 16.5 min
+3500/7520  elapsed 13.8 min  eta 15.9 min
+3750/7520  elapsed 14.7 min  eta 14.8 min
+4000/7520  elapsed 15.7 min  eta 13.8 min
+4250/7520  elapsed 16.8 min  eta 12.9 min
+4500/7520  elapsed 17.6 min  eta 11.8 min
+4750/7520  elapsed 18.4 min  eta 10.7 min
+5000/7520  elapsed 19.1 min  eta 9.6 min
+5250/7520  elapsed 19.8 min  eta 8.6 min
+5500/7520  elapsed 20.8 min  eta 7.6 min
+5750/7520  elapsed 21.4 min  eta 6.6 min
+6000/7520  elapsed 22.1 min  eta 5.6 min
+6250/7520  elapsed 22.9 min  eta 4.7 min
+6500/7520  elapsed 23.6 min  eta 3.7 min
+6750/7520  elapsed 24.3 min  eta 2.8 min
+7000/7520  elapsed 24.9 min  eta 1.9 min
+7250/7520  elapsed 26.0 min  eta 1.0 min
+7500/7520  elapsed 26.6 min  eta 0.1 min
+7520/7520  elapsed 26.7 min  eta 0.0 min
+[2026-11-11T01:08:26Z] FRONTIER_DONE

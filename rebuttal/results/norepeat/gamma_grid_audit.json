@@ -1,0 +1,200 @@
+{
+  "source": "baselines_edit_qwen17_raw.csv",
+  "scope": "Four no-repeat Qwen3-1.7B EDIT frontiers, LR4, warm0, five seeds. All achieved Type-I breakpoints and curve endpoints checked.",
+  "original_grid": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.068,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    5.0,
+    10.0
+  ],
+  "frontier_subsets": [
+    {
+      "max_allowed_typeii_increase": 0.0,
+      "grid": [
+        0.005,
+        0.01,
+        0.02,
+        0.05,
+        0.068,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        5.0,
+        10.0
+      ],
+      "size": 18,
+      "optimal": true,
+      "max_gap_by_setting": {
+        "Llama-3.3-70B / MATH": 0.0,
+        "Llama-3.3-70B / PopQA": 0.0,
+        "Qwen3-32B / MATH": 0.0,
+        "Qwen3-32B / PopQA": 0.0
+      }
+    },
+    {
+      "max_allowed_typeii_increase": 0.0005,
+      "grid": [
+        0.005,
+        0.01,
+        0.02,
+        0.05,
+        0.068,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        5.0,
+        10.0
+      ],
+      "size": 18,
+      "optimal": true,
+      "max_gap_by_setting": {
+        "Llama-3.3-70B / MATH": 0.0,
+        "Llama-3.3-70B / PopQA": 0.0,
+        "Qwen3-32B / MATH": 0.0,
+        "Qwen3-32B / PopQA": 0.0
+      }
+    },
+    {
+      "max_allowed_typeii_increase": 0.001,
+      "grid": [
+        0.005,
+        0.01,
+        0.02,
+        0.05,
+        0.068,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        5.0,
+        10.0
+      ],
+      "size": 17,
+      "optimal": true,
+      "max_gap_by_setting": {
+        "Llama-3.3-70B / MATH": 0.0007567287784678994,
+        "Llama-3.3-70B / PopQA": 0.00017391304347824654,
+        "Qwen3-32B / MATH": 0.0,
+        "Qwen3-32B / PopQA": 0.0
+      }
+    },
+    {
+      "max_allowed_typeii_increase": 0.002,
+      "grid": [
+        0.005,
+        0.01,
+        0.02,
+        0.05,
+        0.068,
+        0.1,
+        0.15,
+        0.2,
+        0.3,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        5.0,
+        10.0
+      ],
+      "size": 17,
+      "optimal": true,
+      "max_gap_by_setting": {
+        "Llama-3.3-70B / MATH": 0.0007567287784678994,
+        "Llama-3.3-70B / PopQA": 0.00017391304347824654,
+        "Qwen3-32B / MATH": 0.0,
+        "Qwen3-32B / PopQA": 0.0
+      }
+    },
+    {
+      "max_allowed_typeii_increase": 0.005,
+      "grid": [
+        0.005,
+        0.01,
+        0.02,
+        0.1,
+        0.3,
+        0.5,
+        0.75,
+        2.0,
+        3.0,
+        5.0,
+        10.0
+      ],
+      "size": 11,
+      "optimal": true,
+      "max_gap_by_setting": {
+        "Llama-3.3-70B / MATH": 0.0049579020013802155,
+        "Llama-3.3-70B / PopQA": 0.0037805383022774253,
+        "Qwen3-32B / MATH": 0.004469634230503727,
+        "Qwen3-32B / PopQA": 0.004956521739130415
+      }
+    },
+    {
+      "max_allowed_typeii_increase": 0.01,
+      "grid": [
+        0.02,
+        0.5,
+        5.0,
+        10.0
+      ],
+      "size": 4,
+      "optimal": true,
+      "max_gap_by_setting": {
+        "Llama-3.3-70B / MATH": 0.00818978605935125,
+        "Llama-3.3-70B / PopQA": 0.008344720496894498,
+        "Qwen3-32B / MATH": 0.00945376121463079,
+        "Qwen3-32B / PopQA": 0.009746376811594293
+      }
+    }
+  ],
+  "exact_table_only_grid": [
+    0.005,
+    0.02,
+    0.2,
+    0.3,
+    1.0,
+    3.0,
+    5.0,
+    10.0
+  ]
+}

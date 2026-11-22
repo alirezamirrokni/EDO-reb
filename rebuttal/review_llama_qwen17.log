@@ -1,0 +1,196 @@
+DOWNLOAD pinned official Qwen3-1.7B 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  40%|████      | 4/10 [00:20<00:30,  5.00s/it]Fetching 10 files:  50%|█████     | 5/10 [15:40<15:40, 188.13s/it]Fetching 10 files:  70%|███████   | 7/10 [20:41<08:51, 177.33s/it]Fetching 10 files:  80%|████████  | 8/10 [20:42<05:10, 155.27s/it]Fetching 10 files:  90%|█████████ | 9/10 [20:43<02:18, 138.19s/it]Fetching 10 files: 100%|██████████| 10/10 [22:27<00:00, 134.74s/it]Fetching 10 files: 100%|██████████| 10/10 [22:27<00:00, 134.74s/it]
+[score_model:qwen3] loading frozen encoder: /home/mll/alireza/or_runs/models/Qwen3-1.7B
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 35.25it/s]
+[score_model:qwen3] loaded model=/home/mll/alireza/or_runs/models/Qwen3-1.7B hidden_size=2048 pooling=last max_length=512 batch_size=4 device=cuda:0 dtype=torch.bfloat16 normalize=True cache_embeddings=False
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 32 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 64 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 96 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 128 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 160 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 192 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 224 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 256 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 288 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 320 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 352 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 384 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 416 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 448 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 480 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MATH-500 500 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 32 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 64 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 96 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 128 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 160 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 192 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 224 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 256 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 288 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 320 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 352 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 384 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 416 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 448 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 480 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_MMLU-Pro 500 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 32 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 64 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 96 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 128 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 160 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 192 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 224 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 256 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 288 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 320 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 352 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 384 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 416 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 448 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 480 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_PopQA 500 500
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 32 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 64 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 96 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 128 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 160 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 192 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 224 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 256 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 288 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 320 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 352 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 384 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 416 448
+/home/mll/alireza/or_runs/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2919: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+EMBED llama_GPQA 448 448
+ALL FOUR EMBEDDING CACHES COMPLETE
+rebuttal/launch_llama_qwen17.sh: line 7: --output: command not found
+PIPELINE_EXIT_CODE=127

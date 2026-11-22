@@ -1,0 +1,23 @@
+[run] name=llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7 method=llm_select
+[run] run csv=outputs/llama-3.3-70b-versatile_math500-test/llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7.csv
+[cache] generation cache: outputs/llama-3.3-70b-versatile_math500-test/gen_llama-3.3-70b-versatile_math500-test.csv
+[cache] cached_total=500 loaded_unique_for_this_run=20 missing_unique=0 requested_rows=20 requested_unique=20
+[cache] cached model accuracy on requested unique rows=0.8500 (17/20)
+[resume] loaded 1 completed batches / 10 rows
+[openrouter] model=meta-llama/llama-3.3-70b-instruct provider_routing={'only': ['CoreWeave'], 'allow_fallbacks': False} max_output_tokens=512 key_fingerprint=0233cbf4453a
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7:   0%|          | 0/2 [00:00<?, ?it/s]llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7:   0%|          | 0/2 [00:00<?, ?it/s, acc=0.900][llm_select] selector call/parse failed at batch 1: OpenRouter call failed after 1 attempts: HTTP 403: { "success": false, "error": "Access denied by security policy." }
+llm_select_llama-3.3-70b-versatile_math500-test_budget5_or-llama-3.3-70b-instruct_promptlegacy_full_context_seed7:  50%|█████     | 1/2 [00:02<00:02,  2.34s/it, acc=0.900]
+Traceback (most recent call last):
+  File "/home/mll/alireza/EDO-reb/run_experiment.py", line 608, in <module>
+    main()
+  File "/home/mll/alireza/EDO-reb/run_experiment.py", line 589, in main
+    run(
+  File "/home/mll/alireza/EDO-reb/run_experiment.py", line 508, in run
+    out_batch, new_method_state = method.process_batch(batch_df, t=t)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/alireza/EDO-reb/methods/llm_select.py", line 334, in process_batch
+    response = self.selector_llm.generate(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mll/alireza/EDO-reb/models/openrouter.py", line 84, in generate
+    raise RuntimeError(f"OpenRouter call failed after {self.cfg.retry_attempts} attempts: {last_err}")
+RuntimeError: OpenRouter call failed after 1 attempts: HTTP 403: { "success": false, "error": "Access denied by security policy." }

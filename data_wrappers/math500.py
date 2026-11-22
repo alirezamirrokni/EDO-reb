@@ -184,13 +184,34 @@ class Math500Wrapper:
     def __init__(self, cfg: Dict[str, Any]):
         self.cfg = cfg
 
+    def _local_rows(self) -> List[tuple]:
+        import numpy as np
+        import pandas as pd
+
+        frame = pd.concat([pd.read_parquet(f) for f in self.cfg["local_files"]], ignore_index=True)
+        rows = list(enumerate(frame.to_dict("records")))
+        exclude = self.cfg.get("exclude_hf_name")
+        if exclude:
+            held_out = {str(r["problem"]).strip() for r in load_dataset(exclude, split="test")}
+            rows = [(i, r) for i, r in rows if str(r["problem"]).strip() not in held_out]
+        size = int(self.cfg.get("subset_size", len(rows)))
+        if size > len(rows):
+            raise ValueError(f"Requested math subset_size={size}, but only {len(rows)} rows are available.")
+        rng = np.random.default_rng(int(self.cfg.get("subset_seed", 42)))
+        keep = sorted(rng.permutation(len(rows))[:size].tolist())
+        return [rows[k] for k in keep]
+
     def load_records(self) -> List[Dict[str, Any]]:
-        ds = load_dataset(
-            self.cfg.get("hf_name", "HuggingFaceH4/MATH-500"),
-            split=self.cfg.get("split", "test"),
-        )
+        if self.cfg.get("local_files"):
+            source = self._local_rows()
+        else:
+            ds = load_dataset(
+                self.cfg.get("hf_name", "HuggingFaceH4/MATH-500"),
+                split=self.cfg.get("split", "test"),
+            )
+            source = list(enumerate(ds))
         records = []
-        for idx, row in enumerate(ds):
+        for idx, row in source:
             problem = row.get("problem") or row.get("question") or row.get("input")
             solution = row.get("solution", "")
             answer = row.get("answer") or final_answer_from_text(solution)

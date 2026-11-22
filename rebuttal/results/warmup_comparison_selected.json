@@ -1,0 +1,250 @@
+[
+  {
+    "setting": "GPQA",
+    "method": "conformal",
+    "feasible": true,
+    "params": {
+      "q": 0.38,
+      "warmup": 20.0
+    }
+  },
+  {
+    "setting": "GPQA",
+    "method": "edit",
+    "feasible": true,
+    "params": {
+      "alpha_step_size": 0.1,
+      "epsilon": 0.38
+    }
+  },
+  {
+    "setting": "GPQA",
+    "method": "gollapudi",
+    "feasible": true,
+    "params": {
+      "dual_step": 0.063,
+      "epsilon": 0.6
+    }
+  },
+  {
+    "setting": "GPQA",
+    "method": "tau",
+    "feasible": true,
+    "params": {
+      "tau": 0.4
+    }
+  },
+  {
+    "setting": "GPQA",
+    "method": "thompson",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 5.0,
+      "v": 0.3
+    }
+  },
+  {
+    "setting": "GPQA",
+    "method": "topk",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 5.0
+    }
+  },
+  {
+    "setting": "GPQA",
+    "method": "zliobaite",
+    "feasible": false,
+    "params": {
+      "adj_step": 0.05,
+      "budget_per_batch": 5.0,
+      "randomized": 0.0
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "conformal",
+    "feasible": true,
+    "params": {
+      "q": 0.18,
+      "warmup": 20.0
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "edit",
+    "feasible": true,
+    "params": {
+      "alpha_step_size": 0.02,
+      "epsilon": 0.36
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "gollapudi",
+    "feasible": true,
+    "params": {
+      "dual_step": 0.063,
+      "epsilon": 0.44
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "tau",
+    "feasible": true,
+    "params": {
+      "tau": 0.44
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "thompson",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 3.0,
+      "v": 0.3
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "topk",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 3.0
+    }
+  },
+  {
+    "setting": "MATH-500",
+    "method": "zliobaite",
+    "feasible": false,
+    "params": {
+      "adj_step": 0.01,
+      "budget_per_batch": 5.0,
+      "randomized": 0.0
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "conformal",
+    "feasible": true,
+    "params": {
+      "q": 0.16,
+      "warmup": 20.0
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "edit",
+    "feasible": true,
+    "params": {
+      "alpha_step_size": 0.02,
+      "epsilon": 0.26
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "gollapudi",
+    "feasible": true,
+    "params": {
+      "dual_step": 0.063,
+      "epsilon": 0.4
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "tau",
+    "feasible": true,
+    "params": {
+      "tau": 0.44
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "thompson",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 5.0,
+      "v": 0.3
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "topk",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 5.0
+    }
+  },
+  {
+    "setting": "MMLU-Pro",
+    "method": "zliobaite",
+    "feasible": false,
+    "params": {
+      "adj_step": 0.01,
+      "budget_per_batch": 5.0,
+      "randomized": 0.0
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "conformal",
+    "feasible": true,
+    "params": {
+      "q": 0.02,
+      "warmup": 20.0
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "edit",
+    "feasible": true,
+    "params": {
+      "alpha_step_size": 0.1,
+      "epsilon": 0.28
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "gollapudi",
+    "feasible": true,
+    "params": {
+      "dual_step": 0.063,
+      "epsilon": 0.38
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "tau",
+    "feasible": true,
+    "params": {
+      "tau": 0.42
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "thompson",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 5.0,
+      "v": 0.3
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "topk",
+    "feasible": true,
+    "params": {
+      "budget_per_batch": 5.0
+    }
+  },
+  {
+    "setting": "PopQA",
+    "method": "zliobaite",
+    "feasible": true,
+    "params": {
+      "adj_step": 0.01,
+      "budget_per_batch": 1.0,
+      "randomized": 1.0
+    }
+  }
+]

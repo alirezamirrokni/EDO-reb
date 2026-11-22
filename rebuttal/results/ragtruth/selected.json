@@ -1,0 +1,18 @@
+{
+  "epsilon": 0.45,
+  "rep_type_ii": 0.2444276860810728,
+  "rep_cost": 4.882868525896415,
+  "rep_gamma": 0.05,
+  "rep_lr": 8.0,
+  "rep_warm": 0.0,
+  "rep_type_i": 0.3616201859229752,
+  "llm_type_ii": 0.183585657370518,
+  "llm_cost": 5.0,
+  "llm_gamma": 0.0,
+  "llm_warm": 0.0,
+  "llm_type_i": 0.3128286852589646,
+  "train_llm_select_type_i": 0.5091633466135459,
+  "train_llm_select_type_ii": 0.3792828685258965,
+  "type_i_cap": 0.5391633466135459,
+  "selection_note": "No best/co-best REP point on training; minimum REP Type-II selected"
+}

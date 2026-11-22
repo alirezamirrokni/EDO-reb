@@ -1,0 +1,8 @@
+{
+  "train": 7000,
+  "development": 1000,
+  "test": 1000,
+  "dev_edit_rate": 0.701,
+  "test_edit_rate": 0.63,
+  "test_label_hter_disagreement": 1
+}

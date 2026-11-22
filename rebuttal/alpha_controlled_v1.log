@@ -1,0 +1,27 @@
+PASS production update, threshold tie-breaking, paper metrics, frozen-alpha invariance
+LOCKED Llama-3.3-70B / MATH 1.7B [(0.2, 0.48, 0.15), (0.4, 0.42, 1.5), (0.6, 0.16, 0.068)]
+LOCKED Llama-3.3-70B / MATH minilm [(0.2, 0.54, 5.0), (0.4, 0.48, 1.5), (0.6, 0.3, 0.05)]
+LOCKED Qwen3-32B / MATH 1.7B [(0.2, 0.52, 0.05), (0.4, 0.42, 0.0), (0.6, 0.12, 0.0)]
+LOCKED Qwen3-32B / MATH minilm [(0.2, 0.5, 0.15), (0.4, 0.4, 0.05), (0.6, 0.22, 0.0)]
+ALL FOUR CONFIGURATIONS LOCKED; beginning test evaluation
+TESTED or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B 0.2
+TESTED or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B 0.4
+TESTED or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_1.7B 0.6
+TESTED or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm 0.2
+TESTED or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm 0.4
+TESTED or-llama-3.3-70b-instruct_math500-full_n2500_norepeat_minilm 0.6
+TESTED or-qwen3-32b_math500-full_n2500_norepeat_1.7B 0.2
+TESTED or-qwen3-32b_math500-full_n2500_norepeat_1.7B 0.4
+TESTED or-qwen3-32b_math500-full_n2500_norepeat_1.7B 0.6
+TESTED or-qwen3-32b_math500-full_n2500_norepeat_minilm 0.2
+TESTED or-qwen3-32b_math500-full_n2500_norepeat_minilm 0.4
+TESTED or-qwen3-32b_math500-full_n2500_norepeat_minilm 0.6
+# Controlled alpha update: primary target epsilon = 0.40
+
+| Model | Encoder | Type-I A/F (%) | Type-II A/F (%) | Cost A/F | Delta pp [95% CI] | p | Holm p | Wins |
+|---|---|---|---|---|---|---|---|---|
+| Llama-3.3-70B | Qwen3-1.7B | 38.51/44.05 | 13.77/16.29 | 2.94/2.03 | 2.51 [2.19, 2.82] | 0.0000 | 0.0000 | 100.0% |
+| Llama-3.3-70B | MiniLM | 38.65/32.18 | 16.14/19.90 | 2.68/1.09 | 3.76 [3.39, 4.12] | 0.0000 | 0.0000 | 100.0% |
+| Qwen3-32B | Qwen3-1.7B | 42.17/42.17 | 13.80/13.80 | 3.14/3.14 | 0.00 [0.00, 0.00] | 1.0000 | 1.0000 | 0.0% |
+| Qwen3-32B | MiniLM | 40.00/41.10 | 16.82/16.50 | 2.58/2.63 | -0.32 [-0.66, 0.01] | 0.0772 | 0.1545 | 36.7% |
+COMPLETE /home/mll/alireza/EDO-reb/rebuttal/results/alpha_controlled_v1

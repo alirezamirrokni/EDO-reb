@@ -1,0 +1,42 @@
+{
+  "stages": [
+    "minilm",
+    "0.6B",
+    "1.7B",
+    "4B"
+  ],
+  "gammas": [
+    0,
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.068,
+    0.075,
+    0.1,
+    0.125,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2,
+    3,
+    5,
+    10
+  ],
+  "co_best_type_ii_tolerance": 0.005,
+  "epsilon_tolerance": 1e-09,
+  "success": "4/4 combinations feasible and best/co-best against feasible plotted baselines",
+  "ranking": "co-best count, feasible count, mean epsilon excess, mean Type-II, mean cost",
+  "metric": "mean per-round ratios over all 250 rounds, matching notebook",
+  "caveat": "Exploratory tuning on these same streams; not held-out evaluation.",
+  "fixed": "stream, seed, epsilon, theta learning rate, initialization, budget and encoder max length"
+}

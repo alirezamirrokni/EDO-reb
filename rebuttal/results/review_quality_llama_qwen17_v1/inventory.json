@@ -1,0 +1,194 @@
+[
+  {
+    "setting": "llama_MATH-500_Qwen1.7B",
+    "records": 500,
+    "encoder": "Qwen1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 2,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      }
+    ],
+    "feature_hash": "b2b64cd1c6f8b8293efbb008a04734d028d4e662739e62b1ced38e7ef4aa3c76"
+  },
+  {
+    "setting": "llama_MMLU-Pro_Qwen1.7B",
+    "records": 500,
+    "encoder": "Qwen1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 2,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 100,
+        "test": 100
+      }
+    ],
+    "feature_hash": "2975e6c439ae4562af11d2b0afb90e32e729e7c3b65178c1cc321ab9eaab0b12"
+  },
+  {
+    "setting": "llama_PopQA_Qwen1.7B",
+    "records": 500,
+    "encoder": "Qwen1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 199,
+        "calibration": 101,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 1,
+        "fit": 199,
+        "calibration": 100,
+        "validation": 100,
+        "test": 101
+      },
+      {
+        "fold": 2,
+        "fit": 201,
+        "calibration": 100,
+        "validation": 99,
+        "test": 100
+      },
+      {
+        "fold": 3,
+        "fit": 201,
+        "calibration": 99,
+        "validation": 100,
+        "test": 100
+      },
+      {
+        "fold": 4,
+        "fit": 200,
+        "calibration": 100,
+        "validation": 101,
+        "test": 99
+      }
+    ],
+    "feature_hash": "0c3128ea062a2a495b259ce3e05b46bc3f226a2ad70b39dd4290b42892cd2337"
+  },
+  {
+    "setting": "llama_GPQA_Qwen1.7B",
+    "records": 448,
+    "encoder": "Qwen1.7B",
+    "split": "five-fold grouped cross-fitting",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 178,
+        "calibration": 90,
+        "validation": 90,
+        "test": 90
+      },
+      {
+        "fold": 1,
+        "fit": 179,
+        "calibration": 90,
+        "validation": 89,
+        "test": 90
+      },
+      {
+        "fold": 2,
+        "fit": 180,
+        "calibration": 89,
+        "validation": 89,
+        "test": 90
+      },
+      {
+        "fold": 3,
+        "fit": 180,
+        "calibration": 89,
+        "validation": 90,
+        "test": 89
+      },
+      {
+        "fold": 4,
+        "fit": 179,
+        "calibration": 90,
+        "validation": 90,
+        "test": 89
+      }
+    ],
+    "feature_hash": "585d8cfa711c9addbc094d8dd17c2e3571752ca6ad2067d049523a55a76381bf"
+  },
+  {
+    "setting": "RAGTruth_Qwen4B",
+    "records": 2965,
+    "encoder": "Qwen4B",
+    "split": "official RAGTruth",
+    "folds": [
+      {
+        "fold": 0,
+        "fit": 1503,
+        "calibration": 517,
+        "validation": 495,
+        "test": 450
+      }
+    ],
+    "feature_hash": "2a62f0b4cbeac2e39becaeb721a578699c1881edae19f1c605232885815f772a"
+  }
+]

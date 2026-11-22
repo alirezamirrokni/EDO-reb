@@ -148,6 +148,64 @@ DEFAULT_SELECTOR_PROMPTS = {
 }
 
 
+PROMPT_VARIANTS = (
+    "legacy",
+    "legacy_full_context",
+    "reasoning_allowed",
+    "independent_verify",
+    "risk_rank_full_budget",
+)
+
+VARIANT_INSTRUCTIONS = {
+    "reasoning_allowed": """Reasoning instruction:
+- You may solve the questions or reason through them privately when useful.
+- Use that private reasoning to assess whether each model answer is correct.
+- Do not reveal your reasoning; the final response must still contain only the JSON object.""",
+    "independent_verify": """Verification procedure:
+- For every item, independently derive or verify the correct answer before judging the model answer.
+- Compare your result with both the model's final answer and any supporting reasoning.
+- Treat substantive reasoning errors, contradictions, invalid options, and instruction failures as evidence that correction is needed.
+- Select the budget-feasible items with the highest probability of requiring correction.
+- Perform the verification privately; return only the JSON object.""",
+    "risk_rank_full_budget": """Risk-ranking procedure:
+- Independently solve or fact-check every item, then compare your conclusion with the model answer.
+- Rank all items from highest to lowest probability of requiring a substantive correction.
+- Spend as much of the available budget as possible without exceeding it; for equal unit costs, select exactly as many highest-risk items as the budget permits.
+- List selected indices in descending order of estimated error risk.
+- Keep all analysis private and return only the JSON object.""",
+}
+
+
+def _variant_system_prompt(base_prompt: str, variant: str) -> str:
+    if variant in {"legacy", "legacy_full_context"}:
+        return base_prompt
+    prefix = base_prompt.split("Return only valid JSON.", 1)[0].rstrip()
+    if variant == "reasoning_allowed":
+        instruction = "You may solve or reason through each question privately when useful."
+    elif variant == "independent_verify":
+        instruction = "Independently solve or verify every question before judging its model-generated answer."
+    elif variant == "risk_rank_full_budget":
+        instruction = "Independently verify every answer, rank the items by correction risk, and use the available review budget."
+    else:
+        raise ValueError(f"Unknown LLM-Select prompt variant: {variant!r}")
+    return (
+        f"{prefix}\n{instruction}\n"
+        "Keep your analysis private. Return only valid JSON and do not include explanations."
+    )
+
+
+def _variant_user_prompt(base_prompt: str, variant: str) -> str:
+    if variant in {"legacy", "legacy_full_context"}:
+        return base_prompt
+    instruction = VARIANT_INSTRUCTIONS.get(variant)
+    if instruction is None:
+        raise ValueError(f"Unknown LLM-Select prompt variant: {variant!r}")
+    marker = "\nBatch:\n"
+    if marker not in base_prompt:
+        raise ValueError("LLM-Select prompt template is missing the Batch marker")
+    return base_prompt.replace(marker, f"\n{instruction}\n{marker}", 1)
+
+
 class LLMSelect:
     """LLM-based budgeted batch selection baseline.
 
@@ -164,17 +222,25 @@ class LLMSelect:
         self.policy = cfg["policy"]
         self.seed = int(cfg.get("seed", 0))
         self.dataset_name = _canonical_dataset_name(cfg.get("data", {}).get("name", "math500"))
+        self.prompt_variant = str(self.policy.get("prompt_variant", "legacy"))
+        if self.prompt_variant not in PROMPT_VARIANTS:
+            raise ValueError(
+                f"Unknown policy.prompt_variant={self.prompt_variant!r}; "
+                f"expected one of {PROMPT_VARIANTS}"
+            )
         selector_cfg = dict(cfg.get("selector_llm") or cfg.get("main_llm"))
         if not selector_cfg.get("system_prompt"):
-            selector_cfg["system_prompt"] = DEFAULT_SELECTOR_SYSTEM_PROMPTS.get(
+            base_system_prompt = DEFAULT_SELECTOR_SYSTEM_PROMPTS.get(
                 self.dataset_name,
                 MATH500_SELECTOR_SYSTEM_PROMPT,
             )
+            selector_cfg["system_prompt"] = _variant_system_prompt(base_system_prompt, self.prompt_variant)
         self.selector_llm = build_main_llm(selector_cfg)
-        self.prompt_template = self.policy.get("prompt") or DEFAULT_SELECTOR_PROMPTS.get(
+        base_prompt = self.policy.get("prompt") or DEFAULT_SELECTOR_PROMPTS.get(
             self.dataset_name,
             MATH500_SELECTOR_PROMPT,
         )
+        self.prompt_template = _variant_user_prompt(base_prompt, self.prompt_variant)
 
     @staticmethod
     def _truncate(text: str, max_chars: int = 1200) -> str:
@@ -270,6 +336,8 @@ class LLMSelect:
             selected = self._validate_indices(indices, costs, budget)
         except Exception as exc:
             print(f"[llm_select] selector call/parse failed at batch {t}: {exc}")
+            if self.policy.get("fail_on_selector_error", False):
+                raise
             selected = np.zeros(len(batch_df), dtype=int)
 
         out = batch_df.copy()

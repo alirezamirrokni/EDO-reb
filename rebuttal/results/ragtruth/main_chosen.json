@@ -1,0 +1,11 @@
+{
+  "Qwen3-4B": {
+    "gamma": 0.2,
+    "lr": 0.5,
+    "warm": 0
+  },
+  "EDIT-RAND": {
+    "gamma": 1.5,
+    "warm": 10
+  }
+}

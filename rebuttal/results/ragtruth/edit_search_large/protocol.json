@@ -1,0 +1,76 @@
+{
+  "configurations": 100000,
+  "seed_runs": 500000,
+  "seeds": [
+    7,
+    17,
+    27,
+    37,
+    47
+  ],
+  "search_seed": 20261111,
+  "global_fraction": 0.4,
+  "local_fraction": 0.6,
+  "epsilon": [
+    0,
+    0.8
+  ],
+  "gamma": [
+    0,
+    30
+  ],
+  "learning_rate": [
+    0.01,
+    128
+  ],
+  "warmup": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "l2": [
+    0,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "initial_scale": [
+    0,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1
+  ],
+  "initial_alpha": [
+    0,
+    1
+  ],
+  "l2_times_lr_max": 1,
+  "score_from_round": 20,
+  "budget": 5,
+  "feature_file": "features_qwen4b_2048.npy",
+  "manifest_sha256": "f0b34e9c1acc883aeee7734f987d9739cf3d0fcda159a08df23d01931b21f882",
+  "interpretation": "Exploratory test-set search; unequal tuning budgets; no guarantee of victory or independent validation"
+}
